@@ -1,0 +1,1203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<Page name="Выпуски" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выпуски</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выпуски</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ВыпускиРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="4">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ReportHeaderBackColor</BackColor>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="5"/>
+							<ChildItems>
+								<Button name="ПолучитьПЗ" id="10">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПолучитьПЗ</CommandName>
+									<ExtendedTooltip name="ПолучитьПЗРасширеннаяПодсказка" id="11"/>
+								</Button>
+								<CommandBar name="Группа2" id="6">
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="7"/>
+									<ChildItems>
+										<Button name="Перепровести" id="103">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.Перепровести</CommandName>
+											<ExtendedTooltip name="ПерепровестиРасширеннаяПодсказка" id="104"/>
+										</Button>
+										<Button name="ИсправитьОшибкиВВыбранной" id="62">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ИсправитьОшибкиВВыбранной</CommandName>
+											<ExtendedTooltip name="ИсправитьОшибкиВВыбраннойРасширеннаяПодсказка" id="63"/>
+										</Button>
+										<Button name="ИсправитьОшибки" id="8">
+											<Type>CommandBarButton</Type>
+											<DefaultButton>true</DefaultButton>
+											<CommandName>Form.Command.ИсправитьОшибки</CommandName>
+											<ExtendedTooltip name="ИсправитьОшибкиРасширеннаяПодсказка" id="9"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТаблицаПЗ" id="12">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаПЗ</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаПЗКонтекстноеМеню" id="13"/>
+							<AutoCommandBar name="ТаблицаПЗКоманднаяПанель" id="14"/>
+							<ExtendedTooltip name="ТаблицаПЗРасширеннаяПодсказка" id="15"/>
+							<SearchStringAddition name="ТаблицаПЗСтрокаПоиска" id="16">
+								<AdditionSource>
+									<Item>ТаблицаПЗ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗСтрокаПоискаКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="ТаблицаПЗСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаПЗСостояниеПросмотра" id="19">
+								<AdditionSource>
+									<Item>ТаблицаПЗ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗСостояниеПросмотраКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="ТаблицаПЗСостояниеПросмотраРасширеннаяПодсказка" id="21"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаПЗУправлениеПоиском" id="22">
+								<AdditionSource>
+									<Item>ТаблицаПЗ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗУправлениеПоискомКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="ТаблицаПЗУправлениеПоискомРасширеннаяПодсказка" id="24"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаПЗПЗ" id="25">
+									<DataPath>ТаблицаПЗ.ПЗ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗПЗКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ТаблицаПЗПЗРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="ТаблицаПЗИзделие" id="136">
+									<DataPath>ТаблицаПЗ.Изделие</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗИзделиеКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ТаблицаПЗИзделиеРасширеннаяПодсказка" id="138"/>
+								</InputField>
+								<InputField name="ТаблицаПЗПЗДатаЗапуска" id="105">
+									<DataPath>ТаблицаПЗ.ПЗ.ДатаЗапуска</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗПЗДатаЗапускаКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ТаблицаПЗПЗДатаЗапускаРасширеннаяПодсказка" id="107"/>
+								</InputField>
+								<InputField name="ТаблицаПЗПП" id="133">
+									<DataPath>ТаблицаПЗ.ПП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗППКонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="ТаблицаПЗППРасширеннаяПодсказка" id="135"/>
+								</InputField>
+								<InputField name="ТаблицаПЗОшибки" id="59">
+									<DataPath>ТаблицаПЗ.Ошибки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗОшибкиКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ТаблицаПЗОшибкиРасширеннаяПодсказка" id="61"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="ТаблицаПЗТаблицаВыпусков" id="31">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаВыпусков</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаПЗТаблицаВыпусковКонтекстноеМеню" id="32"/>
+							<AutoCommandBar name="ТаблицаПЗТаблицаВыпусковКоманднаяПанель" id="33"/>
+							<ExtendedTooltip name="ТаблицаПЗТаблицаВыпусковРасширеннаяПодсказка" id="34"/>
+							<SearchStringAddition name="ТаблицаПЗТаблицаВыпусковСтрокаПоиска" id="35">
+								<AdditionSource>
+									<Item>ТаблицаПЗТаблицаВыпусков</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗТаблицаВыпусковСтрокаПоискаКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="ТаблицаПЗТаблицаВыпусковСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаПЗТаблицаВыпусковСостояниеПросмотра" id="38">
+								<AdditionSource>
+									<Item>ТаблицаПЗТаблицаВыпусков</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗТаблицаВыпусковСостояниеПросмотраКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="ТаблицаПЗТаблицаВыпусковСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаПЗТаблицаВыпусковУправлениеПоиском" id="41">
+								<AdditionSource>
+									<Item>ТаблицаПЗТаблицаВыпусков</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗТаблицаВыпусковУправлениеПоискомКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="ТаблицаПЗТаблицаВыпусковУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаПЗТаблицаВыпусковГруппаРМ" id="44">
+									<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаВыпусков.ГруппаРМ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗТаблицаВыпусковГруппаРМКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ТаблицаПЗТаблицаВыпусковГруппаРМРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="ТаблицаПЗТаблицаВыпусковРабочееМесто" id="56">
+									<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаВыпусков.РабочееМесто</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗТаблицаВыпусковРабочееМестоКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ТаблицаПЗТаблицаВыпусковРабочееМестоРасширеннаяПодсказка" id="58"/>
+								</InputField>
+								<InputField name="ТаблицаПЗТаблицаВыпусковДатаОкончания" id="47">
+									<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаВыпусков.ДатаОкончания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗТаблицаВыпусковДатаОкончанияКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ТаблицаПЗТаблицаВыпусковДатаОкончанияРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="ТаблицаПЗТаблицаВыпусковИсполнитель" id="53">
+									<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаВыпусков.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗТаблицаВыпусковИсполнительКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ТаблицаПЗТаблицаВыпусковИсполнительРасширеннаяПодсказка" id="55"/>
+								</InputField>
+								<InputField name="ТаблицаПЗТаблицаВыпусковВыпуск" id="50">
+									<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаВыпусков.Выпуск</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗТаблицаВыпусковВыпускКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ТаблицаПЗТаблицаВыпусковВыпускРасширеннаяПодсказка" id="52"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="ТаблицаПЗТаблицаРасхода" id="108">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаРасхода</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаПЗТаблицаРасходаКонтекстноеМеню" id="109"/>
+							<AutoCommandBar name="ТаблицаПЗТаблицаРасходаКоманднаяПанель" id="110"/>
+							<ExtendedTooltip name="ТаблицаПЗТаблицаРасходаРасширеннаяПодсказка" id="111"/>
+							<SearchStringAddition name="ТаблицаПЗТаблицаРасходаСтрокаПоиска" id="112">
+								<AdditionSource>
+									<Item>ТаблицаПЗТаблицаРасхода</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗТаблицаРасходаСтрокаПоискаКонтекстноеМеню" id="113"/>
+								<ExtendedTooltip name="ТаблицаПЗТаблицаРасходаСтрокаПоискаРасширеннаяПодсказка" id="114"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаПЗТаблицаРасходаСостояниеПросмотра" id="115">
+								<AdditionSource>
+									<Item>ТаблицаПЗТаблицаРасхода</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗТаблицаРасходаСостояниеПросмотраКонтекстноеМеню" id="116"/>
+								<ExtendedTooltip name="ТаблицаПЗТаблицаРасходаСостояниеПросмотраРасширеннаяПодсказка" id="117"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаПЗТаблицаРасходаУправлениеПоиском" id="118">
+								<AdditionSource>
+									<Item>ТаблицаПЗТаблицаРасхода</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗТаблицаРасходаУправлениеПоискомКонтекстноеМеню" id="119"/>
+								<ExtendedTooltip name="ТаблицаПЗТаблицаРасходаУправлениеПоискомРасширеннаяПодсказка" id="120"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаПЗТаблицаРасходаМПЗ" id="130">
+									<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаРасхода.МПЗ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗТаблицаРасходаМПЗКонтекстноеМеню" id="131"/>
+									<ExtendedTooltip name="ТаблицаПЗТаблицаРасходаМПЗРасширеннаяПодсказка" id="132"/>
+								</InputField>
+								<InputField name="ТаблицаПЗТаблицаРасходаПриход" id="121">
+									<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаРасхода.Приход</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗТаблицаРасходаПриходКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="ТаблицаПЗТаблицаРасходаПриходРасширеннаяПодсказка" id="123"/>
+								</InputField>
+								<InputField name="ТаблицаПЗТаблицаРасходаРасход" id="124">
+									<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаРасхода.Расход</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗТаблицаРасходаРасходКонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="ТаблицаПЗТаблицаРасходаРасходРасширеннаяПодсказка" id="126"/>
+								</InputField>
+								<InputField name="ТаблицаПЗТаблицаРасходаВыпуск" id="127">
+									<DataPath>Items.ТаблицаПЗ.CurrentData.ТаблицаРасхода.Выпуск</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗТаблицаРасходаВыпускКонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="ТаблицаПЗТаблицаРасходаВыпускРасширеннаяПодсказка" id="129"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ДатаЗапуска" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата запуска</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата запуска</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ДатаЗапускаРасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="92">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ReportHeaderBackColor</BackColor>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="93"/>
+							<ChildItems>
+								<CommandBar name="Группа4" id="94">
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="95"/>
+									<ChildItems>
+										<Button name="ПолучитьПЗ2" id="96">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПолучитьПЗ2</CommandName>
+											<ExtendedTooltip name="ПолучитьПЗ2РасширеннаяПодсказка" id="97"/>
+										</Button>
+										<Button name="ИсправитьОшибки2" id="98">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ИсправитьОшибки2</CommandName>
+											<BackColor>#00FF00</BackColor>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ExtendedTooltip name="ИсправитьОшибки2РасширеннаяПодсказка" id="99"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТаблицаПЗ2" id="70">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаПЗ2</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаПЗ2КонтекстноеМеню" id="71"/>
+							<AutoCommandBar name="ТаблицаПЗ2КоманднаяПанель" id="72"/>
+							<ExtendedTooltip name="ТаблицаПЗ2РасширеннаяПодсказка" id="73"/>
+							<SearchStringAddition name="ТаблицаПЗ2СтрокаПоиска" id="74">
+								<AdditionSource>
+									<Item>ТаблицаПЗ2</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗ2СтрокаПоискаКонтекстноеМеню" id="75"/>
+								<ExtendedTooltip name="ТаблицаПЗ2СтрокаПоискаРасширеннаяПодсказка" id="76"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаПЗ2СостояниеПросмотра" id="77">
+								<AdditionSource>
+									<Item>ТаблицаПЗ2</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗ2СостояниеПросмотраКонтекстноеМеню" id="78"/>
+								<ExtendedTooltip name="ТаблицаПЗ2СостояниеПросмотраРасширеннаяПодсказка" id="79"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаПЗ2УправлениеПоиском" id="80">
+								<AdditionSource>
+									<Item>ТаблицаПЗ2</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПЗ2УправлениеПоискомКонтекстноеМеню" id="81"/>
+								<ExtendedTooltip name="ТаблицаПЗ2УправлениеПоискомРасширеннаяПодсказка" id="82"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаПЗ2ПЗ" id="83">
+									<DataPath>ТаблицаПЗ2.ПЗ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗ2ПЗКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ТаблицаПЗ2ПЗРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ТаблицаПЗ2ПЗДатаЗапуска" id="100">
+									<DataPath>ТаблицаПЗ2.ПЗ.ДатаЗапуска</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗ2ПЗДатаЗапускаКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ТаблицаПЗ2ПЗДатаЗапускаРасширеннаяПодсказка" id="102"/>
+								</InputField>
+								<InputField name="ТаблицаПЗ2ПП" id="86">
+									<DataPath>ТаблицаПЗ2.ПП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗ2ППКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ТаблицаПЗ2ППРасширеннаяПодсказка" id="88"/>
+								</InputField>
+								<InputField name="ТаблицаПЗ2ППДата" id="89">
+									<DataPath>ТаблицаПЗ2.ПП.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПЗ2ППДатаКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ТаблицаПЗ2ППДатаРасширеннаяПодсказка" id="91"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ДокументыСОшибками" id="139">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы с ошибками</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы с ошибками</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ДокументыСОшибкамиРасширеннаяПодсказка" id="140"/>
+					<ChildItems>
+						<UsualGroup name="Группа5" id="159">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ReportHeaderBackColor</BackColor>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="160"/>
+							<ChildItems>
+								<InputField name="Период" id="163">
+									<DataPath>Период</DataPath>
+									<ContextMenu name="ПериодКонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="165"/>
+								</InputField>
+								<CommandBar name="Группа6" id="161">
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="162"/>
+									<ChildItems>
+										<Button name="ПолучитьДокументыСОшибками" id="157">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПолучитьДокументыСОшибками</CommandName>
+											<ExtendedTooltip name="ПолучитьДокументыСОшибкамиРасширеннаяПодсказка" id="158"/>
+										</Button>
+										<Button name="ПометитьДокументыНаУдаление" id="166">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПометитьДокументыНаУдаление</CommandName>
+											<BackColor>#FFAA76</BackColor>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ExtendedTooltip name="ПометитьДокументыНаУдалениеРасширеннаяПодсказка" id="167"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТаблицаДокументов" id="141">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаДокументов</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаДокументовКонтекстноеМеню" id="142"/>
+							<AutoCommandBar name="ТаблицаДокументовКоманднаяПанель" id="143"/>
+							<ExtendedTooltip name="ТаблицаДокументовРасширеннаяПодсказка" id="144"/>
+							<SearchStringAddition name="ТаблицаДокументовСтрокаПоиска" id="145">
+								<AdditionSource>
+									<Item>ТаблицаДокументов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДокументовСтрокаПоискаКонтекстноеМеню" id="146"/>
+								<ExtendedTooltip name="ТаблицаДокументовСтрокаПоискаРасширеннаяПодсказка" id="147"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаДокументовСостояниеПросмотра" id="148">
+								<AdditionSource>
+									<Item>ТаблицаДокументов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДокументовСостояниеПросмотраКонтекстноеМеню" id="149"/>
+								<ExtendedTooltip name="ТаблицаДокументовСостояниеПросмотраРасширеннаяПодсказка" id="150"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаДокументовУправлениеПоиском" id="151">
+								<AdditionSource>
+									<Item>ТаблицаДокументов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДокументовУправлениеПоискомКонтекстноеМеню" id="152"/>
+								<ExtendedTooltip name="ТаблицаДокументовУправлениеПоискомРасширеннаяПодсказка" id="153"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаДокументовДокумент" id="154">
+									<DataPath>ТаблицаДокументов.Документ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаДокументовДокументКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="ТаблицаДокументовДокументРасширеннаяПодсказка" id="156"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИсправлениеОшибокПроизводственныхЗаданий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаПЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица ПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ПЗ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПроизводственноеЗадание</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТаблицаВыпусков" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица выпусков</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ошибки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Обработана" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработана</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТаблицаРасхода" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица расхода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПП" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПередачаВПроизводство</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Изделие" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изделие</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<AdditionalColumns table="ТаблицаПЗ.ТаблицаВыпусков">
+					<Column name="ГруппаРМ" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа РМ</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.ГруппыРабочихМест</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ДатаОкончания" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата окончания</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>DateTime</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="Выпуск" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выпуск</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:DocumentRef.ВыпускПродукции</v8:Type>
+							<v8:Type>cfg:DocumentRef.ВыпускПродукцииКанбан</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Исполнитель" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Исполнитель</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+						</Type>
+					</Column>
+					<Column name="РабочееМесто" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Рабочее место</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.РабочиеМестаЛинеек</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="ТаблицаПЗ.ТаблицаРасхода">
+					<Column name="Приход" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Приход</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Расход" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Расход</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Выпуск" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выпуск</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:DocumentRef.ВыпускПродукции</v8:Type>
+						</Type>
+					</Column>
+					<Column name="МПЗ" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>МПЗ</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+							<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЭтапыАРМ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы АРМ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.РабочиеМестаЛинеек</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="Этапы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЭтапСпецификации" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этап спецификации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>7</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГруппаНоменклатуры" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаКомплектации" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица комплектации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЭтапСпецификации" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этап спецификации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комплектация" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплектация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Документация</v8:Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>6</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕдиницаИзмерения" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЕдиницыИзмерений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидЭлемента" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид элемента</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыЭлементовНормРасходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Компл" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компл</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КанбанБезРезервирования" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Канбан без резервирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаПЗ2" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица п з2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ПЗ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПроизводственноеЗадание</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПП" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПередачаВПроизводство</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаДокументов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Документ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ДвижениеМПЗ</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеНаЛинейку</v8:Type>
+						<v8:Type>cfg:DocumentRef.СписаниеМПЗПрочее</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Период" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПЗ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПЗ.Обработана</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ИсправитьОшибки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить ошибки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИсправитьОшибки</Action>
+		</Command>
+		<Command name="ПолучитьПЗ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить ПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить ПЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПЗ</Action>
+		</Command>
+		<Command name="ИсправитьОшибкиВВыбранной" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить ошибки в выбранной</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить ошибки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИсправитьОшибкиВВыбранной</Action>
+		</Command>
+		<Command name="ПолучитьПЗ2" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить ПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить п з2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПЗ2</Action>
+		</Command>
+		<Command name="ИсправитьОшибки2" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить ошибки2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИсправитьОшибки2</Action>
+		</Command>
+		<Command name="Перепровести" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перепровести</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перепровести</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Перепровести</Action>
+		</Command>
+		<Command name="ПолучитьДокументыСОшибками" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить документы с ошибками</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДокументыСОшибками</Action>
+		</Command>
+		<Command name="ПометитьДокументыНаУдаление" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить документы на удаление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПометитьДокументыНаУдаление</Action>
+		</Command>
+	</Commands>
+</Form>

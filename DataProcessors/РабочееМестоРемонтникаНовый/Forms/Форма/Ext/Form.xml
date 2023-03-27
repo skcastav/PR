@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРабочееМесто" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее место</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа рабочее место</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="ГруппаРабочееМестоРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<LabelField name="СписокЛинеек" id="25">
+					<DataPath>СписокЛинеек</DataPath>
+					<ContextMenu name="СписокЛинеекКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СписокЛинеекРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="214">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="215"/>
+			<ChildItems>
+				<CommandBar name="Группа1" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<Button name="ПолучитьЗадание" id="14">
+							<Type>CommandBarButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.ПолучитьЗадание</CommandName>
+							<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ExtendedTooltip name="ПолучитьЗаданиеРасширеннаяПодсказка" id="53"/>
+						</Button>
+						<Popup name="ДилерскийРемонт" id="112">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дилерский ремонт</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дилерский ремонт</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ДилерскийРемонтРасширеннаяПодсказка" id="113"/>
+							<ChildItems>
+								<Button name="ДилерскийРемонтПрибора" id="114">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ДилерскийРемонтПрибора</CommandName>
+									<ExtendedTooltip name="ДилерскийРемонтПрибораРасширеннаяПодсказка" id="115"/>
+								</Button>
+								<Button name="ДилерскийРемонтПолуфабриката" id="116">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ДилерскийРемонтПолуфабриката</CommandName>
+									<ExtendedTooltip name="ДилерскийРемонтПолуфабрикатаРасширеннаяПодсказка" id="117"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+					</ChildItems>
+				</CommandBar>
+				<InputField name="ОтобратьПоЛинейке" id="122">
+					<DataPath>ОтобратьПоЛинейке</DataPath>
+					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ОтобратьПоЛинейкеКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="ОтобратьПоЛинейкеРасширеннаяПодсказка" id="124"/>
+					<Events>
+						<Event name="OnChange">ОтобратьПоЛинейкеПриИзменении</Event>
+						<Event name="ChoiceProcessing">ОтобратьПоЛинейкеОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДеревоМПЗ" id="73">
+			<Representation>Tree</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<ReadOnly>true</ReadOnly>
+			<ChoiceMode>true</ChoiceMode>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ДеревоМПЗ</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отложенные ремонтные карты</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Choose</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>HierarchicalList</ExcludedCommand>
+				<ExcludedCommand>List</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>Tree</ExcludedCommand>
+			</CommandSet>
+			<ContextMenu name="ДеревоМПЗКонтекстноеМеню" id="74"/>
+			<AutoCommandBar name="ДеревоМПЗКоманднаяПанель" id="75">
+				<ChildItems>
+					<Button name="Обновить" id="66">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Refresh</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="67"/>
+					</Button>
+					<Button name="ДеревоМПЗРазвернутьДерево" id="105">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РазвернутьДерево</CommandName>
+						<ExtendedTooltip name="ДеревоМПЗРазвернутьДеревоРасширеннаяПодсказка" id="106"/>
+					</Button>
+					<Button name="ДеревоМПЗСвернутьДерево" id="107">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СвернутьДерево</CommandName>
+						<ExtendedTooltip name="ДеревоМПЗСвернутьДеревоРасширеннаяПодсказка" id="108"/>
+					</Button>
+					<Button name="НайтиПоБарКоду" id="118">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.НайтиПоБарКоду</CommandName>
+						<ExtendedTooltip name="НайтиПоБарКодуРасширеннаяПодсказка" id="119"/>
+					</Button>
+					<Button name="НайтиПоКодуDanfoss" id="120">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.НайтиПоКодуDanfoss</CommandName>
+						<ExtendedTooltip name="НайтиПоКодуDanfossРасширеннаяПодсказка" id="121"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоМПЗРасширеннаяПодсказка" id="76"/>
+			<SearchStringAddition name="ДеревоМПЗСтрокаПоиска" id="77">
+				<AdditionSource>
+					<Item>ДеревоМПЗ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоМПЗСтрокаПоискаКонтекстноеМеню" id="78"/>
+				<ExtendedTooltip name="ДеревоМПЗСтрокаПоискаРасширеннаяПодсказка" id="79"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоМПЗСостояниеПросмотра" id="80">
+				<AdditionSource>
+					<Item>ДеревоМПЗ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоМПЗСостояниеПросмотраКонтекстноеМеню" id="81"/>
+				<ExtendedTooltip name="ДеревоМПЗСостояниеПросмотраРасширеннаяПодсказка" id="82"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоМПЗУправлениеПоиском" id="83">
+				<AdditionSource>
+					<Item>ДеревоМПЗ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоМПЗУправлениеПоискомКонтекстноеМеню" id="84"/>
+				<ExtendedTooltip name="ДеревоМПЗУправлениеПоискомРасширеннаяПодсказка" id="85"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ДеревоМПЗВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДеревоМПЗНаименование" id="86">
+					<DataPath>ДеревоМПЗ.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМПЗНаименованиеКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ДеревоМПЗНаименованиеРасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<InputField name="ДеревоМПЗВозвратнаяТара" id="187">
+					<DataPath>ДеревоМПЗ.ВозвратнаяТара</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМПЗВозвратнаяТараКонтекстноеМеню" id="188"/>
+					<ExtendedTooltip name="ДеревоМПЗВозвратнаяТараРасширеннаяПодсказка" id="189"/>
+				</InputField>
+				<InputField name="ДеревоМПЗБарКод" id="131">
+					<DataPath>ДеревоМПЗ.БарКод</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМПЗБарКодКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="ДеревоМПЗБарКодРасширеннаяПодсказка" id="133"/>
+				</InputField>
+				<InputField name="ДеревоМПЗКодDanfoss" id="134">
+					<DataPath>ДеревоМПЗ.КодDanfoss</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМПЗКодDanfossКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="ДеревоМПЗКодDanfossРасширеннаяПодсказка" id="136"/>
+				</InputField>
+				<InputField name="ДеревоМПЗЕдиницаИзмерения" id="89">
+					<DataPath>ДеревоМПЗ.ЕдиницаИзмерения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>8</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДеревоМПЗЕдиницаИзмеренияКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ДеревоМПЗЕдиницаИзмеренияРасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="ДеревоМПЗКоличествоТребуется" id="92">
+					<DataPath>ДеревоМПЗ.КоличествоТребуется</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДеревоМПЗКоличествоТребуетсяКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ДеревоМПЗКоличествоТребуетсяРасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="ДеревоМПЗКоличествоСклад" id="95">
+					<DataPath>ДеревоМПЗ.КоличествоСклад</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМПЗКоличествоСкладКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ДеревоМПЗКоличествоСкладРасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<CheckBoxField name="ДеревоМПЗАналог" id="190">
+					<DataPath>ДеревоМПЗ.Аналог</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>А.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоМПЗАналогКонтекстноеМеню" id="191"/>
+					<ExtendedTooltip name="ДеревоМПЗАналогРасширеннаяПодсказка" id="192"/>
+				</CheckBoxField>
+				<PictureField name="ДеревоМПЗСтатусМТК" id="128">
+					<DataPath>ДеревоМПЗ.СтатусМТК</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ст.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.СтатусыМТК</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ДеревоМПЗСтатусМТККонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="ДеревоМПЗСтатусМТКРасширеннаяПодсказка" id="130"/>
+				</PictureField>
+				<InputField name="ДеревоМПЗМТК" id="125">
+					<DataPath>ДеревоМПЗ.МТК</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМПЗМТККонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ДеревоМПЗМТКРасширеннаяПодсказка" id="127"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоРемонтникаНовый</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоМПЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Линейка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лин.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НР" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+						<v8:Type>cfg:CatalogRef.АналогиНормРасходов</v8:Type>
+						<v8:Type>cfg:CatalogRef.НормыРасходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоТребуется" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Треб.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="МестоХранения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место хранения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоСклад" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во на складах</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>14</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РемонтнаяКарта" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ремонтная карта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.РемонтнаяКарта</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Аналог" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналог</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лин. / РК / МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НРРемонта" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.АналогиНормРасходов</v8:Type>
+						<v8:Type>cfg:CatalogRef.НормыРасходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕдиницаИзмерения" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЕдиницыИзмерений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МТК" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МТК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.МаршрутнаяКарта</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатусМТК" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус МТК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="БарКод" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бар-код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>18</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодDanfoss" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код Danfoss</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВозвратнаяТара" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ в.т.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>4</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОтобратьПоЛинейке" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобрать по линейке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокМестХранения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список мест хранения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоМПЗ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоМПЗ.Аналог</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоМПЗ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>OrGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоМПЗ.КоличествоСклад</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ДеревоМПЗ.КоличествоТребуется</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ДеревоМПЗ.СтатусМТК</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">3</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ДеревоМПЗ.МТК</dcsset:left>
+								<dcsset:comparisonType>Filled</dcsset:comparisonType>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#808080</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоМПЗ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоМПЗ.КоличествоТребуется</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоМПЗ.НР</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#0000FF</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоМПЗ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоМПЗ.РемонтнаяКарта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ReportHeaderBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьЗадание" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьЗадание</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РазвернутьДерево" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть дерево</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть дерево</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РазвернутьДерево</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СвернутьДерево" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть дерево</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть дерево</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СвернутьДерево</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДилерскийРемонтПолуфабриката" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дилерский ремонт полуфабриката</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дилерский ремонт полуфабриката</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДилерскийРемонтПолуфабриката</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДилерскийРемонтПрибора" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дилерский ремонт прибора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дилерский ремонт прибора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДилерскийРемонтПрибора</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НайтиПоБарКоду" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по бар-коду </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по бар коду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.НайтиПоБарКоду</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиПоБарКоду</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НайтиПоКодуDanfoss" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по коду Danfoss</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по бар коду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.НайтиПоБарКоду</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиПоКодуDanfoss</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НайтиПоБарКоду1" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по бар-коду </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по бар коду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.НайтиПоБарКоду</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиПоБарКоду1</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НайтиПоКодуDanfoss1" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по коду Danfoss</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по бар коду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.НайтиПоБарКоду</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиПоКодуDanfoss1</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

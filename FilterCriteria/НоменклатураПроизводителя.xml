@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<FilterCriterion uuid="7e7b2bbe-3b02-4a72-9207-7318e7723dd2">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.НоменклатураПроизводителя" category="Manager">
+				<xr:TypeId>80ca7bfa-8367-473b-b9ad-09391e49cbc3</xr:TypeId>
+				<xr:ValueId>41bd323c-370c-46aa-9f2c-91d39dc44a26</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.НоменклатураПроизводителя" category="List">
+				<xr:TypeId>3f8972b8-748f-40e9-85d3-d16a17de589b</xr:TypeId>
+				<xr:ValueId>5ce2031c-50fc-40ef-bea0-82ab0061d51a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>НоменклатураПроизводителя</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Производители</v8:Type>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Материалы.Attribute.Производитель</xr:Item>
+			</Content>
+			<DefaultForm>FilterCriterion.НоменклатураПроизводителя.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</FilterCriterion>
+</MetaDataObject>

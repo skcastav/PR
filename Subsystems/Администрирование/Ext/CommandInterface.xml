@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandsVisibility>
+		<Command name="Catalog.НормыРасходов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.НормыРасходов.Command.НормыРасходовВсе">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.ВводОстатков.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводОстатковБракаПроизводства.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводОстатковЗаказовПоставщикам.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводОстатковЗаявокНаЗакупку.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводОстатковЗаявокОтПокупателей.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводОстатковМПЗ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводОстатковПередачВПроизводство.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводОстатковПередачНаЛинейки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводОстатковПлановВыпуска.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводЦенМПЗ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.БарКоды.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ЗаказыНаПроизводство.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ДополнительныеПараметрыНоменклатуры.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЛьготнаяОчередь.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.НормыВремени.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПараметрыТоварныхГрупп.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СборИнформацииПоАРМ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СообщенияПользователям.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ОборотКанбанов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.Выравнивание.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыравниваниеЛюбыхДоковЗаПериод.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РегистрацияИзмененийДляОбменаДанными.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ИсправлениеОшибокПроизводственныхЗаданий.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.УдалениеБитыхСсылокЗаписейРегистра.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаОстатковПоМестамХранения.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаДвиженийМПЗ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПередачВПроизводство.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПередачНаЛинейки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПоступленийПрочих.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаСписанийПрочих.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаДвиженийМПЗСтарая.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаРазборок.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструДоговорныхПозиций.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструДоговорыСПоставщиками.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструСтатусыМПЗ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструЯчейкиХранения.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструБракПроизводства.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыНаПроизводство.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыПоставщикам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиНаЗакупку.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиОтПокупателей.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЛьготнойОчереди.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструМестаХранения.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПаспортЛинейки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПроизводство.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПереработку.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиНаЛинейки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПланыВыпуска.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструРезервированиеГП.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЦены.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструГТД.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструДолги.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструИзменениеДатыОтгрузкиОбещанной.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаВБазуАршин.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаГотовойПродукции.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаДвиженийВБухБазу.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаНакладныхНаСборку.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПереносРеализацийВ1С8.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПереносЗаказовПоставщикамВЗаявкиОтПокупателей1C8.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="DocumentJournal.ВводОстатков.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводОстатковБракаПроизводства.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводОстатковЗаказовПоставщикам.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводОстатковЗаявокНаЗакупку.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводОстатковЗаявокОтПокупателей.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводОстатковМПЗ.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводОстатковПередачВПроизводство.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводОстатковПередачНаЛинейки.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводОстатковПлановВыпуска.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводЦенМПЗ.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.БарКоды.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ЗаказыНаПроизводство.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ДополнительныеПараметрыНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ЛьготнаяОчередь.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.НормыВремени.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ПараметрыТоварныхГрупп.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.СборИнформацииПоАРМ.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.СообщенияПользователям.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ОборотКанбанов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.Выравнивание.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыравниваниеЛюбыхДоковЗаПериод.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.РегистрацияИзмененийДляОбменаДанными.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ИсправлениеОшибокПроизводственныхЗаданий.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.УдалениеБитыхСсылокЗаписейРегистра.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаОстатковПоМестамХранения.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаДвиженийМПЗ.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПередачВПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПередачНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПоступленийПрочих.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаСписанийПрочих.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаДвиженийМПЗСтарая.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаРазборок.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструДоговорныхПозиций.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструДоговорыСПоставщиками.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструСтатусыМПЗ.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструЯчейкиХранения.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструБракПроизводства.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыНаПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыПоставщикам.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиНаЗакупку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиОтПокупателей.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЛьготнойОчереди.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструМестаХранения.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПаспортЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПереработку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПланыВыпуска.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструРезервированиеГП.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЦены.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструГТД.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструДолги.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструИзменениеДатыОтгрузкиОбещанной.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаВБазуАршин.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаГотовойПродукции.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаДвиженийВБухБазу.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаНакладныхНаСборку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ПереносРеализацийВ1С8.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ПереносЗаказовПоставщикамВЗаявкиОтПокупателей1C8.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="DocumentJournal.ВводОстатков.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="Document.ВводОстатковБракаПроизводства.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="Document.ВводОстатковЗаказовПоставщикам.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="Document.ВводОстатковЗаявокНаЗакупку.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="Document.ВводОстатковЗаявокОтПокупателей.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="Document.ВводОстатковМПЗ.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="Document.ВводОстатковПередачВПроизводство.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="Document.ВводОстатковПередачНаЛинейки.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="Document.ВводОстатковПлановВыпуска.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="Document.ВводЦенМПЗ.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ДокументыВводаОстатков</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.БарКоды.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ЗаказыНаПроизводство.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="Catalog.ДополнительныеПараметрыНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЛьготнаяОчередь.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.НормыВремени.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПараметрыТоварныхГрупп.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.СборИнформацииПоАРМ.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.СообщенияПользователям.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ОборотКанбанов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.Выравнивание.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыравниваниеЛюбыхДоковЗаПериод.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РегистрацияИзмененийДляОбменаДанными.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ИсправлениеОшибокПроизводственныхЗаданий.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УдалениеБитыхСсылокЗаписейРегистра.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВосстановлениеПослеСбоя</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаОстатковПоМестамХранения.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаДвиженийМПЗ.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПередачВПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПередачНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПоступленийПрочих.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаСписанийПрочих.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаДвиженийМПЗСтарая.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаРазборок.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ВыгрузкиВБухгалтерию</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструДоговорныхПозиций.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструДоговорыСПоставщиками.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструСтатусыМПЗ.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструЯчейкиХранения.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструБракПроизводства.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыНаПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыПоставщикам.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиНаЗакупку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиОтПокупателей.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЛьготнойОчереди.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструМестаХранения.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПаспортЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПереработку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПланыВыпуска.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструРезервированиеГП.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЦены.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструГТД.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструДолги.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструИзменениеДатыОтгрузкиОбещанной.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаВБазуАршин.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаГотовойПродукции.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаДвиженийВБухБазу.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаНакладныхНаСборку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПереносРеализацийВ1С8.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПереносЗаказовПоставщикамВЗаявкиОтПокупателей1C8.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Регламенты</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.ДокументыВводаОстатков</Group>
+		<Group>CommandGroup.Регистры</Group>
+		<Group>CommandGroup.ВосстановлениеПослеСбоя</Group>
+		<Group>CommandGroup.ВыгрузкиВБухгалтерию</Group>
+		<Group>CommandGroup.ОтчётыПоРегистрам</Group>
+		<Group>CommandGroup.Регламенты</Group>
+	</GroupsOrder>
+</CommandInterface>

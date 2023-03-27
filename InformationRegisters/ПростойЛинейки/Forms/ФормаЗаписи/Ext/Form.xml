@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Линейка" id="4">
+			<DataPath>Запись.Линейка</DataPath>
+			<ContextMenu name="ЛинейкаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="13">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Запись.Period</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Окончание" id="10">
+					<DataPath>Запись.Окончание</DataPath>
+					<ContextMenu name="ОкончаниеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ОкончаниеРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Причина" id="18">
+			<DataPath>Запись.Причина</DataPath>
+			<ContextMenu name="ПричинаКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ПричинаРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<InputField name="Примечание" id="15">
+			<DataPath>Запись.Примечание</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ПримечаниеКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="17"/>
+		</InputField>
+		<CheckBoxField name="Остановка" id="21">
+			<DataPath>Запись.Остановка</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОстановкаКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ОстановкаРасширеннаяПодсказка" id="23"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ПростойЛинейки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

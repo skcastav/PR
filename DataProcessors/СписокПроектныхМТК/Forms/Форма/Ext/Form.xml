@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Объект.Период</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="СписокЛинеек" id="4">
+			<DataPath>СписокЛинеек</DataPath>
+			<ContextMenu name="СписокЛинеекКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СписокЛинеекРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="ТаблицаМТК" id="7">
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТаблицаМТК</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаМТККонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ТаблицаМТККоманднаяПанель" id="9">
+				<ChildItems>
+					<Button name="ТаблицаМТКПолучитьМТК" id="35">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.ПолучитьМТК</CommandName>
+						<ExtendedTooltip name="ТаблицаМТКПолучитьМТКРасширеннаяПодсказка" id="36"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаМТКРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ТаблицаМТКСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ТаблицаМТК</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМТКСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаМТКСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаМТКСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ТаблицаМТК</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМТКСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТаблицаМТКСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаМТКУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ТаблицаМТК</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМТКУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТаблицаМТКУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаМТКМТК" id="23">
+					<DataPath>Объект.ТаблицаМТК.МТК</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<QuickChoice>false</QuickChoice>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ТаблицаМТКМТККонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаблицаМТКМТКРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<LabelField name="ТаблицаМТКМТКЛинейка" id="26">
+					<DataPath>Объект.ТаблицаМТК.МТК.Линейка</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лин.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМТКМТКЛинейкаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаМТКМТКЛинейкаРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="ТаблицаМТКМТКНоменклатура" id="29">
+					<DataPath>Объект.ТаблицаМТК.МТК.Номенклатура</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМТКМТКНоменклатураКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаблицаМТКМТКНоменклатураРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<LabelField name="ТаблицаМТКМТККоличество" id="32">
+					<DataPath>Объект.ТаблицаМТК.МТК.Количество</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМТКМТККоличествоКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТаблицаМТКМТККоличествоРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<LabelField name="ТаблицаМТКМТКПроект" id="37">
+					<DataPath>Объект.ТаблицаМТК.МТК.Проект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМТКМТКПроектКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ТаблицаМТКМТКПроектРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СписокПроектныхМТК</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список линеек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокЛинеек</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьМТК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить МТК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить МТК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьМТК</Action>
+		</Command>
+	</Commands>
+</Form>

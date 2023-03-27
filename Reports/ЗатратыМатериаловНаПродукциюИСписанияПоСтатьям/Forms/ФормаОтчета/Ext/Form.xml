@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="12">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Отчет.Период</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="СписокПодразделений" id="6">
+					<DataPath>СписокПодразделений</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокПодразделенийКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="СписокПодразделенийРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<InputField name="СписокГруппМПЗ" id="9">
+					<DataPath>СписокГруппМПЗ</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокГруппМПЗКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="СписокГруппМПЗРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<Button name="ФормаСформировать" id="4">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Сформировать</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ФормаСформироватьРасширеннаяПодсказка" id="5"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статьи списаний</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="15"/>
+			<ChildItems>
+				<InputField name="СписокСтатейПрочиеМатериалы" id="16">
+					<DataPath>СписокСтатейПрочиеМатериалы</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокСтатейПрочиеМатериалыКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СписокСтатейПрочиеМатериалыРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="СписокСтатейПрямыеПотери" id="19">
+					<DataPath>СписокСтатейПрямыеПотери</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокСтатейПрямыеПотериКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="СписокСтатейПрямыеПотериРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="СписокСтатейЗатратыНаКачество" id="22">
+					<DataPath>СписокСтатейЗатратыНаКачество</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокСтатейЗатратыНаКачествоКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СписокСтатейЗатратыНаКачествоРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="СписокСтатейИспытания" id="25">
+					<DataPath>СписокСтатейИспытания</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокСтатейИспытанияКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СписокСтатейИспытанияРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="СписокСтатейСтенды" id="28">
+					<DataPath>СписокСтатейСтенды</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокСтатейСтендыКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СписокСтатейСтендыРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="СписокСтатейПроектныеЗатраты" id="31">
+					<DataPath>СписокСтатейПроектныеЗатраты</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокСтатейПроектныеЗатратыКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="СписокСтатейПроектныеЗатратыРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="СписокСтатейПрямыеПотериПоставщиков" id="34">
+					<DataPath>СписокСтатейПрямыеПотериПоставщиков</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокСтатейПрямыеПотериПоставщиковКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="СписокСтатейПрямыеПотериПоставщиковРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="СписокСтатейПрочиеПотери" id="37">
+					<DataPath>СписокСтатейПрочиеПотери</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокСтатейПрочиеПотериКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="СписокСтатейПрочиеПотериРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="СписокСтатейПрочиеПоступления" id="40">
+					<DataPath>СписокСтатейПрочиеПоступления</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокСтатейПрочиеПоступленияКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="СписокСтатейПрочиеПоступленияРасширеннаяПодсказка" id="42"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="ТабДок" id="43">
+			<DataPath>ТабДок</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="45"/>
+			<Events>
+				<Event name="DetailProcessing">ТабДокОбработкаРасшифровки</Event>
+			</Events>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ЗатратыМатериаловНаПродукциюИСписанияПоСтатьям</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Отчет.Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СписокПодразделений" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокПодразделений</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокГруппМПЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокГруппМПЗ</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСтатейПрочиеМатериалы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Материалы, входящие в изготовление продукции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокСтатейПрочиеМатериалы</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСтатейПрямыеПотери" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прямые потери</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокСтатейПрямыеПотери</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСтатейЗатратыНаКачество" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Затраты на качество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокСтатейЗатратыНаКачество</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСтатейИспытания" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Испытания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокСтатейИспытания</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСтатейСтенды" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стенды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокСтатейСтенды</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСтатейПроектныеЗатраты" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проектные затраты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокСтатейПроектныеЗатраты</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСтатейПрямыеПотериПоставщиков" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прямые потери поставщиков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокСтатейПрямыеПотериПоставщиков</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСтатейПрочиеПотери" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие потери</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокСтатейПрочиеПотери</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСтатейПрочиеПоступления" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие поступления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокСтатейПрочиеПоступления</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТабДок" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаИтогов" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица итогов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Подразделение" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>14</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВыбСписокГруппМПЗ" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выб список групп МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТаблицаИтоговОбщая" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица итогов общая</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Подразделение" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>14</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаИтоговПроизводство" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица итогов производство</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Подразделение" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>14</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Владелец" id="1">
+			<DataPath>Объект.Owner</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="НормаВремени" id="4">
+			<DataPath>1/0:89350821-3306-4caa-8f99-35b195af047a</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НормаВремениКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НормаВремениРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="КУП" id="7">
+			<DataPath>1/0:ab9346b3-e127-46fb-be59-02449e00a447</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КУПКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КУПРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ЦенаНормчаса" id="10">
+			<DataPath>1/0:4b9f53ad-d979-402f-a11f-4c97e095be50</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЦенаНормчасаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЦенаНормчасаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ПроцентНаФЗП" id="13">
+			<DataPath>1/0:b5aafeaa-938a-4abf-b643-a114fe1a0e34</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПроцентНаФЗПКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПроцентНаФЗПРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ТПЗ" id="16">
+			<DataPath>1/0:786bc16f-700c-4616-8fe6-d6051e03cd8c</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТПЗКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТПЗРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ТПЗМТК" id="19">
+			<DataPath>1/0:81838ea7-0f8e-4195-9968-503c716d08c4</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТПЗМТККонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ТПЗМТКРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="НормаВремениРМТест" id="22">
+			<DataPath>1/0:7a8a0e51-2640-4aee-86e4-a90707fa41bf</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НормаВремениРМТестКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НормаВремениРМТестРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ЦенаНормчасаРМТест" id="25">
+			<DataPath>1/0:72b76d2c-8bb9-4357-a157-8ea6717dde77</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЦенаНормчасаРМТестКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ЦенаНормчасаРМТестРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="НормаВремениСМД2" id="28">
+			<DataPath>1/0:d64f2ee8-dc22-4686-99b0-8949116acef2</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НормаВремениСМД2КонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="НормаВремениСМД2РасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ЦенаНормчасаСМД2" id="31">
+			<DataPath>1/0:736a2694-ce1f-400c-885f-801049f63f97</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЦенаНормчасаСМД2КонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ЦенаНормчасаСМД2РасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="НормаВремениПРБ" id="34">
+			<DataPath>1/0:96a30791-e844-49e9-b1d6-58dda38d381a</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НормаВремениПРБКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="НормаВремениПРБРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ЦенаНормчасаПРБ" id="37">
+			<DataPath>1/0:d1809b2c-7946-4ead-a020-bedd73de5c7e</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЦенаНормчасаПРБКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ЦенаНормчасаПРБРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="НЛ1" id="40">
+			<DataPath>1/0:78977ce0-017d-4efe-b37e-f576fbb255b1</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НЛ1КонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="НЛ1РасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="НЛ2" id="43">
+			<DataPath>1/0:ac04a666-131e-4055-bda6-d4d6277d675b</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НЛ2КонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="НЛ2РасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="НЛ3" id="46">
+			<DataPath>1/0:b700db5b-29e6-4aa3-8ad6-f2a11cbf910c</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НЛ3КонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="НЛ3РасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="НЛ4" id="49">
+			<DataPath>1/0:89bcea67-e4fe-47a1-a5d4-38056ada1200</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НЛ4КонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="НЛ4РасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="СТ_ПД" id="52">
+			<DataPath>Объект.СТ_ПД</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>t подг., мин</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СТ_ПДКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="СТ_ПДРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="СТ_ПР" id="55">
+			<DataPath>Объект.СТ_ПР</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>t прог., мин</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СТ_ПРКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="СТ_ПРРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<InputField name="СТ_СН" id="58">
+			<DataPath>Объект.СТ_СН</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>t снят., мин</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СТ_СНКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="СТ_СНРасширеннаяПодсказка" id="60"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ДополнительныеПараметрыНоменклатуры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

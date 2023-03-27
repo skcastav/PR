@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПечатьКарточкиСотрудника" id="82">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПечатьКарточкиСотрудника</CommandName>
+				<ExtendedTooltip name="ФормаПечатьКарточкиСотрудникаРасширеннаяПодсказка" id="83"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="49">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ТабельныйНомер" id="53">
+					<DataPath>Объект.ТабельныйНомер</DataPath>
+					<ContextMenu name="ТабельныйНомерКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ТабельныйНомерРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ф.И.О.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Должность" id="10">
+					<DataPath>Объект.Должность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="47">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<InputField name="Email" id="13">
+					<DataPath>Объект.Email</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="EmailКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="EmailРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="Skype" id="16">
+					<DataPath>Объект.Skype</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="SkypeКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="SkypeРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="51">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<InputField name="ТелефоныМестные" id="19">
+					<DataPath>Объект.ТелефоныМестные</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТелефоныМестныеКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ТелефоныМестныеРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="Телефоны" id="22">
+					<DataPath>Объект.Телефоны</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТелефоныКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТелефоныРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ОсновнаяЛинейка" id="88">
+			<DataPath>Объект.ОсновнаяЛинейка</DataPath>
+			<ContextMenu name="ОсновнаяЛинейкаКонтекстноеМеню" id="89"/>
+			<ExtendedTooltip name="ОсновнаяЛинейкаРасширеннаяПодсказка" id="90"/>
+		</InputField>
+		<InputField name="Ответственный" id="25">
+			<DataPath>Объект.Ответственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="СервисЦентр" id="79">
+			<DataPath>Объект.СервисЦентр</DataPath>
+			<ContextMenu name="СервисЦентрКонтекстноеМеню" id="80"/>
+			<ExtendedTooltip name="СервисЦентрРасширеннаяПодсказка" id="81"/>
+		</InputField>
+		<UsualGroup name="Группа4" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейки производства</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<Table name="ЛинейкиПроизводства" id="28">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ЛинейкиПроизводства</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ЛинейкиПроизводстваКонтекстноеМеню" id="29"/>
+					<AutoCommandBar name="ЛинейкиПроизводстваКоманднаяПанель" id="30">
+						<ChildItems>
+							<Button name="ЛинейкиПроизводстваПодборЛинеек" id="84">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПодборЛинеек</CommandName>
+								<ExtendedTooltip name="ЛинейкиПроизводстваПодборЛинеекРасширеннаяПодсказка" id="85"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ЛинейкиПроизводстваРасширеннаяПодсказка" id="31"/>
+					<SearchStringAddition name="ЛинейкиПроизводстваСтрокаПоиска" id="32">
+						<AdditionSource>
+							<Item>ЛинейкиПроизводства</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЛинейкиПроизводстваСтрокаПоискаКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="ЛинейкиПроизводстваСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЛинейкиПроизводстваСостояниеПросмотра" id="35">
+						<AdditionSource>
+							<Item>ЛинейкиПроизводства</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЛинейкиПроизводстваСостояниеПросмотраКонтекстноеМеню" id="36"/>
+						<ExtendedTooltip name="ЛинейкиПроизводстваСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЛинейкиПроизводстваУправлениеПоиском" id="38">
+						<AdditionSource>
+							<Item>ЛинейкиПроизводства</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЛинейкиПроизводстваУправлениеПоискомКонтекстноеМеню" id="39"/>
+						<ExtendedTooltip name="ЛинейкиПроизводстваУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="ChoiceProcessing">ЛинейкиПроизводстваОбработкаВыбора</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ЛинейкиПроизводстваНомерСтроки" id="41">
+							<DataPath>Объект.ЛинейкиПроизводства.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЛинейкиПроизводстваНомерСтрокиКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ЛинейкиПроизводстваНомерСтрокиРасширеннаяПодсказка" id="43"/>
+						</LabelField>
+						<InputField name="ЛинейкиПроизводстваЛинейка" id="44">
+							<DataPath>Объект.ЛинейкиПроизводства.Линейка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЛинейкиПроизводстваЛинейкаКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ЛинейкиПроизводстваЛинейкаРасширеннаяПодсказка" id="46"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделения</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<Table name="Подразделения" id="60">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.Подразделения</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПодразделенияКонтекстноеМеню" id="61"/>
+					<AutoCommandBar name="ПодразделенияКоманднаяПанель" id="62">
+						<ChildItems>
+							<Button name="ПодразделенияПодборПодразделений" id="86">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПодборПодразделений</CommandName>
+								<ExtendedTooltip name="ПодразделенияПодборПодразделенийРасширеннаяПодсказка" id="87"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПодразделенияРасширеннаяПодсказка" id="63"/>
+					<SearchStringAddition name="ПодразделенияСтрокаПоиска" id="64">
+						<AdditionSource>
+							<Item>Подразделения</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодразделенияСтрокаПоискаКонтекстноеМеню" id="65"/>
+						<ExtendedTooltip name="ПодразделенияСтрокаПоискаРасширеннаяПодсказка" id="66"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПодразделенияСостояниеПросмотра" id="67">
+						<AdditionSource>
+							<Item>Подразделения</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодразделенияСостояниеПросмотраКонтекстноеМеню" id="68"/>
+						<ExtendedTooltip name="ПодразделенияСостояниеПросмотраРасширеннаяПодсказка" id="69"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПодразделенияУправлениеПоиском" id="70">
+						<AdditionSource>
+							<Item>Подразделения</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодразделенияУправлениеПоискомКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="ПодразделенияУправлениеПоискомРасширеннаяПодсказка" id="72"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="ChoiceProcessing">ПодразделенияОбработкаВыбора</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ПодразделенияНомерСтроки" id="73">
+							<DataPath>Объект.Подразделения.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПодразделенияНомерСтрокиКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="ПодразделенияНомерСтрокиРасширеннаяПодсказка" id="75"/>
+						</LabelField>
+						<InputField name="ПодразделенияПодразделение" id="76">
+							<DataPath>Объект.Подразделения.Подразделение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПодразделенияПодразделениеКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ПодразделенияПодразделениеРасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Сотрудники</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПечатьКарточкиСотрудника" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать карточки сотрудника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать карточки сотрудника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьКарточкиСотрудника</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодборЛинеек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор линеек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборЛинеек</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодборПодразделений" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор подразделений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборПодразделений</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

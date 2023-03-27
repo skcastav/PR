@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="70">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<InputField name="Линейка" id="72">
+					<DataPath>Объект.Линейка</DataPath>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЛинейкаКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="ЛинейкаКанбан" id="75">
+					<DataPath>Объект.ЛинейкаКанбан</DataPath>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЛинейкаКанбанКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ЛинейкаКанбанРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="ВидКанбана" id="78">
+					<DataPath>Объект.ВидКанбана</DataPath>
+					<ContextMenu name="ВидКанбанаКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ВидКанбанаРасширеннаяПодсказка" id="80"/>
+				</InputField>
+				<InputField name="ИнтервалОбновления" id="81">
+					<DataPath>Объект.ИнтервалОбновления</DataPath>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<ContextMenu name="ИнтервалОбновленияКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ИнтервалОбновленияРасширеннаяПодсказка" id="83"/>
+					<Events>
+						<Event name="OnChange">ИнтервалОбновленияПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<RadioButtonField name="СортироватьПо" id="98">
+			<DataPath>СортироватьПо</DataPath>
+			<RadioButtonType>Auto</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>номеру очереди</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">1</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>изделие</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">2</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>выпущенным канбанам</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">3</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>обещанной дате отгрузки</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">4</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="СортироватьПоКонтекстноеМеню" id="99"/>
+			<ExtendedTooltip name="СортироватьПоРасширеннаяПодсказка" id="100"/>
+			<Events>
+				<Event name="OnChange">СортироватьПоПриИзменении</Event>
+			</Events>
+		</RadioButtonField>
+		<Table name="ДеревоМТК" id="110">
+			<Representation>Tree</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ДеревоМТК</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>HierarchicalList</ExcludedCommand>
+				<ExcludedCommand>List</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>Tree</ExcludedCommand>
+			</CommandSet>
+			<ContextMenu name="ДеревоМТККонтекстноеМеню" id="111"/>
+			<AutoCommandBar name="ДеревоМТККоманднаяПанель" id="112">
+				<ChildItems>
+					<Button name="ТаблицаМТКОбновить" id="39">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<ExtendedTooltip name="ТаблицаМТКОбновитьРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="ДеревоМТКПроверитьНаличиеПФНаСкладе" id="180">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПроверитьНаличиеПФНаСкладе</CommandName>
+						<ExtendedTooltip name="ДеревоМТКПроверитьНаличиеПФНаСкладеРасширеннаяПодсказка" id="181"/>
+					</Button>
+					<Button name="ТаблицаМТКСоздатьМТККанбанов" id="68">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьМТККанбана</CommandName>
+						<ExtendedTooltip name="ТаблицаМТКСоздатьМТККанбановРасширеннаяПодсказка" id="69"/>
+					</Button>
+					<Button name="ДеревоМТКЗапуститьВПроизводство" id="175">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗапуститьВПроизводство</CommandName>
+						<ExtendedTooltip name="ДеревоМТКЗапуститьВПроизводствоРасширеннаяПодсказка" id="176"/>
+					</Button>
+					<Button name="ТаблицаМТКУдалитьМТК" id="96">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьМТК</CommandName>
+						<ExtendedTooltip name="ТаблицаМТКУдалитьМТКРасширеннаяПодсказка" id="97"/>
+					</Button>
+					<Button name="ДеревоМТКРазвернутьДерево" id="162">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РазвернутьДерево</CommandName>
+						<ExtendedTooltip name="ДеревоМТКРазвернутьДеревоРасширеннаяПодсказка" id="163"/>
+					</Button>
+					<Button name="ДеревоМТКСвернутьДерево" id="164">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СвернутьДерево</CommandName>
+						<ExtendedTooltip name="ДеревоМТКСвернутьДеревоРасширеннаяПодсказка" id="165"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоМТКРасширеннаяПодсказка" id="113"/>
+			<SearchStringAddition name="ДеревоМТКСтрокаПоиска" id="114">
+				<AdditionSource>
+					<Item>ДеревоМТК</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоМТКСтрокаПоискаКонтекстноеМеню" id="115"/>
+				<ExtendedTooltip name="ДеревоМТКСтрокаПоискаРасширеннаяПодсказка" id="116"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоМТКСостояниеПросмотра" id="117">
+				<AdditionSource>
+					<Item>ДеревоМТК</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоМТКСостояниеПросмотраКонтекстноеМеню" id="118"/>
+				<ExtendedTooltip name="ДеревоМТКСостояниеПросмотраРасширеннаяПодсказка" id="119"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоМТКУправлениеПоиском" id="120">
+				<AdditionSource>
+					<Item>ДеревоМТК</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоМТКУправлениеПоискомКонтекстноеМеню" id="121"/>
+				<ExtendedTooltip name="ДеревоМТКУправлениеПоискомРасширеннаяПодсказка" id="122"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<PictureField name="ДеревоМТКСтатус" id="177">
+					<DataPath>ДеревоМТК.Статус</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.СтатусыМТК</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ДеревоМТКСтатусКонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="ДеревоМТКСтатусРасширеннаяПодсказка" id="179"/>
+				</PictureField>
+				<InputField name="ДеревоМТКМТК" id="123">
+					<DataPath>ДеревоМТК.Документ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ContextMenu name="ДеревоМТКМТККонтекстноеМеню" id="124"/>
+					<ExtendedTooltip name="ДеревоМТКМТКРасширеннаяПодсказка" id="125"/>
+				</InputField>
+				<InputField name="ДеревоМТКНоменклатура" id="150">
+					<DataPath>ДеревоМТК.Изделие</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМТКНоменклатураКонтекстноеМеню" id="151"/>
+					<ExtendedTooltip name="ДеревоМТКНоменклатураРасширеннаяПодсказка" id="152"/>
+				</InputField>
+				<InputField name="ДеревоМТКНомерОчереди" id="153">
+					<DataPath>ДеревоМТК.НомерОчереди</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>6</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДеревоМТКНомерОчередиКонтекстноеМеню" id="154"/>
+					<ExtendedTooltip name="ДеревоМТКНомерОчередиРасширеннаяПодсказка" id="155"/>
+				</InputField>
+				<InputField name="ДеревоМТКСчёт" id="172">
+					<DataPath>ДеревоМТК.Счёт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДеревоМТКСчётКонтекстноеМеню" id="173"/>
+					<ExtendedTooltip name="ДеревоМТКСчётРасширеннаяПодсказка" id="174"/>
+				</InputField>
+				<InputField name="ДеревоМТКДатаОтгрузки" id="156">
+					<DataPath>ДеревоМТК.ДатаОтгрузки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМТКДатаОтгрузкиКонтекстноеМеню" id="157"/>
+					<ExtendedTooltip name="ДеревоМТКДатаОтгрузкиРасширеннаяПодсказка" id="158"/>
+				</InputField>
+				<InputField name="ДеревоМТККоличество" id="166">
+					<DataPath>ДеревоМТК.Количество</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМТККоличествоКонтекстноеМеню" id="167"/>
+					<ExtendedTooltip name="ДеревоМТККоличествоРасширеннаяПодсказка" id="168"/>
+				</InputField>
+				<InputField name="ДеревоМТККоличествоВыпущено" id="129">
+					<DataPath>ДеревоМТК.КоличествоВыпущено</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМТККоличествоВыпущеноКонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="ДеревоМТККоличествоВыпущеноРасширеннаяПодсказка" id="131"/>
+				</InputField>
+				<InputField name="ДеревоМТКВозвратнаяТара" id="169">
+					<DataPath>ДеревоМТК.ВозвратнаяТара</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>6</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДеревоМТКВозвратнаяТараКонтекстноеМеню" id="170"/>
+					<ExtendedTooltip name="ДеревоМТКВозвратнаяТараРасширеннаяПодсказка" id="171"/>
+				</InputField>
+				<InputField name="ДеревоМТККомментарий" id="182">
+					<DataPath>ДеревоМТК.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМТККомментарийКонтекстноеМеню" id="183"/>
+					<ExtendedTooltip name="ДеревоМТККомментарийРасширеннаяПодсказка" id="184"/>
+				</InputField>
+				<CheckBoxField name="ДеревоМТКЛОУпаковка" id="126">
+					<DataPath>ДеревоМТК.ЛО</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоМТКЛОУпаковкаКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="ДеревоМТКЛОУпаковкаРасширеннаяПодсказка" id="128"/>
+				</CheckBoxField>
+				<CheckBoxField name="ДеревоМТКРемонт" id="138">
+					<DataPath>ДеревоМТК.Ремонт</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоМТКРемонтКонтекстноеМеню" id="139"/>
+					<ExtendedTooltip name="ДеревоМТКРемонтРасширеннаяПодсказка" id="140"/>
+				</CheckBoxField>
+				<InputField name="ДеревоМТКРабочееМесто" id="141">
+					<DataPath>ДеревоМТК.РабочееМесто</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМТКРабочееМестоКонтекстноеМеню" id="142"/>
+					<ExtendedTooltip name="ДеревоМТКРабочееМестоРасширеннаяПодсказка" id="143"/>
+				</InputField>
+				<InputField name="ДеревоМТКДатаНачала" id="144">
+					<DataPath>ДеревоМТК.ДатаНачала</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМТКДатаНачалаКонтекстноеМеню" id="145"/>
+					<ExtendedTooltip name="ДеревоМТКДатаНачалаРасширеннаяПодсказка" id="146"/>
+				</InputField>
+				<InputField name="ДеревоМТКДатаОкончания" id="147">
+					<DataPath>ДеревоМТК.ДатаОкончания</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоМТКДатаОкончанияКонтекстноеМеню" id="148"/>
+					<ExtendedTooltip name="ДеревоМТКДатаОкончанияРасширеннаяПодсказка" id="149"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоУД_МастерДД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:91bc4f0a-217e-49e0-a514-d9acc8097a26</Field>
+				<Field>1/0:b7e95566-318c-4be9-bba8-562cbcc1dcf6</Field>
+				<Field>Объект.ВидКанбана</Field>
+				<Field>Объект.ИнтервалОбновления</Field>
+				<Field>Объект.Линейка</Field>
+				<Field>Объект.ЛинейкаКанбан</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СортироватьПо" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>СортироватьПо</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДеревоМТК" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево МТК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Документ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПроизводственноеЗадание</v8:Type>
+						<v8:Type>cfg:DocumentRef.МаршрутнаяКарта</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЛО" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЛО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоВыпущено" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вып. канбан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПЗ" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПроизводственноеЗадание</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ремонт" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рем.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РабочееМесто" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочее место</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РабочиеМестаЛинеек</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаНачала" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОкончания" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изделие" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изделие</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерОчереди" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ оч.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>6</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОтгрузки" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата отгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВозвратнаяТара" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ в.т.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Счёт" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счёт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>60</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Статус" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ст.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоМТК</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоМТК.РабочееМесто</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ReportGroup1BackColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection/>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоМТК.Количество</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ДеревоМТК.КоличествоВыпущено</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#0000FF</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьМТККанбана" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать МТК канбана</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать МТККанбана</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionNewNestedScheme</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьМТККанбана</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьМТК" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить МТК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить МТК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьМТК</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РазвернутьДерево" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть дерево</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть дерево</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РазвернутьДерево</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СвернутьДерево" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть дерево</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть дерево</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СвернутьДерево</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапуститьВПроизводство" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить в производство</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить в производство</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьВПроизводство</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьНаличиеПФНаСкладе" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить наличие п.ф. на складе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить наличие ПФНа складе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьНаличиеПФНаСкладе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

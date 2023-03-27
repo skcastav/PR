@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<DocumentJournal uuid="cd891721-a9e0-43dd-9016-ff9979fb55d3">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ВводОстатков" category="Selection">
+				<xr:TypeId>458b8b52-d0e1-434d-9ddc-f21fe1385aa6</xr:TypeId>
+				<xr:ValueId>ad36e9c4-e416-4b3e-90ee-9842823dcdfb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ВводОстатков" category="List">
+				<xr:TypeId>8156ae31-65ac-408d-abee-1c399fe92501</xr:TypeId>
+				<xr:ValueId>dba07c29-755e-446e-92bd-3ada737cebf4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ВводОстатков" category="Manager">
+				<xr:TypeId>7ee818d6-e2c2-4752-907a-9b009f15ee90</xr:TypeId>
+				<xr:ValueId>3a6386a8-ce7a-4882-98ad-7cf53d138966</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВводОстатков</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал ввода остатков по регистрам</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ВводОстатков.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатковМПЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатковПередачВПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатковЗаявокОтПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатковЗаявокНаЗакупку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатковЗаказовПоставщикам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатковПередачНаЛинейки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатковПлановВыпуска</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатковБракаПроизводства</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

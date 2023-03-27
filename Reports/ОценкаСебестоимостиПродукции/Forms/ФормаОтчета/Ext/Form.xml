@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="84">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="85"/>
+			<ChildItems>
+				<InputField name="Период" id="55">
+					<DataPath>Период</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="57"/>
+					<Events>
+						<Event name="OnChange">ПериодПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СписокПочтовойРассылки" id="86">
+					<DataPath>СписокПочтовойРассылки</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокПочтовойРассылкиКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="СписокПочтовойРассылкиРасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<Button name="ТаблицаМПЗПочтоваяРассылка" id="82">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПочтоваяРассылка</CommandName>
+					<BackColor>#CCFFFF</BackColor>
+					<ExtendedTooltip name="ТаблицаМПЗПочтоваяРассылкаРасширеннаяПодсказка" id="83"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаМПЗ" id="1">
+			<Representation>List</Representation>
+			<Height>5</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаМПЗ</DataPath>
+			<CommandSet>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаМПЗКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаМПЗКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ТаблицаМПЗПодбор" id="50">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Подбор</CommandName>
+						<ExtendedTooltip name="ТаблицаМПЗПодборРасширеннаяПодсказка" id="51"/>
+					</Button>
+					<Button name="ТаблицаМПЗЗаполнитьЗаПериод" id="58">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьЗаПериод</CommandName>
+						<ExtendedTooltip name="ТаблицаМПЗЗаполнитьЗаПериодРасширеннаяПодсказка" id="59"/>
+					</Button>
+					<Button name="ТаблицаМПЗЗагрузитьИзФайла" id="20">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+						<ExtendedTooltip name="ТаблицаМПЗЗагрузитьИзФайлаРасширеннаяПодсказка" id="21"/>
+					</Button>
+					<Button name="ТаблицаМПЗОчистить" id="48">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Очистить</CommandName>
+						<ExtendedTooltip name="ТаблицаМПЗОчиститьРасширеннаяПодсказка" id="49"/>
+					</Button>
+					<Button name="ТаблицаМПЗСформировать" id="25">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.Сформировать</CommandName>
+						<ExtendedTooltip name="ТаблицаМПЗСформироватьРасширеннаяПодсказка" id="26"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаМПЗРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаМПЗСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаМПЗ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМПЗСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаМПЗСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаМПЗСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаМПЗ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМПЗСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаМПЗСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаМПЗУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаМПЗ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМПЗУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаМПЗУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаМПЗМПЗ" id="14">
+					<DataPath>ТаблицаМПЗ.МПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗМПЗКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТаблицаМПЗМПЗРасширеннаяПодсказка" id="16"/>
+					<Events>
+						<Event name="OnChange">ТаблицаМПЗМПЗПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаМПЗЦенаПоследнейЗакупки" id="45">
+					<DataPath>ТаблицаМПЗ.ЦенаПоследнейЗакупки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗЦенаПоследнейЗакупкиКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ТаблицаМПЗЦенаПоследнейЗакупкиРасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗЦенаИзмененная" id="17">
+					<DataPath>ТаблицаМПЗ.ЦенаИзмененная</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗЦенаИзмененнаяКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаМПЗЦенаИзмененнаяРасширеннаяПодсказка" id="19"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<SpreadSheetDocumentField name="ТабДок" id="22">
+			<DataPath>ТабДок</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="24"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ОценкаСебестоимостиПродукции</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаМПЗ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="МПЗ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЦенаИзмененная" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена измененная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Спецификации" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЦенаПоследнейЗакупки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена последней закупки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>5</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<AdditionalColumns table="ТаблицаМПЗ.Спецификации">
+					<Column name="Номенклатура" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номенклатура</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Норма" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Норма</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТабДок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+			<Save>
+				<Field>Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СписокПочтовойРассылки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список почтовой рассылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>СписокПочтовойРассылки</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.LevelUp</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="Очистить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Очистить</Action>
+		</Command>
+		<Command name="Подбор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подбор</Action>
+		</Command>
+		<Command name="ЗаполнитьЗаПериод" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить за период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить за период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьЗаПериод</Action>
+		</Command>
+		<Command name="ПочтоваяРассылка" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Почтовая рассылка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Почтовая рассылка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПочтоваяРассылка</Action>
+		</Command>
+	</Commands>
+</Form>

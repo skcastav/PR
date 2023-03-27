@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<FilterCriterion uuid="436d99d7-1e42-4a1d-b018-ca9fd6e829b7">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.ПрименениеВидовБрака" category="Manager">
+				<xr:TypeId>6c79080a-1b0c-4316-8ff8-aa0788159ef0</xr:TypeId>
+				<xr:ValueId>b7f17445-ef5b-43d5-abd3-226cbab9f091</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.ПрименениеВидовБрака" category="List">
+				<xr:TypeId>e4c3c1b4-183f-4a02-b086-d8927a3b96e2</xr:TypeId>
+				<xr:ValueId>92009611-344c-48f7-8fae-b0b660aeba60</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПрименениеВидовБрака</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применение видов брака</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыБрака</v8:Type>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Материалы.Attribute.ВидБрака</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура.Attribute.ВидБрака</xr:Item>
+			</Content>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects/>
+	</FilterCriterion>
+</MetaDataObject>

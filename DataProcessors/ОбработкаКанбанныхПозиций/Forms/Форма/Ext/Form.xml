@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="СписокЛинеек" id="60">
+			<DataPath>СписокЛинеек</DataPath>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="СписокЛинеекКонтекстноеМеню" id="61"/>
+			<ExtendedTooltip name="СписокЛинеекРасширеннаяПодсказка" id="62"/>
+		</InputField>
+		<Table name="ТабличнаяЧасть" id="1">
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТабличнаяЧасть</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабличнаяЧастьКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТабличнаяЧастьКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ТабличнаяЧастьПолучитьКанбанныеПозиции" id="47">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.ПолучитьКанбанныеПозиции</CommandName>
+						<ExtendedTooltip name="ТабличнаяЧастьПолучитьКанбанныеПозицииРасширеннаяПодсказка" id="48"/>
+					</Button>
+					<Button name="ТабличнаяЧастьСоздатьМТК" id="53">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьМТК</CommandName>
+						<ExtendedTooltip name="ТабличнаяЧастьСоздатьМТКРасширеннаяПодсказка" id="54"/>
+					</Button>
+					<Button name="ТабличнаяЧастьСправка" id="51">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.Help</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ТабличнаяЧастьСправкаРасширеннаяПодсказка" id="52"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТабличнаяЧастьРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТабличнаяЧастьСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабличнаяЧастьСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабличнаяЧастьУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТабличнаяЧастьУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ТабличнаяЧастьПометка" id="17">
+					<DataPath>Объект.ТабличнаяЧасть.Пометка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧастьПометкаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПометкаРасширеннаяПодсказка" id="19"/>
+				</CheckBoxField>
+				<InputField name="ТабличнаяЧастьТовар" id="20">
+					<DataPath>Объект.ТабличнаяЧасть.Товар</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьТоварКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТабличнаяЧастьТоварРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьСтатус" id="63">
+					<DataPath>Объект.ТабличнаяЧасть.Статус</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьСтатусКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ТабличнаяЧастьСтатусРасширеннаяПодсказка" id="65"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПродукция" id="23">
+					<DataPath>Объект.ТабличнаяЧасть.Продукция</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<SpinButton>false</SpinButton>
+					<CreateButton>false</CreateButton>
+					<QuickChoice>false</QuickChoice>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ТабличнаяЧастьПродукцияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПродукцияРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="StartChoice">ТабличнаяЧастьПродукцияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<LabelField name="ТабличнаяЧастьТоварТочкаЗаказа" id="44">
+					<DataPath>Объект.ТабличнаяЧасть.Товар.ТочкаЗаказа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьТоварТочкаЗаказаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТабличнаяЧастьТоварТочкаЗаказаРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<LabelField name="ТабличнаяЧастьТоварКратностьЗапуска" id="41">
+					<DataPath>Объект.ТабличнаяЧасть.Товар.КратностьЗапуска</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кратн. зап.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьТоварКратностьЗапускаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТабличнаяЧастьТоварКратностьЗапускаРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<InputField name="ТабличнаяЧастьКоличествоПроизводство" id="26">
+					<DataPath>Объект.ТабличнаяЧасть.КоличествоПроизводство</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличествоПроизводствоКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличествоПроизводствоРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличествоПроизводствоКЗ" id="66">
+					<DataPath>Объект.ТабличнаяЧасть.КоличествоПроизводствоКЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличествоПроизводствоКЗКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличествоПроизводствоКЗРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличествоДолг" id="32">
+					<DataPath>Объект.ТабличнаяЧасть.КоличествоДолг</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличествоДолгКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличествоДолгРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличествоДолгПоКЗ" id="69">
+					<DataPath>Объект.ТабличнаяЧасть.КоличествоДолгПоКЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличествоДолгПоКЗКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличествоДолгПоКЗРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличествоОстаток" id="35">
+					<DataPath>Объект.ТабличнаяЧасть.КоличествоОстаток</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличествоОстатокКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличествоОстатокРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличествоЗапустить" id="38">
+					<DataPath>Объект.ТабличнаяЧасть.КоличествоЗапустить</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличествоЗапуститьКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличествоЗапуститьРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбработкаКанбанныхПозиций</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список линеек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокЛинеек</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьКанбанныеПозиции" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить канбанные позиции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьКанбанныеПозиции</Action>
+		</Command>
+		<Command name="ЗагрузитьФайл" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьФайл</Action>
+		</Command>
+		<Command name="СоздатьМТК" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать МТК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать МТК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьМТК</Action>
+		</Command>
+	</Commands>
+</Form>

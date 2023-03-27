@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаРассчитать" id="15">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Рассчитать</CommandName>
+				<ExtendedTooltip name="ФормаРассчитатьРасширеннаяПодсказка" id="16"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="13">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Объект.Период</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="СписокЛинеек" id="10">
+					<DataPath>СписокЛинеек</DataPath>
+					<ClearButton>true</ClearButton>
+					<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+					<ContextMenu name="СписокЛинеекКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СписокЛинеекРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="СписокГруппМПЗ" id="7">
+					<DataPath>СписокГруппМПЗ</DataPath>
+					<ClearButton>true</ClearButton>
+					<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+					<ContextMenu name="СписокГруппМПЗКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СписокГруппМПЗРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="17">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="18"/>
+			<ChildItems>
+				<InputField name="МестоХранения" id="19">
+					<DataPath>МестоХранения</DataPath>
+					<ContextMenu name="МестоХраненияКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="МестоХраненияРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="СтатьяСписания" id="22">
+					<DataPath>СтатьяСписания</DataPath>
+					<ContextMenu name="СтатьяСписанияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СтатьяСписанияРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Прирост" id="4">
+			<DataPath>Объект.Прирост</DataPath>
+			<ContextMenu name="ПриростКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПриростРасширеннаяПодсказка" id="6"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СписаниеТехПотерьНаЛинейкахИзделий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Период</Field>
+				<Field>Объект.Прирост</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СписокГруппМПЗ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокГруппМПЗ</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СписокЛинеек</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="МестоХранения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Место хранения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>МестоХранения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СтатьяСписания" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья списания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СтатьяСписания</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Рассчитать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Рассчитать</Action>
+		</Command>
+	</Commands>
+</Form>

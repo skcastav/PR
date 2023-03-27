@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ВидМатериала" id="1">
+			<DataPath>ВидМатериала</DataPath>
+			<ContextMenu name="ВидМатериалаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ВидМатериалаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ГруппаМатериалов" id="26">
+			<DataPath>ГруппаМатериалов</DataPath>
+			<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+			<ContextMenu name="ГруппаМатериаловКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ГруппаМатериаловРасширеннаяПодсказка" id="28"/>
+			<Events>
+				<Event name="OnChange">ГруппаМатериаловПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="ТаблицаМатериалов" id="4">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаМатериалов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаМатериаловКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ТаблицаМатериаловКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="ТаблицаМатериаловНазначитьВидМатериала" id="36">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.НазначитьВидМатериала</CommandName>
+						<ExtendedTooltip name="ТаблицаМатериаловНазначитьВидМатериалаРасширеннаяПодсказка" id="37"/>
+					</Button>
+					<Button name="ТаблицаМатериаловВыбратьПоПризнаку" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыбратьПоПризнаку</CommandName>
+						<ExtendedTooltip name="ТаблицаМатериаловВыбратьПоПризнакуРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="ТаблицаМатериаловОтменитьВсе" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьВсе</CommandName>
+						<ExtendedTooltip name="ТаблицаМатериаловОтменитьВсеРасширеннаяПодсказка" id="35"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаМатериаловРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ТаблицаМатериаловСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ТаблицаМатериалов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМатериаловСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаМатериаловСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаМатериаловСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ТаблицаМатериалов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМатериаловСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаМатериаловСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаМатериаловУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ТаблицаМатериалов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМатериаловУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТаблицаМатериаловУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ТаблицаМатериаловПометка" id="17">
+					<DataPath>ТаблицаМатериалов.Пометка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаМатериаловПометкаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаМатериаловПометкаРасширеннаяПодсказка" id="19"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаМатериаловМатериал" id="20">
+					<DataPath>ТаблицаМатериалов.Материал</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМатериаловМатериалКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаМатериаловМатериалРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТаблицаМатериаловВидМатериала" id="38">
+					<DataPath>ТаблицаМатериалов.ВидМатериала</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМатериаловВидМатериалаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТаблицаМатериаловВидМатериалаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НазначениеВидовМатериалов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВидМатериала" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид материала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыМатериалов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаМатериалов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица материалов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Пометка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Материал" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Материал</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидМатериала" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид материала</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыМатериалов</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ГруппаМатериалов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа материалов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьПоПризнаку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать по признаку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать по признаку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПоПризнаку</Action>
+		</Command>
+		<Command name="ОтменитьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьВсе</Action>
+		</Command>
+		<Command name="НазначитьВидМатериала" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить вид материала</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НазначитьВидМатериала</Action>
+		</Command>
+	</Commands>
+</Form>

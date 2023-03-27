@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСформировать" id="7">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Сформировать</CommandName>
+				<ExtendedTooltip name="ФормаСформироватьРасширеннаяПодсказка" id="8"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="18">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<InputField name="Период" id="9">
+					<DataPath>Отчет.Период</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<InputField name="Контрагент" id="12">
+					<DataPath>Контрагент</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="14"/>
+				</InputField>
+				<InputField name="ЛинейкаУпаковки" id="15">
+					<DataPath>ЛинейкаУпаковки</DataPath>
+					<ContextMenu name="ЛинейкаУпаковкиКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ЛинейкаУпаковкиРасширеннаяПодсказка" id="17"/>
+				</InputField>
+				<InputField name="ДатаОтгрузки" id="20">
+					<DataPath>ДатаОтгрузки</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ДатаОтгрузкиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДатаОтгрузкиРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="Исполнитель" id="23">
+					<DataPath>Исполнитель</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="Автор" id="26">
+					<DataPath>Автор</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="АвторКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="Расшифровать" id="29">
+			<DataPath>Расшифровать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РасшифроватьКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="РасшифроватьРасширеннаяПодсказка" id="31"/>
+		</CheckBoxField>
+		<SpreadSheetDocumentField name="ТабДок" id="1">
+			<DataPath>ТабДок</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="3"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ОтчётПоННСХарьков</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Отчет.Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТабДок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Контрагент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+			<Save>
+				<Field>Контрагент</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЛинейкаУпаковки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейка упаковки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ЛинейкаУпаковки</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДатаОтгрузки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ДатаОтгрузки</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Исполнитель" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+			<Save>
+				<Field>Исполнитель</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Автор" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+			<Save>
+				<Field>Автор</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Расшифровать" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расшифровать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>Расшифровать</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+	</Commands>
+</Form>

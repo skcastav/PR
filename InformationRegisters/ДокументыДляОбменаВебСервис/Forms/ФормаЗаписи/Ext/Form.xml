@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="18"/>
+			</Button>
+			<Button name="ФормаОбновить" id="84">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Обновить</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="85"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ПланОбмена" id="38">
+			<DataPath>Запись.ПланОбмена</DataPath>
+			<ContextMenu name="ПланОбменаКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="60">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<Table name="СписокДокументов" id="19">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СписокДокументов</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СписокДокументовКонтекстноеМеню" id="20"/>
+					<AutoCommandBar name="СписокДокументовКоманднаяПанель" id="21">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокДокументовРасширеннаяПодсказка" id="22"/>
+					<SearchStringAddition name="СписокДокументовСтрокаПоиска" id="23">
+						<AdditionSource>
+							<Item>СписокДокументов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокДокументовСтрокаПоискаКонтекстноеМеню" id="24"/>
+						<ExtendedTooltip name="СписокДокументовСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокДокументовСостояниеПросмотра" id="26">
+						<AdditionSource>
+							<Item>СписокДокументов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокДокументовСостояниеПросмотраКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="СписокДокументовСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокДокументовУправлениеПоиском" id="29">
+						<AdditionSource>
+							<Item>СписокДокументов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокДокументовУправлениеПоискомКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="СписокДокументовУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="СписокОбмен" id="35">
+							<DataPath>СписокДокументов.Обмен</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокОбменКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="СписокОбменРасширеннаяПодсказка" id="37"/>
+						</CheckBoxField>
+						<InputField name="СписокДокумент" id="32">
+							<DataPath>СписокДокументов.Документ</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СписокДокументКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="СписокДокументРасширеннаяПодсказка" id="34"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="СписокСправочников" id="41">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СписокСправочников</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СписокСправочниковКонтекстноеМеню" id="42"/>
+					<AutoCommandBar name="СписокСправочниковКоманднаяПанель" id="43">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокСправочниковРасширеннаяПодсказка" id="44"/>
+					<SearchStringAddition name="СписокСправочниковСтрокаПоиска" id="45">
+						<AdditionSource>
+							<Item>СписокСправочников</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСправочниковСтрокаПоискаКонтекстноеМеню" id="46"/>
+						<ExtendedTooltip name="СписокСправочниковСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокСправочниковСостояниеПросмотра" id="48">
+						<AdditionSource>
+							<Item>СписокСправочников</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСправочниковСостояниеПросмотраКонтекстноеМеню" id="49"/>
+						<ExtendedTooltip name="СписокСправочниковСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокСправочниковУправлениеПоиском" id="51">
+						<AdditionSource>
+							<Item>СписокСправочников</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСправочниковУправлениеПоискомКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="СписокСправочниковУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="СписокСправочниковОбмен" id="57">
+							<DataPath>СписокСправочников.Обмен</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокСправочниковОбменКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="СписокСправочниковОбменРасширеннаяПодсказка" id="59"/>
+						</CheckBoxField>
+						<InputField name="СписокСправочниковСправочник" id="54">
+							<DataPath>СписокСправочников.Справочник</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СписокСправочниковСправочникКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="СписокСправочниковСправочникРасширеннаяПодсказка" id="56"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="СписокРегистров" id="62">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СписокРегистров</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СписокРегистровКонтекстноеМеню" id="63"/>
+					<AutoCommandBar name="СписокРегистровКоманднаяПанель" id="64">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокРегистровРасширеннаяПодсказка" id="65"/>
+					<SearchStringAddition name="СписокРегистровСтрокаПоиска" id="66">
+						<AdditionSource>
+							<Item>СписокРегистров</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокРегистровСтрокаПоискаКонтекстноеМеню" id="67"/>
+						<ExtendedTooltip name="СписокРегистровСтрокаПоискаРасширеннаяПодсказка" id="68"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокРегистровСостояниеПросмотра" id="69">
+						<AdditionSource>
+							<Item>СписокРегистров</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокРегистровСостояниеПросмотраКонтекстноеМеню" id="70"/>
+						<ExtendedTooltip name="СписокРегистровСостояниеПросмотраРасширеннаяПодсказка" id="71"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокРегистровУправлениеПоиском" id="72">
+						<AdditionSource>
+							<Item>СписокРегистров</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокРегистровУправлениеПоискомКонтекстноеМеню" id="73"/>
+						<ExtendedTooltip name="СписокРегистровУправлениеПоискомРасширеннаяПодсказка" id="74"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="СписокРегистровОбмен" id="75">
+							<DataPath>СписокРегистров.Обмен</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокРегистровОбменКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="СписокРегистровОбменРасширеннаяПодсказка" id="77"/>
+						</CheckBoxField>
+						<InputField name="СписокРегистровРегистр" id="81">
+							<DataPath>СписокРегистров.Регистр</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СписокРегистровРегистрКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="СписокРегистровРегистрРасширеннаяПодсказка" id="83"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ДокументыДляОбменаВебСервис</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СписокДокументов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Документ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Обмен" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокСправочников" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список справочников</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Справочник" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Обмен" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокРегистров" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список регистров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Обмен" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Регистр" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
+</Form>

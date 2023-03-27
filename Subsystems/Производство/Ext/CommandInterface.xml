@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandsOrder>
+		<Command name="Report.Визуализация.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ВизуализацияСводная.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ВизуализацияЗаказовНаПроизводство.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ВыпускПродукцииПоВремени.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ВыпускиПоКодамDanfoss.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоСменнымЗаданиям.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоВыработкеВЛинейках.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоВыработкеНаСтендеСводный.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоВыработкеНаСтендеДДСводный.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоГрупповойУпаковке.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоПрименениюТехнологическойОснастки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоДрагоценнымМеталлам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоПодчиненнымМТК.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоИспытаниям.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Производство.Subsystem.СправочникиПроизводства</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.СправочникиЛинеек</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.СправочникиБарКодов</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.Документы</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.УД</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.УД_ДД</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.УПЭА</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>CommandGroup.АРМыДД</Group>
+	</GroupsOrder>
+</CommandInterface>

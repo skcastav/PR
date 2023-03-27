@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Folders</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="16">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<LabelField name="ID" id="18">
+					<DataPath>Объект.ID</DataPath>
+					<ContextMenu name="IDКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="IDРасширеннаяПодсказка" id="20"/>
+				</LabelField>
+				<InputField name="Родитель" id="5">
+					<DataPath>Объект.Parent</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РодительКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="13"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="24">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Префикс" id="26">
+					<DataPath>Объект.Префикс</DataPath>
+					<ContextMenu name="ПрефиксКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="РазделПоЕСКД" id="21">
+			<DataPath>Объект.РазделПоЕСКД</DataPath>
+			<ContextMenu name="РазделПоЕСКДКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="РазделПоЕСКДРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="ШаблоныТО" id="7">
+			<DataPath>Объект.ШаблоныТО</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ШаблоныТОКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ШаблоныТОРасширеннаяПодсказка" id="14"/>
+		</InputField>
+		<InputField name="ЭтапПроизводства" id="9">
+			<DataPath>Объект.ЭтапПроизводства</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЭтапПроизводстваКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ЭтапПроизводстваРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ВидБрака" id="32">
+			<DataPath>Объект.ВидБрака</DataPath>
+			<ContextMenu name="ВидБракаКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ВидБракаРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<InputField name="ЭтапЖизненногоЦикла" id="29">
+			<DataPath>Объект.ЭтапЖизненногоЦикла</DataPath>
+			<ContextMenu name="ЭтапЖизненногоЦиклаКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ЭтапЖизненногоЦиклаРасширеннаяПодсказка" id="31"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

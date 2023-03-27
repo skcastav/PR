@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСледующееСообщение" id="19">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СледующееСообщение</CommandName>
+				<BackColor>#FFFF99</BackColor>
+				<ExtendedTooltip name="ФормаСледующееСообщениеРасширеннаяПодсказка" id="20"/>
+			</Button>
+			<Button name="ФормаОтветить" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Ответить</CommandName>
+				<BackColor>#CCFFFF</BackColor>
+				<ExtendedTooltip name="ФормаОтветитьРасширеннаяПодсказка" id="18"/>
+			</Button>
+			<Button name="ФормаЗакрытьФорму" id="15">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗакрытьФорму</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьФормуРасширеннаяПодсказка" id="16"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="13">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<LabelField name="Отправитель" id="1">
+					<DataPath>Отправитель</DataPath>
+					<ContextMenu name="ОтправительКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ОтправительРасширеннаяПодсказка" id="3"/>
+				</LabelField>
+				<LabelField name="Время" id="4">
+					<DataPath>Время</DataPath>
+					<ContextMenu name="ВремяКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="6"/>
+				</LabelField>
+				<LabelField name="Сообщение" id="7">
+					<DataPath>Сообщение</DataPath>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="СообщениеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СообщениеРасширеннаяПодсказка" id="9"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ТекстСообщения" id="10">
+			<DataPath>ТекстСообщения</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>None</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ТекстСообщенияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТекстСообщенияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ТекстОтвета" id="21">
+			<DataPath>ТекстОтвета</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ТекстОтветаКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ТекстОтветаРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<CheckBoxField name="Важное" id="24">
+			<DataPath>Важное</DataPath>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВажноеКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ВажноеРасширеннаяПодсказка" id="26"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отправитель" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Время" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сообщение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстСообщения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстОтвета" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ответного сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Важное" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Важное</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗакрытьФорму" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьФорму</Action>
+		</Command>
+		<Command name="Ответить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceUpArrowGreen</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Ответить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СледующееСообщение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующее сообщение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceRightArrowGray</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СледующееСообщение</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

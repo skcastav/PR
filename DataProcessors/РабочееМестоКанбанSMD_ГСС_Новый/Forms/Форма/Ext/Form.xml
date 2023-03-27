@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПолучитьЗадание" id="125">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПолучитьЗадание</CommandName>
+				<ExtendedTooltip name="ПолучитьЗаданиеРасширеннаяПодсказка" id="126"/>
+			</Button>
+			<Button name="ФормаРемонт" id="133">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Ремонт</CommandName>
+				<ExtendedTooltip name="ФормаРемонтРасширеннаяПодсказка" id="134"/>
+			</Button>
+			<Button name="ОформитьБрак" id="120">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОформитьБрак</CommandName>
+				<ExtendedTooltip name="ОформитьБракРасширеннаяПодсказка" id="121"/>
+			</Button>
+			<Button name="Завершить" id="107">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Завершить</CommandName>
+				<ExtendedTooltip name="ЗавершитьРасширеннаяПодсказка" id="108"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="1">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="РабочееМесто" id="91">
+					<DataPath>Объект.РабочееМесто</DataPath>
+					<ChoiceForm>Catalog.РабочиеМестаЛинеек.Form.ФормаВыбораДляКанбанов</ChoiceForm>
+					<ContextMenu name="РабочееМестоКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="РабочееМестоРасширеннаяПодсказка" id="93"/>
+					<Events>
+						<Event name="OnChange">РабочееМестоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelField name="ПроизводственноеЗадание" id="96">
+					<DataPath>Объект.ПроизводственноеЗадание</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Hiperlink>true</Hiperlink>
+					<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="ПроизводственноеЗаданиеКонтекстноеМеню" id="97"/>
+					<ExtendedTooltip name="ПроизводственноеЗаданиеРасширеннаяПодсказка" id="98"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПроизводственноеЗадание" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Производственное задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа производственное задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="ГруппаПроизводственноеЗаданиеРасширеннаяПодсказка" id="95"/>
+			<ChildItems>
+				<InputField name="ПроизводственноеЗаданиеИзделие" id="99">
+					<DataPath>Объект.ПроизводственноеЗадание.Изделие</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ПроизводственноеЗаданиеИзделиеКонтекстноеМеню" id="100"/>
+					<ExtendedTooltip name="ПроизводственноеЗаданиеИзделиеРасширеннаяПодсказка" id="101"/>
+				</InputField>
+				<CommandBar name="Группа2" id="131">
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="132"/>
+					<ChildItems>
+						<Button name="ПечатьСпецификации" id="102">
+							<Type>CommandBarButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Command.ПечатьТекущейСпецификации</CommandName>
+							<ExtendedTooltip name="ПечатьСпецификацииРасширеннаяПодсказка" id="103"/>
+						</Button>
+						<Button name="ПечатьQRКоды" id="127">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьQRКоды</CommandName>
+							<ExtendedTooltip name="ПечатьQRКодыРасширеннаяПодсказка" id="128"/>
+						</Button>
+						<Button name="ФормаОтчётПоИзмененияВСпецификации" id="129">
+							<Type>CommandBarButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.ОтчётПоИзмененияВСпецификации</CommandName>
+							<ExtendedTooltip name="ФормаОтчётПоИзмененияВСпецификацииРасширеннаяПодсказка" id="130"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<InputField name="КоличествоИзделия" id="117">
+					<DataPath>КоличествоИзделия</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="КоличествоИзделияКонтекстноеМеню" id="118"/>
+					<ExtendedTooltip name="КоличествоИзделияРасширеннаяПодсказка" id="119"/>
+				</InputField>
+				<InputField name="КоличествоБрак" id="122">
+					<DataPath>КоличествоБрак</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В браке</v8:content>
+						</v8:item>
+					</Title>
+					<TextColor>style:SpecialTextColor</TextColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="КоличествоБракКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="КоличествоБракРасширеннаяПодсказка" id="124"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоКанбанSMD_ГСС_Новый</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:02cf7df7-5eef-449d-9b40-19d8a986df10</Field>
+				<Field>1/0:984d499b-13ae-4977-a424-f0408770ad05</Field>
+				<Field>1/0:c3aafbf6-04e9-4439-ae62-9040a91bb8b4</Field>
+				<Field>Объект.РабочееМесто</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КоличествоИзделия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол-во</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>9</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоБрак" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество брак</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>9</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаЗаданий</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаЗаданий.ВыборРазрешен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьЗадания</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьТекущейСпецификации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать текущей спецификации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать текущей спецификации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьТекущейСпецификации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Завершить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Завершить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьБрак" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить брак</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить надостачу / брак / ремонт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьБрак</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьПЗ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ПЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПЗ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьЗадание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьЗадание</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьQRКоды" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>QR-коды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать QRКоды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.БарКод</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьQRКоды</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтчётПоИзмененияВСпецификации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёт по изменения в спецификации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтчётПоИзмененияВСпецификации</Action>
+		</Command>
+		<Command name="Ремонт" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ремонт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ремонт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Ремонт</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Ремонт</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

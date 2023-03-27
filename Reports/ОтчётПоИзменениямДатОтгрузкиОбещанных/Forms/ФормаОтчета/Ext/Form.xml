@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>CancelEdit</ExcludedCommand>
+		<ExcludedCommand>ChangeSettingsStructure</ExcludedCommand>
+		<ExcludedCommand>ChangeVariant</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>EndEdit</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>LoadReportSettings</ExcludedCommand>
+		<ExcludedCommand>LoadVariant</ExcludedCommand>
+		<ExcludedCommand>NewWindow</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>Print</ExcludedCommand>
+		<ExcludedCommand>ReportSettings</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Save</ExcludedCommand>
+		<ExcludedCommand>SaveReportSettings</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>SaveVariant</ExcludedCommand>
+		<ExcludedCommand>StandardSettings</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="38">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="14">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:ReportHeaderBackColor</BackColor>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<InputField name="Период" id="25">
+							<DataPath>Отчет.Период</DataPath>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ЗНП" id="16">
+							<DataPath>ЗНП</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ЗНПКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ЗНПРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="СписокЛинеек" id="40">
+							<DataPath>СписокЛинеек</DataPath>
+							<ClearButton>true</ClearButton>
+							<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+							<ContextMenu name="СписокЛинеекКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="СписокЛинеекРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="Товар" id="19">
+							<DataPath>Товар</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ТоварКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ТоварРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="Причина" id="22">
+							<DataPath>Причина</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ПричинаКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПричинаРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<CommandBar name="Группа2" id="28">
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="29"/>
+							<ChildItems>
+								<Button name="Сформировать" id="30">
+									<Type>CommandBarButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<DefaultItem>true</DefaultItem>
+									<CommandName>Form.Command.Сформировать</CommandName>
+									<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="31"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</UsualGroup>
+				<RadioButtonField name="СтатусЗНП" id="35">
+					<DataPath>СтатусЗНП</DataPath>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Все</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Закрытые</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Открытые</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СтатусЗНПКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СтатусЗНПРасширеннаяПодсказка" id="37"/>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="ТабДок" id="4">
+			<DataPath>ТабДок</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<VerticalScrollBar>true</VerticalScrollBar>
+			<HorizontalScrollBar>true</HorizontalScrollBar>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="13"/>
+			<Events>
+				<Event name="DetailProcessing">ТабДокОбработкаРасшифровки</Event>
+			</Events>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ОтчётПоИзменениямДатОтгрузкиОбещанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:1249a610-dabb-4d71-be26-9ea2c588efb1</Field>
+				<Field>1/0:3dac738e-48e5-41fd-a30d-4bdffec0c5f6</Field>
+				<Field>1/0:74d3ff25-52ae-4311-8e68-0c513ae949c1</Field>
+				<Field>1/0:acacc4df-b526-4bd2-a3bb-85948085b2c5</Field>
+				<Field>Отчет.Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТабДок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗНП" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЗНП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗНП</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Товар" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товар</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Товары</v8:Type>
+			</Type>
+			<Save>
+				<Field>Товар</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Причина" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Причина</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПричиныУвеличенияСроковПоставки</v8:Type>
+			</Type>
+			<Save>
+				<Field>Причина</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СтатусЗНП" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЗНП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>СтатусЗНП</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокЛинеек</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

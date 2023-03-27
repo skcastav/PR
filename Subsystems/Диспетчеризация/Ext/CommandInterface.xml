@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandsVisibility>
+		<Command name="Report.Визуализация.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ВизуализацияСводная.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОформлениеПустыхКанбановИлиИзлишков.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоТекущейЛьготнойОчереди.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиНаЛинейки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.БесконечнаяОчередь.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОстановкаМаршрутныхКарт.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ГрупповаяОстановкаМаршрутныхКарт.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ДиспетчеризацияПроизводства.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.СозданиеПодчиненныхМТК.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.НаличиеКомплектацииНаЛинейках.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоОжидаемомуДефициту.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоГрупповойУпаковке.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоНоменклатуреЛинеек.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоНоменклатуреЛинеекТНП.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПланыВыпуска.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СверкаПоступленийНаЛинейки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Report.Визуализация.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияВизуализация</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ВизуализацияСводная.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияВизуализация</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ОформлениеПустыхКанбановИлиИзлишков.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияДиспетчера</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоТекущейЛьготнойОчереди.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияДиспетчера</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияДиспетчера</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.БесконечнаяОчередь.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияМастера</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ОстановкаМаршрутныхКарт.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияМастера</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ГрупповаяОстановкаМаршрутныхКарт.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияМастера</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ДиспетчеризацияПроизводства.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияПЭО</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.СозданиеПодчиненныхМТК.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияПЭО</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.НаличиеКомплектацииНаЛинейках.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоОжидаемомуДефициту.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоГрупповойУпаковке.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоНоменклатуреЛинеек.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоНоменклатуреЛинеекТНП.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПланыВыпуска.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СверкаПоступленийНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="DataProcessor.ВыгрузкаХарьковскихЗаказов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбработкаЗаказовНаПроизводство.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Report.Визуализация.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияВизуализация</CommandGroup>
+		</Command>
+		<Command name="Report.ВизуализацияСводная.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияВизуализация</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОформлениеПустыхКанбановИлиИзлишков.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияДиспетчера</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоТекущейЛьготнойОчереди.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияДиспетчера</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияДиспетчера</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.БесконечнаяОчередь.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияМастера</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОстановкаМаршрутныхКарт.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияМастера</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ГрупповаяОстановкаМаршрутныхКарт.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияМастера</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ДиспетчеризацияПроизводства.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияПЭО</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СозданиеПодчиненныхМТК.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияПЭО</CommandGroup>
+		</Command>
+		<Command name="Report.НаличиеКомплектацииНаЛинейках.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоОжидаемомуДефициту.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоГрупповойУпаковке.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоНоменклатуреЛинеек.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоНоменклатуреЛинеекТНП.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПланыВыпуска.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+		</Command>
+		<Command name="Report.СверкаПоступленийНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ДиспетчеризацияРазное</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.ДиспетчеризацияВизуализация</Group>
+		<Group>CommandGroup.ДиспетчеризацияДиспетчера</Group>
+		<Group>CommandGroup.ДиспетчеризацияМастера</Group>
+		<Group>CommandGroup.ДиспетчеризацияПЭО</Group>
+		<Group>CommandGroup.ДиспетчеризацияРазное</Group>
+	</GroupsOrder>
+</CommandInterface>

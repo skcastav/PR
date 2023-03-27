@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Subsystem uuid="3025b96e-70b2-4035-a193-316e22def4d6">
+		<Properties>
+			<Name>Канбаны</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Канбаны</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.Канбаны</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Канбаны</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанРМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДиспетчеризацияПроизводства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанРМ_Промывка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанРМ_Просмотр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОтправкаВРемонтВыходныхПолуфабрикатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоПрисвоеннымЛиниямSMD</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВизуализацияКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоОценкаБрака</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоТекущейЛьготнойОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаОстановленныхПроизводственныхЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанВнутреннийПоставщик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанУИТ_Выпуск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанУИТ_Производство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанУИТ_Мастер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанУД_Мастер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанУД_Диспетчер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанУД_Выпуск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СозданиеПеремещенийНестандартныхПолуфабрикатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанОформлениеБрака</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанЧЭ_Мастер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанЧЭ_Производство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СверкаТОКанбанУД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СписаниеТехПотерьНаЛинейкахКанбан</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанМО_UA</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВизуализацияКанбанов_Новая</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоЛинейкамКанбановSMD</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПоискНесоответствийВФайлахSMD</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоВременнымПромежуткамОперацийSMD</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанУчетПрессформ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоСтанкамИПрессформам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанУД_Выпуск_Партии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоКанбанВнутреннийПоставщикПартии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРаспределениюМатериаловПоПитателям</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Документы</Subsystem>
+			<Subsystem>Справочники</Subsystem>
+			<Subsystem>SMDРоссия</Subsystem>
+			<Subsystem>SMDУкраина</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="7">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<InputField name="ЭлементСпецификации" id="73">
+					<DataPath>Отчет.ЭлементСпецификации</DataPath>
+					<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+					<ContextMenu name="ЭлементСпецификацииКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ЭлементСпецификацииРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="НаДату" id="1">
+					<DataPath>Отчет.НаДату</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаДатуКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаДатуРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">НаДатуПриИзменении</Event>
+					</Events>
+				</InputField>
+				<RadioButtonField name="Вхождение" id="28">
+					<DataPath>Вхождение</DataPath>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Полное</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Начальное</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Конечное</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">3</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ВхождениеКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ВхождениеРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">ВхождениеПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+				<CheckBoxField name="ТолькоБезПрименяемости" id="84">
+					<DataPath>ТолькоБезПрименяемости</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТолькоБезПрименяемостиКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ТолькоБезПрименяемостиРасширеннаяПодсказка" id="86"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДеревоПодчиненности" id="9">
+			<Representation>Tree</Representation>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ДеревоПодчиненности</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+			</CommandSet>
+			<ContextMenu name="ДеревоПодчиненностиКонтекстноеМеню" id="10"/>
+			<AutoCommandBar name="ДеревоПодчиненностиКоманднаяПанель" id="11">
+				<ChildItems>
+					<Button name="Применяемость" id="31">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.Применяемость</CommandName>
+						<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						<ExtendedTooltip name="ПрименяемостьРасширеннаяПодсказка" id="32"/>
+					</Button>
+					<Button name="ПрименяемостьАналогом" id="36">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПрименяемостьАналогом</CommandName>
+						<ExtendedTooltip name="ПрименяемостьАналогомРасширеннаяПодсказка" id="37"/>
+					</Button>
+					<Button name="ДеревоПодчиненностиСписокВозможныхАналогов" id="41">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СписокВозможныхАналогов</CommandName>
+						<ExtendedTooltip name="ДеревоПодчиненностиСписокВозможныхАналоговРасширеннаяПодсказка" id="42"/>
+					</Button>
+					<Button name="ДеревоПодчиненностиИзменитьСтатусы" id="71">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИзменитьСтатусы</CommandName>
+						<ExtendedTooltip name="ДеревоПодчиненностиИзменитьСтатусыРасширеннаяПодсказка" id="72"/>
+					</Button>
+					<Button name="ДеревоПодчиненностиОтчётОбУникальности" id="79">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтчётОбУникальности</CommandName>
+						<ExtendedTooltip name="ДеревоПодчиненностиОтчётОбУникальностиРасширеннаяПодсказка" id="80"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоПодчиненностиРасширеннаяПодсказка" id="12"/>
+			<SearchStringAddition name="ДеревоПодчиненностиСтрокаПоиска" id="13">
+				<AdditionSource>
+					<Item>ДеревоПодчиненности</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоПодчиненностиСтрокаПоискаКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ДеревоПодчиненностиСтрокаПоискаРасширеннаяПодсказка" id="15"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоПодчиненностиСостояниеПросмотра" id="16">
+				<AdditionSource>
+					<Item>ДеревоПодчиненности</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоПодчиненностиСостояниеПросмотраКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="ДеревоПодчиненностиСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоПодчиненностиУправлениеПоиском" id="19">
+				<AdditionSource>
+					<Item>ДеревоПодчиненности</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоПодчиненностиУправлениеПоискомКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="ДеревоПодчиненностиУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ДеревоПодчиненностиВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДеревоПодчиненностиЭлемент" id="22">
+					<DataPath>ДеревоПодчиненности.Элемент</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоПодчиненностиЭлементКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиЭлементРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ДеревоПодчиненностиСтатус" id="25">
+					<DataPath>ДеревоПодчиненности.Статус</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ст.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>4</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДеревоПодчиненностиСтатусКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиСтатусРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ДеревоПодчиненностиТовар" id="81">
+					<DataPath>ДеревоПодчиненности.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоПодчиненностиТоварКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиТоварРасширеннаяПодсказка" id="83"/>
+				</InputField>
+				<InputField name="ДеревоПодчиненностиЛинейка" id="76">
+					<DataPath>ДеревоПодчиненности.Линейка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоПодчиненностиЛинейкаКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиЛинейкаРасширеннаяПодсказка" id="78"/>
+				</InputField>
+				<InputField name="ДеревоПодчиненностиКанбан" id="33">
+					<DataPath>ДеревоПодчиненности.Канбан</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоПодчиненностиКанбанКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиКанбанРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<LabelField name="ДеревоПодчиненностиОсновныеЭлементы" id="38">
+					<DataPath>ДеревоПодчиненности.ОсновныеЭлементы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CellHyperlink>true</CellHyperlink>
+					<ContextMenu name="ДеревоПодчиненностиОсновныеЭлементыКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиОсновныеЭлементыРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<InputField name="ДеревоПодчиненностиДатаСоздания" id="87">
+					<DataPath>ДеревоПодчиненности.ДатаСоздания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоПодчиненностиДатаСозданияКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиДатаСозданияРасширеннаяПодсказка" id="89"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="ДеревоПодчиненностиТаблицаКорневыхЭлементов" id="43">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Items.ДеревоПодчиненности.CurrentData.ТаблицаКорневыхЭлементов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДеревоПодчиненностиТаблицаКорневыхЭлементовКонтекстноеМеню" id="44"/>
+			<AutoCommandBar name="ДеревоПодчиненностиТаблицаКорневыхЭлементовКоманднаяПанель" id="45"/>
+			<ExtendedTooltip name="ДеревоПодчиненностиТаблицаКорневыхЭлементовРасширеннаяПодсказка" id="46"/>
+			<SearchStringAddition name="ДеревоПодчиненностиТаблицаКорневыхЭлементовСтрокаПоиска" id="47">
+				<AdditionSource>
+					<Item>ДеревоПодчиненностиТаблицаКорневыхЭлементов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоПодчиненностиТаблицаКорневыхЭлементовСтрокаПоискаКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ДеревоПодчиненностиТаблицаКорневыхЭлементовСтрокаПоискаРасширеннаяПодсказка" id="49"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоПодчиненностиТаблицаКорневыхЭлементовСостояниеПросмотра" id="50">
+				<AdditionSource>
+					<Item>ДеревоПодчиненностиТаблицаКорневыхЭлементов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоПодчиненностиТаблицаКорневыхЭлементовСостояниеПросмотраКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ДеревоПодчиненностиТаблицаКорневыхЭлементовСостояниеПросмотраРасширеннаяПодсказка" id="52"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоПодчиненностиТаблицаКорневыхЭлементовУправлениеПоиском" id="53">
+				<AdditionSource>
+					<Item>ДеревоПодчиненностиТаблицаКорневыхЭлементов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоПодчиненностиТаблицаКорневыхЭлементовУправлениеПоискомКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ДеревоПодчиненностиТаблицаКорневыхЭлементовУправлениеПоискомРасширеннаяПодсказка" id="55"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ДеревоПодчиненностиТаблицаКорневыхЭлементовПозиция" id="56">
+					<DataPath>Items.ДеревоПодчиненности.CurrentData.ТаблицаКорневыхЭлементов.Позиция</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоПодчиненностиТаблицаКорневыхЭлементовПозицияКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиТаблицаКорневыхЭлементовПозицияРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ДеревоПодчиненностиТаблицаКорневыхЭлементовЭлемент" id="59">
+					<DataPath>Items.ДеревоПодчиненности.CurrentData.ТаблицаКорневыхЭлементов.Элемент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоПодчиненностиТаблицаКорневыхЭлементовЭлементКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиТаблицаКорневыхЭлементовЭлементРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ДеревоПодчиненностиТаблицаКорневыхЭлементовНорма" id="68">
+					<DataPath>Items.ДеревоПодчиненности.CurrentData.ТаблицаКорневыхЭлементов.Норма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоПодчиненностиТаблицаКорневыхЭлементовНормаКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиТаблицаКорневыхЭлементовНормаРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ДеревоПодчиненностиТаблицаКорневыхЭлементовКорневойЭлемент" id="62">
+					<DataPath>Items.ДеревоПодчиненности.CurrentData.ТаблицаКорневыхЭлементов.КорневойЭлемент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоПодчиненностиТаблицаКорневыхЭлементовКорневойЭлементКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиТаблицаКорневыхЭлементовКорневойЭлементРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<CheckBoxField name="ДеревоПодчиненностиТаблицаКорневыхЭлементовОграниченноеИспользование" id="65">
+					<DataPath>Items.ДеревоПодчиненности.CurrentData.ТаблицаКорневыхЭлементов.ОграниченноеИспользование</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоПодчиненностиТаблицаКорневыхЭлементовОграниченноеИспользованиеКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ДеревоПодчиненностиТаблицаКорневыхЭлементовОграниченноеИспользованиеРасширеннаяПодсказка" id="67"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ПрименяемостьЭлементаСпецификации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДеревоПодчиненности" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево подчиненности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Элемент" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТехОснастка</v8:Type>
+						<v8:Type>cfg:CatalogRef.Документация</v8:Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+						<v8:Type>cfg:CatalogRef.ТехОперации</v8:Type>
+						<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Статус" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыСпецификаций</v8:Type>
+						<v8:Type>cfg:EnumRef.СтатусыМПЗ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Канбан" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Канбан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыКанбанов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОсновныеЭлементы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные элементы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТаблицаКорневыхЭлементов" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица корневых элементов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Линейка" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лин.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Товар" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товар</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Товары</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаСоздания" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<AdditionalColumns table="ДеревоПодчиненности.ТаблицаКорневыхЭлементов">
+					<Column name="Позиция" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поз. обозн.</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>20</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Элемент" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Элемент</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+							<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+						</Type>
+					</Column>
+					<Column name="КорневойЭлемент" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Корневой элемент</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+							<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОграниченноеИспользование" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Огр. исп. аналога</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Норма" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Норма</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>9</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="Вхождение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вхождение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Вхождение</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТолькоБезПрименяемости" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только без применяемости</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоПодчиненности</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоПодчиненности.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыСпецификаций.Запрещённая</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Применяемость" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применяемость</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применяемость</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Применяемость</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПрименяемостьАналогом" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применяемость аналогом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применяемость</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрименяемостьАналогом</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СписокВозможныхАналогов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список возможных аналогов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список возможных аналогов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокВозможныхАналогов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИзменитьСтатусы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить статусы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить статусы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьСтатусы</Action>
+		</Command>
+		<Command name="ОтчётОбУникальности" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёт об уникальности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёт об уникальности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчётОбУникальности</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ЭлементСпецификации">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТехОснастка</v8:Type>
+				<v8:Type>cfg:CatalogRef.Документация</v8:Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+				<v8:Type>cfg:CatalogRef.ТехОперации</v8:Type>
+				<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

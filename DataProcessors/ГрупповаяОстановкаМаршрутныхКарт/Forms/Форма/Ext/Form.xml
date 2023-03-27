@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="128">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="129"/>
+			<ChildItems>
+				<InputField name="СписокКонтрагентов" id="172">
+					<DataPath>СписокКонтрагентов</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокКонтрагентовКонтекстноеМеню" id="173"/>
+					<ExtendedTooltip name="СписокКонтрагентовРасширеннаяПодсказка" id="174"/>
+				</InputField>
+				<InputField name="СписокМасокТоваров" id="175">
+					<DataPath>СписокМасокТоваров</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокМасокТоваровКонтекстноеМеню" id="176"/>
+					<ExtendedTooltip name="СписокМасокТоваровРасширеннаяПодсказка" id="177"/>
+				</InputField>
+				<CommandBar name="Группа3" id="182">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="183"/>
+					<ChildItems>
+						<Button name="ПолучитьМТК" id="178">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПолучитьМТК</CommandName>
+							<ExtendedTooltip name="ПолучитьМТКРасширеннаяПодсказка" id="179"/>
+						</Button>
+						<Button name="Настройки" id="180">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.Настройки</CommandName>
+							<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="181"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<RadioButtonField name="СтатусМТК" id="119">
+					<DataPath>СтатусМТК</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Незавершённые</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Остановленные</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СтатусМТККонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="СтатусМТКРасширеннаяПодсказка" id="121"/>
+					<Events>
+						<Event name="OnChange">СтатусМТКПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ДатаПредполагаемогоОкончания" id="156">
+			<DataPath>ДатаПредполагаемогоОкончанияОстановки</DataPath>
+			<ContextMenu name="ДатаПредполагаемогоОкончанияКонтекстноеМеню" id="157"/>
+			<ExtendedTooltip name="ДатаПредполагаемогоОкончанияРасширеннаяПодсказка" id="158"/>
+		</InputField>
+		<InputField name="ПричинаОстановки" id="122">
+			<DataPath>ПричинаОстановки</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="ПричинаОстановкиКонтекстноеМеню" id="123"/>
+			<ExtendedTooltip name="ПричинаОстановкиРасширеннаяПодсказка" id="124"/>
+		</InputField>
+		<InputField name="Комментарий" id="169">
+			<DataPath>Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="170"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="171"/>
+		</InputField>
+		<Table name="Номенклатура" id="3">
+			<CommandBarLocation>None</CommandBarLocation>
+			<MultipleChoice>true</MultipleChoice>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.МаршрутныеКарты</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="НоменклатураКоманднаяПанель" id="5">
+				<ChildItems>
+					<Button name="НоменклатураПереместитьВверх" id="61">
+						<Type>CommandBarButton</Type>
+						<CommandName>3:37740564-9e86-44a0-bea9-3f485a5a3f91</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="НоменклатураПереместитьВверхРасширеннаяПодсказка" id="62"/>
+					</Button>
+					<Button name="НоменклатураПереместитьВниз" id="63">
+						<Type>CommandBarButton</Type>
+						<CommandName>3:fa51b106-eae6-44c7-8054-76cbb3100603</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="НоменклатураПереместитьВнизРасширеннаяПодсказка" id="64"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="НоменклатураСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Номенклатура</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НоменклатураСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="НоменклатураСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НоменклатураСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Номенклатура</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НоменклатураСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="НоменклатураСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НоменклатураУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Номенклатура</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="НоменклатураУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="НоменклатураУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="НоменклатураПометка" id="110">
+					<DataPath>Объект.МаршрутныеКарты.Пометка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НоменклатураПометкаКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="НоменклатураПометкаРасширеннаяПодсказка" id="112"/>
+					<Events>
+						<Event name="OnChange">НоменклатураПометкаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<ColumnGroup name="НоменклатураГруппа2" id="59">
+					<ExtendedTooltip name="НоменклатураГруппа2РасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<InputField name="НоменклатураМТК" id="51">
+							<DataPath>Объект.МаршрутныеКарты.МТК</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>false</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+							<ClearButton>false</ClearButton>
+							<SpinButton>false</SpinButton>
+							<OpenButton>true</OpenButton>
+							<CreateButton>false</CreateButton>
+							<QuickChoice>false</QuickChoice>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+							<ContextMenu name="НоменклатураМТККонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="НоменклатураМТКРасширеннаяПодсказка" id="53"/>
+						</InputField>
+						<ColumnGroup name="НоменклатураГруппа4" id="70">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="НоменклатураГруппа4РасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<PictureField name="НоменклатураСтатусМТК" id="125">
+									<DataPath>Объект.МаршрутныеКарты.СтатусМТК</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ст.</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.СтатусыМТК</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="НоменклатураСтатусМТККонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="НоменклатураСтатусМТКРасширеннаяПодсказка" id="127"/>
+								</PictureField>
+								<LabelField name="НоменклатураНомерОчереди" id="100">
+									<DataPath>Объект.МаршрутныеКарты.НомерОчереди</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="НоменклатураНомерОчередиКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="НоменклатураНомерОчередиРасширеннаяПодсказка" id="102"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="НоменклатураГруппа1" id="106">
+					<ExtendedTooltip name="НоменклатураГруппа1РасширеннаяПодсказка" id="107"/>
+					<ChildItems>
+						<InputField name="НоменклатураСпецификация" id="22">
+							<DataPath>Объект.МаршрутныеКарты.Спецификация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НоменклатураСпецификацияКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="НоменклатураСпецификацияРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="OnChange">НоменклатураСпецификацияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<ColumnGroup name="НоменклатураГруппа3" id="108">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="НоменклатураГруппа3РасширеннаяПодсказка" id="109"/>
+							<ChildItems>
+								<InputField name="НоменклатураКоличество" id="25">
+									<DataPath>Объект.МаршрутныеКарты.Количество</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Кол-во</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НоменклатураКоличествоКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="НоменклатураКоличествоРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="НоменклатураСчёт" id="33">
+									<DataPath>Объект.МаршрутныеКарты.Счёт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>15</Width>
+									<ContextMenu name="НоменклатураСчётКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="НоменклатураСчётРасширеннаяПодсказка" id="35"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="НоменклатураСтандартныйКомментарий" id="28">
+					<DataPath>Объект.МаршрутныеКарты.СтандартныйКомментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>20</Width>
+					<ContextMenu name="НоменклатураСтандартныйКомментарийКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="НоменклатураСтандартныйКомментарийРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">НоменклатураСтандартныйКомментарийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<ColumnGroup name="НоменклатураГруппа5" id="146">
+					<ExtendedTooltip name="НоменклатураГруппа5РасширеннаяПодсказка" id="147"/>
+					<ChildItems>
+						<InputField name="НоменклатураМПЗОстановки" id="148">
+							<DataPath>Объект.МаршрутныеКарты.МПЗОстановки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НоменклатураМПЗОстановкиКонтекстноеМеню" id="149"/>
+							<ExtendedTooltip name="НоменклатураМПЗОстановкиРасширеннаяПодсказка" id="150"/>
+						</InputField>
+						<InputField name="НоменклатураПричинаОстановки" id="103">
+							<DataPath>Объект.МаршрутныеКарты.ПричинаОстановки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НоменклатураПричинаОстановкиКонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="НоменклатураПричинаОстановкиРасширеннаяПодсказка" id="105"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="НоменклатураИнициаторОстановки" id="140">
+					<DataPath>Объект.МаршрутныеКарты.ИнициаторОстановки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НоменклатураИнициаторОстановкиКонтекстноеМеню" id="141"/>
+					<ExtendedTooltip name="НоменклатураИнициаторОстановкиРасширеннаяПодсказка" id="142"/>
+				</InputField>
+				<ColumnGroup name="НоменклатураГруппа6" id="151">
+					<ExtendedTooltip name="НоменклатураГруппа6РасширеннаяПодсказка" id="152"/>
+					<ChildItems>
+						<InputField name="НоменклатураДатаНачалаОстановки" id="143">
+							<DataPath>Объект.МаршрутныеКарты.ДатаНачалаОстановки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НоменклатураДатаНачалаОстановкиКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="НоменклатураДатаНачалаОстановкиРасширеннаяПодсказка" id="145"/>
+						</InputField>
+						<InputField name="НоменклатураДатаПредполагаемогоОкончанияОстановки" id="153">
+							<DataPath>Объект.МаршрутныеКарты.ДатаПредполагаемогоОкончанияОстановки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НоменклатураДатаПредполагаемогоОкончанияОстановкиКонтекстноеМеню" id="154"/>
+							<ExtendedTooltip name="НоменклатураДатаПредполагаемогоОкончанияОстановкиРасширеннаяПодсказка" id="155"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="НоменклатураГруппа7" id="161">
+					<ExtendedTooltip name="НоменклатураГруппа7РасширеннаяПодсказка" id="162"/>
+					<ChildItems>
+						<InputField name="НоменклатураГоловнаяМТК" id="163">
+							<DataPath>Объект.МаршрутныеКарты.ГоловнаяМТК</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НоменклатураГоловнаяМТККонтекстноеМеню" id="164"/>
+							<ExtendedTooltip name="НоменклатураГоловнаяМТКРасширеннаяПодсказка" id="165"/>
+						</InputField>
+						<PictureField name="НоменклатураГоловнаяМТКСтатус" id="166">
+							<DataPath>Объект.МаршрутныеКарты.ГоловнаяМТК.Статус</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ст.</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.СтатусыМТК</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="НоменклатураГоловнаяМТКСтатусКонтекстноеМеню" id="167"/>
+							<ExtendedTooltip name="НоменклатураГоловнаяМТКСтатусРасширеннаяПодсказка" id="168"/>
+						</PictureField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<CommandBar name="Группа1" id="130">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="131"/>
+			<ChildItems>
+				<Button name="Обработать" id="138">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Обработать</CommandName>
+					<ExtendedTooltip name="ОбработатьРасширеннаяПодсказка" id="139"/>
+				</Button>
+				<Button name="НоменклатураНайтиМТК" id="159">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.НайтиМТК</CommandName>
+					<ExtendedTooltip name="НоменклатураНайтиМТКРасширеннаяПодсказка" id="160"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ГрупповаяОстановкаМаршрутныхКарт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СтатусМТК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус МТК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>СтатусМТК</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПричинаОстановки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Причина остановки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПричиныОстановок</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаПредполагаемогоОкончанияОстановки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата предполагаемого окончания остановки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Комментарий" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокКонтрагентов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиенты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокКонтрагентов</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокМасокТоваров" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маски товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокМасокТоваров</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Номенклатура</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Номенклатура.МТК</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#00FFFF</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Обработать" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обработать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НайтиМТК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти МТК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти МТК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Find</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиМТК</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьМТК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить МТК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить МТК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьМТК</Action>
+		</Command>
+		<Command name="Настройки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.LoadReportSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Настройки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

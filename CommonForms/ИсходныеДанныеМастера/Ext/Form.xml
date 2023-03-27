@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowTitle>false</ShowTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="234">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="235"/>
+			<ChildItems>
+				<InputField name="СписокЛинеек" id="231">
+					<DataPath>СписокЛинеек</DataPath>
+					<ClearButton>true</ClearButton>
+					<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+					<ContextMenu name="СписокЛинеекКонтекстноеМеню" id="232"/>
+					<ExtendedTooltip name="СписокЛинеекРасширеннаяПодсказка" id="233"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановленные маршрутные карты</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ShowLeftMargin>false</ShowLeftMargin>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<Table name="ОстановленныеМТК" id="80">
+					<ChangeRowSet>false</ChangeRowSet>
+					<Height>5</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<DataPath>ОстановленныеМТК</DataPath>
+					<RowPictureDataPath>ОстановленныеМТК.DefaultPicture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Post</ExcludedCommand>
+						<ExcludedCommand>UndoPosting</ExcludedCommand>
+					</CommandSet>
+					<AutoRefresh>true</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="ОстановленныеМТККонтекстноеМеню" id="81"/>
+					<AutoCommandBar name="ОстановленныеМТККоманднаяПанель" id="82">
+						<ChildItems>
+							<Button name="ОстановленныеМТКОбщаяКомандаСтруктураПодчиненности" id="223">
+								<Type>CommandBarButton</Type>
+								<CommandName>CommonCommand.СтруктураПодчиненности</CommandName>
+								<DataPath>Items.ОстановленныеМТК.CurrentData.Ссылка</DataPath>
+								<ExtendedTooltip name="ОстановленныеМТКОбщаяКомандаСтруктураПодчиненностиРасширеннаяПодсказка" id="224"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ОстановленныеМТКРасширеннаяПодсказка" id="83"/>
+					<SearchStringAddition name="ОстановленныеМТКСтрокаПоиска" id="84">
+						<AdditionSource>
+							<Item>ОстановленныеМТК</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОстановленныеМТКСтрокаПоискаКонтекстноеМеню" id="85"/>
+						<ExtendedTooltip name="ОстановленныеМТКСтрокаПоискаРасширеннаяПодсказка" id="86"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОстановленныеМТКСостояниеПросмотра" id="87">
+						<AdditionSource>
+							<Item>ОстановленныеМТК</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОстановленныеМТКСостояниеПросмотраКонтекстноеМеню" id="88"/>
+						<ExtendedTooltip name="ОстановленныеМТКСостояниеПросмотраРасширеннаяПодсказка" id="89"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОстановленныеМТКУправлениеПоиском" id="90">
+						<AdditionSource>
+							<Item>ОстановленныеМТК</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОстановленныеМТКУправлениеПоискомКонтекстноеМеню" id="91"/>
+						<ExtendedTooltip name="ОстановленныеМТКУправлениеПоискомРасширеннаяПодсказка" id="92"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ОстановленныеМТКЛинейка" id="174">
+							<DataPath>ОстановленныеМТК.Линейка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Лин.</v8:content>
+								</v8:item>
+							</Title>
+							<Width>5</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ОстановленныеМТКЛинейкаКонтекстноеМеню" id="175"/>
+							<ExtendedTooltip name="ОстановленныеМТКЛинейкаРасширеннаяПодсказка" id="176"/>
+						</LabelField>
+						<LabelField name="ОстановленныеМТКСсылка" id="171">
+							<DataPath>ОстановленныеМТК.Ссылка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>МТК</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОстановленныеМТКСсылкаКонтекстноеМеню" id="172"/>
+							<ExtendedTooltip name="ОстановленныеМТКСсылкаРасширеннаяПодсказка" id="173"/>
+						</LabelField>
+						<LabelField name="ОстановленныеМТКНоменклатура" id="225">
+							<DataPath>ОстановленныеМТК.Номенклатура</DataPath>
+							<ContextMenu name="ОстановленныеМТКНоменклатураКонтекстноеМеню" id="226"/>
+							<ExtendedTooltip name="ОстановленныеМТКНоменклатураРасширеннаяПодсказка" id="227"/>
+						</LabelField>
+						<LabelField name="ОстановленныеМТККоличество" id="228">
+							<DataPath>ОстановленныеМТК.Количество</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОстановленныеМТККоличествоКонтекстноеМеню" id="229"/>
+							<ExtendedTooltip name="ОстановленныеМТККоличествоРасширеннаяПодсказка" id="230"/>
+						</LabelField>
+						<LabelField name="ОстановленныеМТКСчёт" id="177">
+							<DataPath>ОстановленныеМТК.Счёт</DataPath>
+							<ContextMenu name="ОстановленныеМТКСчётКонтекстноеМеню" id="178"/>
+							<ExtendedTooltip name="ОстановленныеМТКСчётРасширеннаяПодсказка" id="179"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="ОстановленныеМТКОстановки" id="180">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Height>3</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Items.ОстановленныеМТК.CurrentData.Остановки</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ОстановленныеМТКОстановкиКонтекстноеМеню" id="181"/>
+					<AutoCommandBar name="ОстановленныеМТКОстановкиКоманднаяПанель" id="182"/>
+					<ExtendedTooltip name="ОстановленныеМТКОстановкиРасширеннаяПодсказка" id="183"/>
+					<SearchStringAddition name="ОстановленныеМТКОстановкиСтрокаПоиска" id="184">
+						<AdditionSource>
+							<Item>ОстановленныеМТКОстановки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОстановленныеМТКОстановкиСтрокаПоискаКонтекстноеМеню" id="185"/>
+						<ExtendedTooltip name="ОстановленныеМТКОстановкиСтрокаПоискаРасширеннаяПодсказка" id="186"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОстановленныеМТКОстановкиСостояниеПросмотра" id="187">
+						<AdditionSource>
+							<Item>ОстановленныеМТКОстановки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОстановленныеМТКОстановкиСостояниеПросмотраКонтекстноеМеню" id="188"/>
+						<ExtendedTooltip name="ОстановленныеМТКОстановкиСостояниеПросмотраРасширеннаяПодсказка" id="189"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОстановленныеМТКОстановкиУправлениеПоиском" id="190">
+						<AdditionSource>
+							<Item>ОстановленныеМТКОстановки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОстановленныеМТКОстановкиУправлениеПоискомКонтекстноеМеню" id="191"/>
+						<ExtendedTooltip name="ОстановленныеМТКОстановкиУправлениеПоискомРасширеннаяПодсказка" id="192"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ОстановленныеМТКОстановкиДатаНачала" id="199">
+							<DataPath>Items.ОстановленныеМТК.CurrentData.Остановки.ДатаНачала</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстановленныеМТКОстановкиДатаНачалаКонтекстноеМеню" id="200"/>
+							<ExtendedTooltip name="ОстановленныеМТКОстановкиДатаНачалаРасширеннаяПодсказка" id="201"/>
+						</InputField>
+						<InputField name="ОстановленныеМТКОстановкиИнициатор" id="208">
+							<DataPath>Items.ОстановленныеМТК.CurrentData.Остановки.Инициатор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстановленныеМТКОстановкиИнициаторКонтекстноеМеню" id="209"/>
+							<ExtendedTooltip name="ОстановленныеМТКОстановкиИнициаторРасширеннаяПодсказка" id="210"/>
+						</InputField>
+						<InputField name="ОстановленныеМТКОстановкиПричина" id="217">
+							<DataPath>Items.ОстановленныеМТК.CurrentData.Остановки.Причина</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстановленныеМТКОстановкиПричинаКонтекстноеМеню" id="218"/>
+							<ExtendedTooltip name="ОстановленныеМТКОстановкиПричинаРасширеннаяПодсказка" id="219"/>
+						</InputField>
+						<InputField name="ОстановленныеМТКОстановкиКомментарий" id="211">
+							<DataPath>Items.ОстановленныеМТК.CurrentData.Остановки.Комментарий</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстановленныеМТКОстановкиКомментарийКонтекстноеМеню" id="212"/>
+							<ExtendedTooltip name="ОстановленныеМТКОстановкиКомментарийРасширеннаяПодсказка" id="213"/>
+						</InputField>
+						<InputField name="ОстановленныеМТКОстановкиМПЗ" id="214">
+							<DataPath>Items.ОстановленныеМТК.CurrentData.Остановки.МПЗ</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстановленныеМТКОстановкиМПЗКонтекстноеМеню" id="215"/>
+							<ExtendedTooltip name="ОстановленныеМТКОстановкиМПЗРасширеннаяПодсказка" id="216"/>
+						</InputField>
+						<InputField name="ОстановленныеМТКОстановкиРабочееМесто" id="220">
+							<DataPath>Items.ОстановленныеМТК.CurrentData.Остановки.РабочееМесто</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстановленныеМТКОстановкиРабочееМестоКонтекстноеМеню" id="221"/>
+							<ExtendedTooltip name="ОстановленныеМТКОстановкиРабочееМестоРасширеннаяПодсказка" id="222"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Льготная очередь</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="72"/>
+			<ChildItems>
+				<Table name="ЛьготнаяОчередь" id="38">
+					<ChangeRowSet>false</ChangeRowSet>
+					<Height>10</Height>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ЛьготнаяОчередь</DataPath>
+					<RowPictureDataPath>ЛьготнаяОчередь.DefaultPicture</RowPictureDataPath>
+					<TitleTextColor>#FF6600</TitleTextColor>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<CommandSet>
+						<ExcludedCommand>Change</ExcludedCommand>
+					</CommandSet>
+					<AutoRefresh>true</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="ЛьготнаяОчередьКонтекстноеМеню" id="39"/>
+					<AutoCommandBar name="ЛьготнаяОчередьКоманднаяПанель" id="40"/>
+					<ExtendedTooltip name="ЛьготнаяОчередьРасширеннаяПодсказка" id="41"/>
+					<SearchStringAddition name="ЛьготнаяОчередьСтрокаПоиска" id="42">
+						<AdditionSource>
+							<Item>ЛьготнаяОчередь</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЛьготнаяОчередьСтрокаПоискаКонтекстноеМеню" id="43"/>
+						<ExtendedTooltip name="ЛьготнаяОчередьСтрокаПоискаРасширеннаяПодсказка" id="44"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЛьготнаяОчередьСостояниеПросмотра" id="45">
+						<AdditionSource>
+							<Item>ЛьготнаяОчередь</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЛьготнаяОчередьСостояниеПросмотраКонтекстноеМеню" id="46"/>
+						<ExtendedTooltip name="ЛьготнаяОчередьСостояниеПросмотраРасширеннаяПодсказка" id="47"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЛьготнаяОчередьУправлениеПоиском" id="48">
+						<AdditionSource>
+							<Item>ЛьготнаяОчередь</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЛьготнаяОчередьУправлениеПоискомКонтекстноеМеню" id="49"/>
+						<ExtendedTooltip name="ЛьготнаяОчередьУправлениеПоискомРасширеннаяПодсказка" id="50"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ЛьготнаяОчередьЛинейка" id="60">
+							<DataPath>ЛьготнаяОчередь.Линейка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Лин.</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<ContextMenu name="ЛьготнаяОчередьЛинейкаКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьЛинейкаРасширеннаяПодсказка" id="62"/>
+						</LabelField>
+						<LabelField name="ЛьготнаяОчередьПЗ" id="66">
+							<DataPath>ЛьготнаяОчередь.ПЗ</DataPath>
+							<ContextMenu name="ЛьготнаяОчередьПЗКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьПЗРасширеннаяПодсказка" id="68"/>
+						</LabelField>
+						<LabelField name="ЛьготнаяОчередьИзделие" id="54">
+							<DataPath>ЛьготнаяОчередь.Изделие</DataPath>
+							<ContextMenu name="ЛьготнаяОчередьИзделиеКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьИзделиеРасширеннаяПодсказка" id="56"/>
+						</LabelField>
+						<LabelField name="ЛьготнаяОчередьМПЗ" id="63">
+							<DataPath>ЛьготнаяОчередь.МПЗ</DataPath>
+							<ContextMenu name="ЛьготнаяОчередьМПЗКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьМПЗРасширеннаяПодсказка" id="65"/>
+						</LabelField>
+						<LabelField name="ЛьготнаяОчередьПериод" id="51">
+							<DataPath>ЛьготнаяОчередь.Период</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата постановки</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЛьготнаяОчередьПериодКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьПериодРасширеннаяПодсказка" id="53"/>
+						</LabelField>
+						<LabelField name="ЛьготнаяОчередьКоличествоОстаток" id="77">
+							<DataPath>ЛьготнаяОчередь.КоличествоОстаток</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Невыпущено</v8:content>
+								</v8:item>
+							</Title>
+							<Width>5</Width>
+							<ContextMenu name="ЛьготнаяОчередьКоличествоОстатокКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьКоличествоОстатокРасширеннаяПодсказка" id="79"/>
+						</LabelField>
+						<LabelField name="ЛьготнаяОчередьКомментарий" id="57">
+							<DataPath>~ЛьготнаяОчередь.Комментарий</DataPath>
+							<ContextMenu name="ЛьготнаяОчередьКомментарийКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьКомментарийРасширеннаяПодсказка" id="59"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЛьготнаяОчередь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Льготная очередь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЛьготнаяОчередь.Период КАК Период,
+	ЛьготнаяОчередь.ПЗ КАК ПЗ,
+	ЛьготнаяОчередь.Линейка КАК Линейка,
+	ЛьготнаяОчередь.Изделие КАК Изделие,
+	ЛьготнаяОчередь.НормаРасходов.Элемент КАК МПЗ,
+	ПланыВыпускаОстатки.КоличествоОстаток КАК КоличествоОстаток
+ИЗ
+	РегистрНакопления.ПланыВыпуска.Остатки(&amp;НаДату, ) КАК ПланыВыпускаОстатки
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрСведений.ЛьготнаяОчередь КАК ЛьготнаяОчередь
+		ПО ПланыВыпускаОстатки.МаршрутнаяКарта = ЛьготнаяОчередь.ПЗ.ДокументОснование
+ГДЕ
+	ЛьготнаяОчередь.Линейка В ИЕРАРХИИ(&amp;СписокЛинеек)
+	И ЛьготнаяОчередь.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)</QueryText>
+				<MainTable>InformationRegister.ЛьготнаяОчередь</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОстановленныеМТК" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановленные МТК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументМаршрутнаяКарта.Ссылка КАК Ссылка,
+	ДокументМаршрутнаяКарта.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументМаршрутнаяКарта.Номер КАК Номер,
+	ДокументМаршрутнаяКарта.Дата КАК Дата,
+	ДокументМаршрутнаяКарта.Проведен КАК Проведен,
+	ДокументМаршрутнаяКарта.ДокументОснование КАК ДокументОснование,
+	ДокументМаршрутнаяКарта.Статус КАК Статус,
+	ДокументМаршрутнаяКарта.НомерОчереди КАК НомерОчереди,
+	ДокументМаршрутнаяКарта.Линейка КАК Линейка,
+	ДокументМаршрутнаяКарта.ЛинейкаИнициатор КАК ЛинейкаИнициатор,
+	ДокументМаршрутнаяКарта.МестоХраненияПотребитель КАК МестоХраненияПотребитель,
+	ДокументМаршрутнаяКарта.НомерЯчейки КАК НомерЯчейки,
+	ДокументМаршрутнаяКарта.Номенклатура КАК Номенклатура,
+	ДокументМаршрутнаяКарта.Количество КАК Количество,
+	ДокументМаршрутнаяКарта.Проект КАК Проект,
+	ДокументМаршрутнаяКарта.Счёт КАК Счёт,
+	ДокументМаршрутнаяКарта.Ремонт КАК Ремонт,
+	ДокументМаршрутнаяКарта.ДатаНачалаОстановки КАК ДатаНачалаОстановки,
+	ДокументМаршрутнаяКарта.ДатаПредполагаемогоОкончанияОстановки КАК ДатаПредполагаемогоОкончанияОстановки,
+	ДокументМаршрутнаяКарта.ДатаОкончанияОстановки КАК ДатаОкончанияОстановки,
+	ДокументМаршрутнаяКарта.ДатаОтгрузки КАК ДатаОтгрузки,
+	ДокументМаршрутнаяКарта.ИнициаторОстановки КАК ИнициаторОстановки,
+	ДокументМаршрутнаяКарта.МПЗОстановки КАК МПЗОстановки,
+	ДокументМаршрутнаяКарта.ПричинаОстановки КАК ПричинаОстановки,
+	ДокументМаршрутнаяКарта.СтандартныйКомментарий КАК СтандартныйКомментарий,
+	ДокументМаршрутнаяКарта.Выгружено КАК Выгружено,
+	ДокументМаршрутнаяКарта.Подразделение КАК Подразделение,
+	ДокументМаршрутнаяКарта.Автор КАК Автор,
+	ДокументМаршрутнаяКарта.Комментарий КАК Комментарий,
+	ДокументМаршрутнаяКарта.Аналоги.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Спецификация КАК Спецификация,
+		НормаРасходов КАК НормаРасходов,
+		АналогНормыРасходов КАК АналогНормыРасходов
+	) КАК Аналоги,
+	ДокументМаршрутнаяКарта.ТехОперации.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		ТехОперация КАК ТехОперация,
+		Спецификация КАК Спецификация,
+		Количество КАК Количество,
+		Исполнитель КАК Исполнитель
+	) КАК ТехОперации,
+	ДокументМаршрутнаяКарта.Остановки.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		ДатаНачала КАК ДатаНачала,
+		ДатаОкончанияПредполагаемая КАК ДатаОкончанияПредполагаемая,
+		ДатаОкончания КАК ДатаОкончания,
+		Причина КАК Причина,
+		МПЗ КАК МПЗ,
+		Инициатор КАК Инициатор,
+		РабочееМесто КАК РабочееМесто,
+		Комментарий КАК Комментарий
+	) КАК Остановки,
+	ДокументМаршрутнаяКарта.МоментВремени КАК МоментВремени
+ИЗ
+	Документ.МаршрутнаяКарта КАК ДокументМаршрутнаяКарта
+ГДЕ
+	ДокументМаршрутнаяКарта.Линейка В ИЕРАРХИИ(&amp;СписокЛинеек)</QueryText>
+				<MainTable>Document.МаршрутнаяКарта</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Остановки.ДатаОкончания</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокЛинеек</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

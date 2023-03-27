@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="7">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<InputField name="СписокЛинеек" id="1">
+					<DataPath>СписокЛинеек</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокЛинеекКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СписокЛинеекРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Подразделение" id="11">
+					<DataPath>Подразделение</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="Период" id="17">
+					<DataPath>Отчет.Период</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<CheckBoxField name="ТолькоСПодчиненнымиМТК" id="14">
+					<DataPath>ТолькоСПодчиненнымиМТК</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТолькоСПодчиненнымиМТККонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТолькоСПодчиненнымиМТКРасширеннаяПодсказка" id="16"/>
+				</CheckBoxField>
+				<Button name="Сформировать" id="9">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Сформировать</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="10"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="НеПоказыватьСЗавершеннымиПодчиненнымиМТК" id="20">
+			<DataPath>НеПоказыватьСЗавершеннымиПодчиненнымиМТК</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеПоказыватьСЗавершеннымиПодчиненнымиМТККонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="НеПоказыватьСЗавершеннымиПодчиненнымиМТКРасширеннаяПодсказка" id="22"/>
+		</CheckBoxField>
+		<SpreadSheetDocumentField name="ТабДок" id="4">
+			<DataPath>ТабДок</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="6"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ОтчётПоПодчиненнымМТК</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Отчет.Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокЛинеек</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТабДок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Подразделение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+			<Save>
+				<Field>Подразделение</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТолькоСПодчиненнымиМТК" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только с подчиненными МТК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ТолькоСПодчиненнымиМТК</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НеПоказыватьСЗавершеннымиПодчиненнымиМТК" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не показывать с завершенными подчиненными МТК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>НеПоказыватьСЗавершеннымиПодчиненнымиМТК</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

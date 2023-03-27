@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Владелец" id="18">
+			<DataPath>Запись.Владелец</DataPath>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<InputField name="Элемент" id="21">
+			<DataPath>Запись.Элемент</DataPath>
+			<ContextMenu name="ЭлементКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ЭлементРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="НормаРасходов" id="4">
+			<DataPath>Запись.НормаРасходов</DataPath>
+			<ContextMenu name="НормаРасходовКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НормаРасходовРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">НормаРасходовПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="Группа1" id="16">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="Норма" id="7">
+					<DataPath>Запись.Норма</DataPath>
+					<ContextMenu name="НормаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="НормаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<LabelDecoration name="ЕдиницаИзмерения" id="13">
+					<ContextMenu name="ЕдиницаИзмеренияКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ЕдиницаИзмеренияРасширеннаяПодсказка" id="15"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.НормыРасходов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

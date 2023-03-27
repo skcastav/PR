@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<FilterCriterion uuid="ab293e15-e78b-43ac-9a9e-5d82714c4ee6">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.ПодчиненныеДокументы" category="Manager">
+				<xr:TypeId>659f737c-2609-4d58-8b73-d047c0c55992</xr:TypeId>
+				<xr:ValueId>9643dc9a-0de7-43c7-ae1b-0491e5307503</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.ПодчиненныеДокументы" category="List">
+				<xr:TypeId>225ff2ae-ec1a-4cf6-ad64-0f4236e5dd01</xr:TypeId>
+				<xr:ValueId>9ce2d6ce-0443-44b8-8516-06a78679e575</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПодчиненныеДокументы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подчиненные документы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыпускПродукции.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыпускПродукцииКанбан.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДвижениеМПЗ.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПоставщику.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.МаршрутнаяКарта.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НакладнаяНаСборку.TabularSection.ТабличнаяЧасть.Attribute.ЗаказНаПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаВПереработку.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаВПроизводство.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаНаЛинейку.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Перепрогон.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеИзПереработки.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеМПЗ.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеМПЗПрочее.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеНаЛинейку.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственноеЗадание.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Разукомплектовка.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Реализация.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РемонтнаяКарта.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеИзПереработки.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеМПЗПрочее.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаЗаказаНаПроизводство.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Резервирование.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказНаПроизводство.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДвижениеРезервовГП.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Разборка.Attribute.ДокументОснование</xr:Item>
+			</Content>
+			<DefaultForm>FilterCriterion.ПодчиненныеДокументы.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</FilterCriterion>
+</MetaDataObject>

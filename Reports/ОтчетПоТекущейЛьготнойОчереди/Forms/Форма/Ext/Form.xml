@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="6">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<InputField name="СписокЛинеек" id="1">
+					<DataPath>СписокЛинеек</DataPath>
+					<ContextMenu name="СписокЛинеекКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СписокЛинеекРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ВыбПодразделение" id="85">
+					<DataPath>ВыбПодразделение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ВыбПодразделениеКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="ВыбПодразделениеРасширеннаяПодсказка" id="87"/>
+				</InputField>
+				<InputField name="ВидКанбана" id="88">
+					<DataPath>ВидКанбана</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ВидКанбанаКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ВидКанбанаРасширеннаяПодсказка" id="90"/>
+				</InputField>
+				<Button name="Запустить" id="11">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Сформировать</CommandName>
+					<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ExtendedTooltip name="ЗапуститьРасширеннаяПодсказка" id="12"/>
+				</Button>
+				<InputField name="ИнтервалОбновления" id="8">
+					<DataPath>Объект.ИнтервалОбновления</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновлять через, мин</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ИнтервалОбновленияКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ИнтервалОбновленияРасширеннаяПодсказка" id="10"/>
+					<Events>
+						<Event name="OnChange">ИнтервалОбновленияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CommandBar name="Группа3" id="91">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="92"/>
+					<ChildItems>
+						<Button name="Обновить" id="4">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.Обновить</CommandName>
+							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="5"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Льготная очередь</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ShowLeftMargin>false</ShowLeftMargin>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<Table name="ЛьготнаяОчередь" id="52">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ЛьготнаяОчередь</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ЛьготнаяОчередьКонтекстноеМеню" id="53"/>
+					<AutoCommandBar name="ЛьготнаяОчередьКоманднаяПанель" id="54">
+						<ChildItems>
+							<Button name="ПочтоваяРассылка" id="74">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПочтоваяРассылка</CommandName>
+								<ExtendedTooltip name="ПочтоваяРассылкаРасширеннаяПодсказка" id="75"/>
+							</Button>
+							<Button name="ВыбратьВсе" id="79">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыбратьВсе</CommandName>
+								<ExtendedTooltip name="ВыбратьВсеРасширеннаяПодсказка" id="80"/>
+							</Button>
+							<Button name="ОтменитьВсе" id="81">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОтменитьВсе</CommandName>
+								<ExtendedTooltip name="ОтменитьВсеРасширеннаяПодсказка" id="82"/>
+							</Button>
+							<Button name="ВыбратьПодразделение" id="83">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыбратьПодразделение</CommandName>
+								<ExtendedTooltip name="ВыбратьПодразделениеРасширеннаяПодсказка" id="84"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ЛьготнаяОчередьРасширеннаяПодсказка" id="55"/>
+					<SearchStringAddition name="ЛьготнаяОчередьСтрокаПоиска" id="56">
+						<AdditionSource>
+							<Item>ЛьготнаяОчередь</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЛьготнаяОчередьСтрокаПоискаКонтекстноеМеню" id="57"/>
+						<ExtendedTooltip name="ЛьготнаяОчередьСтрокаПоискаРасширеннаяПодсказка" id="58"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЛьготнаяОчередьСостояниеПросмотра" id="59">
+						<AdditionSource>
+							<Item>ЛьготнаяОчередь</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЛьготнаяОчередьСостояниеПросмотраКонтекстноеМеню" id="60"/>
+						<ExtendedTooltip name="ЛьготнаяОчередьСостояниеПросмотраРасширеннаяПодсказка" id="61"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЛьготнаяОчередьУправлениеПоиском" id="62">
+						<AdditionSource>
+							<Item>ЛьготнаяОчередь</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЛьготнаяОчередьУправлениеПоискомКонтекстноеМеню" id="63"/>
+						<ExtendedTooltip name="ЛьготнаяОчередьУправлениеПоискомРасширеннаяПодсказка" id="64"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="ЛьготнаяОчередьПометка" id="76">
+							<DataPath>Объект.ЛьготнаяОчередь.Пометка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЛьготнаяОчередьПометкаКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьПометкаРасширеннаяПодсказка" id="78"/>
+							<Events>
+								<Event name="OnChange">ЛьготнаяОчередьПометкаПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ЛьготнаяОчередьПодразделение" id="71">
+							<DataPath>Объект.ЛьготнаяОчередь.Подразделение</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>10</Width>
+							<ContextMenu name="ЛьготнаяОчередьПодразделениеКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьПодразделениеРасширеннаяПодсказка" id="73"/>
+						</InputField>
+						<InputField name="ЛьготнаяОчередьМПЗ" id="68">
+							<DataPath>Объект.ЛьготнаяОчередь.МПЗ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЛьготнаяОчередьМПЗКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ЛьготнаяОчередьМПЗРасширеннаяПодсказка" id="70"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="ТабДок" id="47">
+			<DataPath>ТабДок</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<VerticalScrollBar>true</VerticalScrollBar>
+			<HorizontalScrollBar>true</HorizontalScrollBar>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="49"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ОтчетПоТекущейЛьготнойОчереди</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список линеек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокЛинеек</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТабДок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыбПодразделение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выб подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВыбПодразделение</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВидКанбана" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид канбана</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыКанбанов</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВидКанбана</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Сформировать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПочтоваяРассылка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Почтовая рассылка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Почтовая рассылка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПочтоваяРассылка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьВсе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьВсе" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьПодразделение" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать подразделение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПодразделение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Линейка">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

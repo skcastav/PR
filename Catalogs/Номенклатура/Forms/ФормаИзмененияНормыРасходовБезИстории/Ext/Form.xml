@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Изменение нормы расходов без истории</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаИзменить" id="16">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Изменить</CommandName>
+				<ExtendedTooltip name="ФормаИзменитьРасширеннаяПодсказка" id="17"/>
+			</Button>
+			<Button name="ФормаОтменить" id="21">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отменить</CommandName>
+				<ExtendedTooltip name="ФормаОтменитьРасширеннаяПодсказка" id="22"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="НаДату" id="18">
+			<DataPath>НаДату</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="НаДатуКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="НаДатуРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<InputField name="Позиция" id="26">
+			<DataPath>Позиция</DataPath>
+			<ContextMenu name="ПозицияКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ПозицияРасширеннаяПодсказка" id="28"/>
+		</InputField>
+		<InputField name="ВидЭлемента" id="4">
+			<DataPath>ВидЭлемента</DataPath>
+			<ContextMenu name="ВидЭлементаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ВидЭлементаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ВидЭлементаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Элемент" id="7">
+			<DataPath>Элемент</DataPath>
+			<ContextMenu name="ЭлементКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЭлементРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="StartChoice">ЭлементНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="Норма" id="10">
+			<DataPath>Норма</DataPath>
+			<ContextMenu name="НормаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НормаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Примечание" id="23">
+			<DataPath>Примечание</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ПримечаниеКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="25"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ВидЭлемента" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид элемента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыЭлементовНормРасходов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Элемент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТехОснастка</v8:Type>
+				<v8:Type>cfg:CatalogRef.Документация</v8:Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+				<v8:Type>cfg:CatalogRef.ТехОперации</v8:Type>
+				<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Норма" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>9</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НормаРасходов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норма расходов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.НормыРасходов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НаДату" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату последнего изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Примечание" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Примечание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Позиция" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поз. обозн.</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Изменить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Изменить</Action>
+		</Command>
+		<Command name="Отменить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отменить</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="НормаРасходов">
+			<Type>
+				<v8:Type>cfg:CatalogRef.НормыРасходов</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="Спецификация">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="Норма">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>9</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

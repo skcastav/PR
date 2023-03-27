@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowTitle>false</ShowTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отложенные задания</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<CollapsedRepresentationTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отложенные задания</v8:content>
+				</v8:item>
+			</CollapsedRepresentationTitle>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ShowLeftMargin>false</ShowLeftMargin>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<Table name="ОтложенныеЗадания" id="19">
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Height>4</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<VerticalStretch>false</VerticalStretch>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ОтложенныеЗадания</DataPath>
+					<RowPictureDataPath>ОтложенныеЗадания.DefaultPicture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>ChangeHistory</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>GetURL</ExcludedCommand>
+						<ExcludedCommand>ListSettings</ExcludedCommand>
+						<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>Refresh</ExcludedCommand>
+						<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SearchHistory</ExcludedCommand>
+						<ExcludedCommand>SetDateInterval</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>true</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="ОтложенныеЗаданияКонтекстноеМеню" id="20"/>
+					<AutoCommandBar name="ОтложенныеЗаданияКоманднаяПанель" id="21">
+						<ChildItems>
+							<Button name="ИзменитьСтатусПоИзвещению" id="41">
+								<Type>CommandBarButton</Type>
+								<DefaultButton>true</DefaultButton>
+								<CommandName>Form.Command.ИзменитьСтатусПоИзвещению</CommandName>
+								<ExtendedTooltip name="ИзменитьСтатусПоИзвещениюРасширеннаяПодсказка" id="42"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ОтложенныеЗаданияРасширеннаяПодсказка" id="22"/>
+					<SearchStringAddition name="ОтложенныеЗаданияСтрокаПоиска" id="23">
+						<AdditionSource>
+							<Item>ОтложенныеЗадания</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОтложенныеЗаданияСтрокаПоискаКонтекстноеМеню" id="24"/>
+						<ExtendedTooltip name="ОтложенныеЗаданияСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОтложенныеЗаданияСостояниеПросмотра" id="26">
+						<AdditionSource>
+							<Item>ОтложенныеЗадания</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОтложенныеЗаданияСостояниеПросмотраКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="ОтложенныеЗаданияСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОтложенныеЗаданияУправлениеПоиском" id="29">
+						<AdditionSource>
+							<Item>ОтложенныеЗадания</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОтложенныеЗаданияУправлениеПоискомКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="ОтложенныеЗаданияУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ОтложенныеЗаданияПериод" id="35">
+							<DataPath>ОтложенныеЗадания.Период</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ОтложенныеЗаданияПериодКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ОтложенныеЗаданияПериодРасширеннаяПодсказка" id="37"/>
+						</LabelField>
+						<LabelField name="ОтложенныеЗаданияИзвещение" id="32">
+							<DataPath>ОтложенныеЗадания.Извещение</DataPath>
+							<ContextMenu name="ОтложенныеЗаданияИзвещениеКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ОтложенныеЗаданияИзвещениеРасширеннаяПодсказка" id="34"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<InputField name="ОтложенныеЗаданияИзвещениеКомментарий" id="43">
+					<DataPath>Items.ОтложенныеЗадания.CurrentData.Извещение.Комментарий</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ОтложенныеЗаданияИзвещениеКомментарийКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ОтложенныеЗаданияИзвещениеКомментарийРасширеннаяПодсказка" id="45"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ОтложенныеЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отложенные задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ОтложенныеЗаданияСрезПоследних.Период КАК Период,
+	ОтложенныеЗаданияСрезПоследних.Извещение КАК Извещение
+	ИЗ
+	РегистрСведений.ОтложенныеЗадания.СрезПоследних(&amp;НаДату, ) КАК ОтложенныеЗаданияСрезПоследних</QueryText>
+				<MainTable>InformationRegister.ОтложенныеЗадания.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИзменитьСтатусПоИзвещению" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить статус по извещению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить статус по извещению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьСтатусПоИзвещению</Action>
+		</Command>
+	</Commands>
+</Form>

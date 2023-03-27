@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="76">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Объект.Период</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="29"/>
+					<Events>
+						<Event name="StartChoice">ПериодНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="Подразделение" id="107">
+					<DataPath>Подразделение</DataPath>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="109"/>
+					<Events>
+						<Event name="OnChange">ПодразделениеПриИзменении</Event>
+						<Event name="ChoiceProcessing">ПодразделениеОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="Сотрудник" id="110">
+					<DataPath>Сотрудник</DataPath>
+					<ContextMenu name="СотрудникКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="112"/>
+					<Events>
+						<Event name="OnChange">СотрудникПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Выходные" id="230">
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<HeightInTableRows>1</HeightInTableRows>
+			<AutoMaxRowsCount>false</AutoMaxRowsCount>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<VerticalStretch>false</VerticalStretch>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Выходные</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВыходныеКонтекстноеМеню" id="231"/>
+			<AutoCommandBar name="ВыходныеКоманднаяПанель" id="232"/>
+			<ExtendedTooltip name="ВыходныеРасширеннаяПодсказка" id="233"/>
+			<SearchStringAddition name="ВыходныеСтрокаПоиска" id="234">
+				<AdditionSource>
+					<Item>Выходные</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыходныеСтрокаПоискаКонтекстноеМеню" id="235"/>
+				<ExtendedTooltip name="ВыходныеСтрокаПоискаРасширеннаяПодсказка" id="236"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВыходныеСостояниеПросмотра" id="237">
+				<AdditionSource>
+					<Item>Выходные</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыходныеСостояниеПросмотраКонтекстноеМеню" id="238"/>
+				<ExtendedTooltip name="ВыходныеСостояниеПросмотраРасширеннаяПодсказка" id="239"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВыходныеУправлениеПоиском" id="240">
+				<AdditionSource>
+					<Item>Выходные</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыходныеУправлениеПоискомКонтекстноеМеню" id="241"/>
+				<ExtendedTooltip name="ВыходныеУправлениеПоискомРасширеннаяПодсказка" id="242"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnChange">ВыходныеПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ВыходныеВыходной" id="246">
+					<DataPath>Объект.Выходные.Выходной</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВыходныеВыходнойКонтекстноеМеню" id="247"/>
+					<ExtendedTooltip name="ВыходныеВыходнойРасширеннаяПодсказка" id="248"/>
+				</InputField>
+				<CheckBoxField name="ВыходныеВыходной1" id="249">
+					<DataPath>Объект.Выходные.Выходной1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной1КонтекстноеМеню" id="250"/>
+					<ExtendedTooltip name="ВыходныеВыходной1РасширеннаяПодсказка" id="251"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной2" id="252">
+					<DataPath>Объект.Выходные.Выходной2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной2КонтекстноеМеню" id="253"/>
+					<ExtendedTooltip name="ВыходныеВыходной2РасширеннаяПодсказка" id="254"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной3" id="255">
+					<DataPath>Объект.Выходные.Выходной3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной3КонтекстноеМеню" id="256"/>
+					<ExtendedTooltip name="ВыходныеВыходной3РасширеннаяПодсказка" id="257"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной4" id="258">
+					<DataPath>Объект.Выходные.Выходной4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной4КонтекстноеМеню" id="259"/>
+					<ExtendedTooltip name="ВыходныеВыходной4РасширеннаяПодсказка" id="260"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной5" id="261">
+					<DataPath>Объект.Выходные.Выходной5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной5КонтекстноеМеню" id="262"/>
+					<ExtendedTooltip name="ВыходныеВыходной5РасширеннаяПодсказка" id="263"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной6" id="264">
+					<DataPath>Объект.Выходные.Выходной6</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной6КонтекстноеМеню" id="265"/>
+					<ExtendedTooltip name="ВыходныеВыходной6РасширеннаяПодсказка" id="266"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной7" id="267">
+					<DataPath>Объект.Выходные.Выходной7</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной7КонтекстноеМеню" id="268"/>
+					<ExtendedTooltip name="ВыходныеВыходной7РасширеннаяПодсказка" id="269"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной8" id="270">
+					<DataPath>Объект.Выходные.Выходной8</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной8КонтекстноеМеню" id="271"/>
+					<ExtendedTooltip name="ВыходныеВыходной8РасширеннаяПодсказка" id="272"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной9" id="273">
+					<DataPath>Объект.Выходные.Выходной9</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной9КонтекстноеМеню" id="274"/>
+					<ExtendedTooltip name="ВыходныеВыходной9РасширеннаяПодсказка" id="275"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной10" id="276">
+					<DataPath>Объект.Выходные.Выходной10</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной10КонтекстноеМеню" id="277"/>
+					<ExtendedTooltip name="ВыходныеВыходной10РасширеннаяПодсказка" id="278"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной11" id="279">
+					<DataPath>Объект.Выходные.Выходной11</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной11КонтекстноеМеню" id="280"/>
+					<ExtendedTooltip name="ВыходныеВыходной11РасширеннаяПодсказка" id="281"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной12" id="282">
+					<DataPath>Объект.Выходные.Выходной12</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной12КонтекстноеМеню" id="283"/>
+					<ExtendedTooltip name="ВыходныеВыходной12РасширеннаяПодсказка" id="284"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной13" id="285">
+					<DataPath>Объект.Выходные.Выходной13</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной13КонтекстноеМеню" id="286"/>
+					<ExtendedTooltip name="ВыходныеВыходной13РасширеннаяПодсказка" id="287"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной14" id="288">
+					<DataPath>Объект.Выходные.Выходной14</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной14КонтекстноеМеню" id="289"/>
+					<ExtendedTooltip name="ВыходныеВыходной14РасширеннаяПодсказка" id="290"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной15" id="291">
+					<DataPath>Объект.Выходные.Выходной15</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной15КонтекстноеМеню" id="292"/>
+					<ExtendedTooltip name="ВыходныеВыходной15РасширеннаяПодсказка" id="293"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной16" id="294">
+					<DataPath>Объект.Выходные.Выходной16</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной16КонтекстноеМеню" id="295"/>
+					<ExtendedTooltip name="ВыходныеВыходной16РасширеннаяПодсказка" id="296"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной17" id="297">
+					<DataPath>Объект.Выходные.Выходной17</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной17КонтекстноеМеню" id="298"/>
+					<ExtendedTooltip name="ВыходныеВыходной17РасширеннаяПодсказка" id="299"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной18" id="300">
+					<DataPath>Объект.Выходные.Выходной18</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной18КонтекстноеМеню" id="301"/>
+					<ExtendedTooltip name="ВыходныеВыходной18РасширеннаяПодсказка" id="302"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной19" id="303">
+					<DataPath>Объект.Выходные.Выходной19</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной19КонтекстноеМеню" id="304"/>
+					<ExtendedTooltip name="ВыходныеВыходной19РасширеннаяПодсказка" id="305"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной20" id="306">
+					<DataPath>Объект.Выходные.Выходной20</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной20КонтекстноеМеню" id="307"/>
+					<ExtendedTooltip name="ВыходныеВыходной20РасширеннаяПодсказка" id="308"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной21" id="309">
+					<DataPath>Объект.Выходные.Выходной21</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной21КонтекстноеМеню" id="310"/>
+					<ExtendedTooltip name="ВыходныеВыходной21РасширеннаяПодсказка" id="311"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной22" id="312">
+					<DataPath>Объект.Выходные.Выходной22</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной22КонтекстноеМеню" id="313"/>
+					<ExtendedTooltip name="ВыходныеВыходной22РасширеннаяПодсказка" id="314"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной23" id="315">
+					<DataPath>Объект.Выходные.Выходной23</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной23КонтекстноеМеню" id="316"/>
+					<ExtendedTooltip name="ВыходныеВыходной23РасширеннаяПодсказка" id="317"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной24" id="318">
+					<DataPath>Объект.Выходные.Выходной24</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной24КонтекстноеМеню" id="319"/>
+					<ExtendedTooltip name="ВыходныеВыходной24РасширеннаяПодсказка" id="320"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной25" id="321">
+					<DataPath>Объект.Выходные.Выходной25</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной25КонтекстноеМеню" id="322"/>
+					<ExtendedTooltip name="ВыходныеВыходной25РасширеннаяПодсказка" id="323"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной26" id="324">
+					<DataPath>Объект.Выходные.Выходной26</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной26КонтекстноеМеню" id="325"/>
+					<ExtendedTooltip name="ВыходныеВыходной26РасширеннаяПодсказка" id="326"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной27" id="327">
+					<DataPath>Объект.Выходные.Выходной27</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной27КонтекстноеМеню" id="328"/>
+					<ExtendedTooltip name="ВыходныеВыходной27РасширеннаяПодсказка" id="329"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной28" id="330">
+					<DataPath>Объект.Выходные.Выходной28</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной28КонтекстноеМеню" id="331"/>
+					<ExtendedTooltip name="ВыходныеВыходной28РасширеннаяПодсказка" id="332"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной29" id="333">
+					<DataPath>Объект.Выходные.Выходной29</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной29КонтекстноеМеню" id="334"/>
+					<ExtendedTooltip name="ВыходныеВыходной29РасширеннаяПодсказка" id="335"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной30" id="336">
+					<DataPath>Объект.Выходные.Выходной30</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной30КонтекстноеМеню" id="337"/>
+					<ExtendedTooltip name="ВыходныеВыходной30РасширеннаяПодсказка" id="338"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыходныеВыходной31" id="339">
+					<DataPath>Объект.Выходные.Выходной31</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыходныеВыходной31КонтекстноеМеню" id="340"/>
+					<ExtendedTooltip name="ВыходныеВыходной31РасширеннаяПодсказка" id="341"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<Table name="ТабличнаяЧасть" id="113">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ТабличнаяЧасть</DataPath>
+			<CommandSet>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабличнаяЧастьКонтекстноеМеню" id="114"/>
+			<AutoCommandBar name="ТабличнаяЧастьКоманднаяПанель" id="115">
+				<ChildItems>
+					<Button name="ТабличнаяЧастьДобавитьТОПоГруппе" id="225">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьТОПоГруппе</CommandName>
+						<ExtendedTooltip name="ТабличнаяЧастьДобавитьТОПоГруппеРасширеннаяПодсказка" id="226"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТабличнаяЧастьРасширеннаяПодсказка" id="116"/>
+			<SearchStringAddition name="ТабличнаяЧастьСтрокаПоиска" id="117">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСтрокаПоискаКонтекстноеМеню" id="118"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСтрокаПоискаРасширеннаяПодсказка" id="119"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабличнаяЧастьСостояниеПросмотра" id="120">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСостояниеПросмотраКонтекстноеМеню" id="121"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСостояниеПросмотраРасширеннаяПодсказка" id="122"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабличнаяЧастьУправлениеПоиском" id="123">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьУправлениеПоискомКонтекстноеМеню" id="124"/>
+				<ExtendedTooltip name="ТабличнаяЧастьУправлениеПоискомРасширеннаяПодсказка" id="125"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeDeleteRow">ТабличнаяЧастьПередУдалением</Event>
+				<Event name="AfterDeleteRow">ТабличнаяЧастьПослеУдаления</Event>
+				<Event name="OnChange">ТабличнаяЧастьПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТабличнаяЧастьТехОперация" id="129">
+					<DataPath>Объект.ТабличнаяЧасть.ТехОперация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<ContextMenu name="ТабличнаяЧастьТехОперацияКонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="ТабличнаяЧастьТехОперацияРасширеннаяПодсказка" id="131"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество1" id="132">
+					<DataPath>Объект.ТабличнаяЧасть.Количество1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество1КонтекстноеМеню" id="133"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество1РасширеннаяПодсказка" id="134"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество2" id="135">
+					<DataPath>Объект.ТабличнаяЧасть.Количество2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество2КонтекстноеМеню" id="136"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество2РасширеннаяПодсказка" id="137"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество3" id="138">
+					<DataPath>Объект.ТабличнаяЧасть.Количество3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество3КонтекстноеМеню" id="139"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество3РасширеннаяПодсказка" id="140"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество4" id="141">
+					<DataPath>Объект.ТабличнаяЧасть.Количество4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество4КонтекстноеМеню" id="142"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество4РасширеннаяПодсказка" id="143"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество5" id="144">
+					<DataPath>Объект.ТабличнаяЧасть.Количество5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество5КонтекстноеМеню" id="145"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество5РасширеннаяПодсказка" id="146"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество6" id="147">
+					<DataPath>Объект.ТабличнаяЧасть.Количество6</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество6КонтекстноеМеню" id="148"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество6РасширеннаяПодсказка" id="149"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество7" id="150">
+					<DataPath>Объект.ТабличнаяЧасть.Количество7</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество7КонтекстноеМеню" id="151"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество7РасширеннаяПодсказка" id="152"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество8" id="153">
+					<DataPath>Объект.ТабличнаяЧасть.Количество8</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество8КонтекстноеМеню" id="154"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество8РасширеннаяПодсказка" id="155"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество9" id="156">
+					<DataPath>Объект.ТабличнаяЧасть.Количество9</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество9КонтекстноеМеню" id="157"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество9РасширеннаяПодсказка" id="158"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество10" id="159">
+					<DataPath>Объект.ТабличнаяЧасть.Количество10</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество10КонтекстноеМеню" id="160"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество10РасширеннаяПодсказка" id="161"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество11" id="162">
+					<DataPath>Объект.ТабличнаяЧасть.Количество11</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество11КонтекстноеМеню" id="163"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество11РасширеннаяПодсказка" id="164"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество12" id="165">
+					<DataPath>Объект.ТабличнаяЧасть.Количество12</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество12КонтекстноеМеню" id="166"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество12РасширеннаяПодсказка" id="167"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество13" id="168">
+					<DataPath>Объект.ТабличнаяЧасть.Количество13</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество13КонтекстноеМеню" id="169"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество13РасширеннаяПодсказка" id="170"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество14" id="171">
+					<DataPath>Объект.ТабличнаяЧасть.Количество14</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество14КонтекстноеМеню" id="172"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество14РасширеннаяПодсказка" id="173"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество15" id="174">
+					<DataPath>Объект.ТабличнаяЧасть.Количество15</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество15КонтекстноеМеню" id="175"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество15РасширеннаяПодсказка" id="176"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество16" id="177">
+					<DataPath>Объект.ТабличнаяЧасть.Количество16</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество16КонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество16РасширеннаяПодсказка" id="179"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество17" id="180">
+					<DataPath>Объект.ТабличнаяЧасть.Количество17</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество17КонтекстноеМеню" id="181"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество17РасширеннаяПодсказка" id="182"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество18" id="183">
+					<DataPath>Объект.ТабличнаяЧасть.Количество18</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество18КонтекстноеМеню" id="184"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество18РасширеннаяПодсказка" id="185"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество19" id="186">
+					<DataPath>Объект.ТабличнаяЧасть.Количество19</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество19КонтекстноеМеню" id="187"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество19РасширеннаяПодсказка" id="188"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество20" id="189">
+					<DataPath>Объект.ТабличнаяЧасть.Количество20</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество20КонтекстноеМеню" id="190"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество20РасширеннаяПодсказка" id="191"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество21" id="192">
+					<DataPath>Объект.ТабличнаяЧасть.Количество21</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество21КонтекстноеМеню" id="193"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество21РасширеннаяПодсказка" id="194"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество22" id="195">
+					<DataPath>Объект.ТабличнаяЧасть.Количество22</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество22КонтекстноеМеню" id="196"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество22РасширеннаяПодсказка" id="197"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество23" id="198">
+					<DataPath>Объект.ТабличнаяЧасть.Количество23</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество23КонтекстноеМеню" id="199"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество23РасширеннаяПодсказка" id="200"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество24" id="201">
+					<DataPath>Объект.ТабличнаяЧасть.Количество24</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество24КонтекстноеМеню" id="202"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество24РасширеннаяПодсказка" id="203"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество25" id="204">
+					<DataPath>Объект.ТабличнаяЧасть.Количество25</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество25КонтекстноеМеню" id="205"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество25РасширеннаяПодсказка" id="206"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество26" id="207">
+					<DataPath>Объект.ТабличнаяЧасть.Количество26</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество26КонтекстноеМеню" id="208"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество26РасширеннаяПодсказка" id="209"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество27" id="210">
+					<DataPath>Объект.ТабличнаяЧасть.Количество27</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество27КонтекстноеМеню" id="211"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество27РасширеннаяПодсказка" id="212"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество28" id="213">
+					<DataPath>Объект.ТабличнаяЧасть.Количество28</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество28КонтекстноеМеню" id="214"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество28РасширеннаяПодсказка" id="215"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество29" id="216">
+					<DataPath>Объект.ТабличнаяЧасть.Количество29</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество29КонтекстноеМеню" id="217"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество29РасширеннаяПодсказка" id="218"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество30" id="219">
+					<DataPath>Объект.ТабличнаяЧасть.Количество30</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество30КонтекстноеМеню" id="220"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество30РасширеннаяПодсказка" id="221"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество31" id="222">
+					<DataPath>Объект.ТабличнаяЧасть.Количество31</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличество31КонтекстноеМеню" id="223"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличество31РасширеннаяПодсказка" id="224"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<SpreadSheetDocumentField name="ТабДок" id="227">
+			<DataPath>ТабДок</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<VerticalScrollBar>true</VerticalScrollBar>
+			<HorizontalScrollBar>true</HorizontalScrollBar>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="228"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="229"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДополнительныеРаботы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:081efa55-33ab-4cbb-be31-c2fd2c1461ad</Field>
+				<Field>1/0:a2109beb-b102-4222-a78c-265222601d7a</Field>
+				<Field>1/0:f71fe634-3b5e-4326-9cea-e117a0ca44c3</Field>
+				<Field>Объект.Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Подразделение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Сотрудник" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ТабДок" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьТОПоГруппе" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить работы из группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить работы из группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateFolder</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьТОПоГруппе</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

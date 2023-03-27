@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Оформление надостачи / брака</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаблицаМПЗ" id="1">
+			<Representation>List</Representation>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаМПЗ</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаМПЗКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаМПЗКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ТаблицаМПЗСписатьНедостачу" id="26">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СписатьНедостачу</CommandName>
+						<ExtendedTooltip name="ТаблицаМПЗСписатьНедостачуРасширеннаяПодсказка" id="27"/>
+					</Button>
+					<Button name="ТаблицаМПЗПереместитьВБрак" id="28">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПереместитьВБрак</CommandName>
+						<ExtendedTooltip name="ТаблицаМПЗПереместитьВБракРасширеннаяПодсказка" id="29"/>
+					</Button>
+					<Button name="ТаблицаМПЗОтправитьВРемонт" id="36">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ОтправитьВРемонт</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.Ремонт</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ТаблицаМПЗОтправитьВРемонтРасширеннаяПодсказка" id="37"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаМПЗРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаМПЗСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаМПЗ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМПЗСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаМПЗСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаМПЗСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаМПЗ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМПЗСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаМПЗСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаМПЗУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаМПЗ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМПЗУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаМПЗУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ТаблицаМПЗПометка" id="20">
+					<DataPath>ТаблицаМПЗ.Пометка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаМПЗПометкаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаМПЗПометкаРасширеннаяПодсказка" id="22"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаМПЗВидМПЗ" id="33">
+					<DataPath>ТаблицаМПЗ.ВидМПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗВидМПЗКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ТаблицаМПЗВидМПЗРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗМПЗ" id="14">
+					<DataPath>ТаблицаМПЗ.МПЗ</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗМПЗКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТаблицаМПЗМПЗРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗКоличествоПП" id="30">
+					<DataPath>ТаблицаМПЗ.КоличествоПП</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗКоличествоППКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТаблицаМПЗКоличествоППРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗКоличествоСклад" id="38">
+					<DataPath>ТаблицаМПЗ.КоличествоСклад</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗКоличествоСкладКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТаблицаМПЗКоличествоСкладРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗКоличество" id="17">
+					<DataPath>ТаблицаМПЗ.Количество</DataPath>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<EditMode>EnterOnInput</EditMode>
+					<SpinButton>true</SpinButton>
+					<BackColor>style:ReportGroup1BackColor</BackColor>
+					<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="ТаблицаМПЗКоличествоКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаМПЗКоличествоРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="OnChange">ТаблицаМПЗКоличествоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаМПЗЕдиницаИзмерения" id="23">
+					<DataPath>ТаблицаМПЗ.ЕдиницаИзмерения</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>7</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ТаблицаМПЗЕдиницаИзмеренияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаблицаМПЗЕдиницаИзмеренияРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗПодразделение" id="41">
+					<DataPath>ТаблицаМПЗ.Подразделение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗПодразделениеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТаблицаМПЗПодразделениеРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоКанбанМО_UA</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаМПЗ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="МПЗ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+						<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕдиницаИзмерения" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОсновныеЕдиницыИзмерений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоПП" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во в передаче</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидМПЗ" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыМПЗ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоСклад" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во на складе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>14</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Линейка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроизводственноеЗадание" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Производственное задание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ПроизводственноеЗадание</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РабочееМесто" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее место</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.РабочиеМестаЛинеек</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СписатьНедостачу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списать недостачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списать недостачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписатьНедостачу</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПереместитьВБрак" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить в брак</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить в брак</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПереместитьВБрак</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтправитьВРемонт" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить в ремонт полуфабрикат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить в ремонт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьВРемонт</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

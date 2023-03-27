@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Линейка" id="1">
+			<DataPath>Объект.Линейка</DataPath>
+			<Width>10</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ЛинейкаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ЛинейкаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="ТаблицаЗаданий" id="4">
+			<CommandBarLocation>Bottom</CommandBarLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<ChoiceMode>true</ChoiceMode>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ТаблицаЗаданий</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Choose</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаЗаданийКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ТаблицаЗаданийКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="ТаблицаЗаданийОбновить" id="38">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<ExtendedTooltip name="ТаблицаЗаданийОбновитьРасширеннаяПодсказка" id="39"/>
+					</Button>
+					<Button name="ТаблицаЗаданийЗапуститьВРаботу" id="40">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗапуститьВРаботу</CommandName>
+						<ExtendedTooltip name="ТаблицаЗаданийЗапуститьВРаботуРасширеннаяПодсказка" id="41"/>
+					</Button>
+					<Button name="ТаблицаЗаданийУдалитьПЗ" id="42">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьПЗ</CommandName>
+						<ExtendedTooltip name="ТаблицаЗаданийУдалитьПЗРасширеннаяПодсказка" id="43"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаЗаданийРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ТаблицаЗаданийСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ТаблицаЗаданий</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗаданийСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаЗаданийСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаЗаданийСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ТаблицаЗаданий</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗаданийСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаЗаданийСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаЗаданийУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ТаблицаЗаданий</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗаданийУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТаблицаЗаданийУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаЗаданийПроизводственноеЗадание" id="20">
+					<DataPath>Объект.ТаблицаЗаданий.ПроизводственноеЗадание</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаЗаданийПроизводственноеЗаданиеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаЗаданийПроизводственноеЗаданиеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<LabelField name="ТаблицаЗаданийПроизводственноеЗаданиеИзделие" id="23">
+					<DataPath>Объект.ТаблицаЗаданий.ПроизводственноеЗадание.Изделие</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаЗаданийПроизводственноеЗаданиеИзделиеКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаблицаЗаданийПроизводственноеЗаданиеИзделиеРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="ТаблицаЗаданийПроизводственноеЗаданиеКоличество" id="26">
+					<DataPath>Объект.ТаблицаЗаданий.ПроизводственноеЗадание.Количество</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаЗаданийПроизводственноеЗаданиеКоличествоКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаЗаданийПроизводственноеЗаданиеКоличествоРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="ТаблицаЗаданийПроизводственноеЗаданиеСтанокSMD" id="29">
+					<DataPath>Объект.ТаблицаЗаданий.ПроизводственноеЗадание.ЛинияSMD</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаЗаданийПроизводственноеЗаданиеСтанокSMDКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаблицаЗаданийПроизводственноеЗаданиеСтанокSMDРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<LabelField name="ТаблицаЗаданийПроизводственноеЗаданиеКомментарий" id="32">
+					<DataPath>Объект.ТаблицаЗаданий.ПроизводственноеЗадание.Комментарий</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий (Инициатор)</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаЗаданийПроизводственноеЗаданиеКомментарийКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТаблицаЗаданийПроизводственноеЗаданиеКомментарийРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбработкаОстановленныхПроизводственныхЗаданий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Линейка</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапуститьВРаботу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить в работу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить в работу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьВРаботу</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьПЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить и уменьшить кол-во в МТК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить ПЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьПЗ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

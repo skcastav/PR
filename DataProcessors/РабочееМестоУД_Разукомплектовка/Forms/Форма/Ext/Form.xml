@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРабочееМесто" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее место</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа рабочее место</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="ГруппаРабочееМестоРасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<LabelField name="СписокЛинеек" id="212">
+					<DataPath>СписокЛинеек</DataPath>
+					<ContextMenu name="СписокЛинеекКонтекстноеМеню" id="213"/>
+					<ExtendedTooltip name="СписокЛинеекРасширеннаяПодсказка" id="214"/>
+				</LabelField>
+				<InputField name="ИнтервалОбновления" id="107">
+					<DataPath>Объект.ИнтервалОбновления</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновлять через, мин</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<ContextMenu name="ИнтервалОбновленияКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="ИнтервалОбновленияРасширеннаяПодсказка" id="109"/>
+					<Events>
+						<Event name="OnChange">ИнтервалОбновленияПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Разукомплектовка" id="25">
+			<Representation>List</Representation>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<ChoiceMode>true</ChoiceMode>
+			<SelectionMode>SingleRow</SelectionMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Разукомплектовка</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РазукомплектовкаКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="РазукомплектовкаКоманднаяПанель" id="27">
+				<ChildItems>
+					<Button name="РазукомплектовкаПоказатьОтсутствующие" id="207">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоказатьОтсутствующие</CommandName>
+						<ExtendedTooltip name="РазукомплектовкаПоказатьОтсутствующиеРасширеннаяПодсказка" id="208"/>
+					</Button>
+					<Button name="НайтиПоБарКоду" id="49">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.НайтиПоБарКоду</CommandName>
+						<ExtendedTooltip name="НайтиПоБарКодуРасширеннаяПодсказка" id="102"/>
+					</Button>
+					<Button name="Обновить" id="119">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Refresh</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="120"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="РазукомплектовкаРасширеннаяПодсказка" id="75"/>
+			<SearchStringAddition name="РазукомплектовкаСтрокаПоиска" id="76">
+				<AdditionSource>
+					<Item>Разукомплектовка</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РазукомплектовкаСтрокаПоискаКонтекстноеМеню" id="77"/>
+				<ExtendedTooltip name="РазукомплектовкаСтрокаПоискаРасширеннаяПодсказка" id="78"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РазукомплектовкаСостояниеПросмотра" id="79">
+				<AdditionSource>
+					<Item>Разукомплектовка</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РазукомплектовкаСостояниеПросмотраКонтекстноеМеню" id="80"/>
+				<ExtendedTooltip name="РазукомплектовкаСостояниеПросмотраРасширеннаяПодсказка" id="81"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РазукомплектовкаУправлениеПоиском" id="82">
+				<AdditionSource>
+					<Item>Разукомплектовка</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РазукомплектовкаУправлениеПоискомКонтекстноеМеню" id="83"/>
+				<ExtendedTooltip name="РазукомплектовкаУправлениеПоискомРасширеннаяПодсказка" id="84"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="ValueChoice">РазукомплектовкаВыборЗначения</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="РазукомплектовкаНомерСтроки" id="28">
+					<DataPath>Объект.Разукомплектовка.LineNumber</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РазукомплектовкаНомерСтрокиКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="РазукомплектовкаНомерСтрокиРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<InputField name="РазукомплектовкаЛинейка" id="187">
+					<DataPath>Объект.Разукомплектовка.Линейка</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лин.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="РазукомплектовкаЛинейкаКонтекстноеМеню" id="188"/>
+					<ExtendedTooltip name="РазукомплектовкаЛинейкаРасширеннаяПодсказка" id="189"/>
+				</InputField>
+				<InputField name="РазукомплектовкаИзделие" id="32">
+					<DataPath>Объект.Разукомплектовка.Изделие</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<QuickChoice>false</QuickChoice>
+					<TextEdit>false</TextEdit>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="РазукомплектовкаИзделиеКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="РазукомплектовкаИзделиеРасширеннаяПодсказка" id="88"/>
+					<Events>
+						<Event name="Opening">СтендИзделиеОткрытие</Event>
+					</Events>
+				</InputField>
+				<LabelField name="РазукомплектовкаПроизводственноеЗаданиеВозвратнаяТара" id="195">
+					<DataPath>Объект.Разукомплектовка.ПроизводственноеЗадание.ВозвратнаяТара</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ бирки</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="РазукомплектовкаПроизводственноеЗаданиеВозвратнаяТараКонтекстноеМеню" id="196"/>
+					<ExtendedTooltip name="РазукомплектовкаПроизводственноеЗаданиеВозвратнаяТараРасширеннаяПодсказка" id="197"/>
+				</LabelField>
+				<InputField name="РазукомплектовкаБарКод" id="113">
+					<DataPath>Объект.Разукомплектовка.БарКод</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бар-код</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<TextColor>#333399</TextColor>
+					<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="РазукомплектовкаБарКодКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="РазукомплектовкаБарКодРасширеннаяПодсказка" id="115"/>
+				</InputField>
+				<LabelField name="РазукомплектовкаПроизводственноеЗаданиеНомер" id="209">
+					<DataPath>Объект.Разукомплектовка.ПроизводственноеЗадание.Number</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РазукомплектовкаПроизводственноеЗаданиеНомерКонтекстноеМеню" id="210"/>
+					<ExtendedTooltip name="РазукомплектовкаПроизводственноеЗаданиеНомерРасширеннаяПодсказка" id="211"/>
+				</LabelField>
+				<LabelField name="РазукомплектовкаРазукомплектовкаВидНеисправности" id="204">
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РазукомплектовкаРазукомплектовкаВидНеисправностиКонтекстноеМеню" id="205"/>
+					<ExtendedTooltip name="РазукомплектовкаРазукомплектовкаВидНеисправностиРасширеннаяПодсказка" id="206"/>
+				</LabelField>
+				<LabelField name="РазукомплектовкаРазукомплектовкаРабочееМесто" id="198">
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РазукомплектовкаРазукомплектовкаРабочееМестоКонтекстноеМеню" id="199"/>
+					<ExtendedTooltip name="РазукомплектовкаРазукомплектовкаРабочееМестоРасширеннаяПодсказка" id="200"/>
+				</LabelField>
+				<InputField name="РазукомплектовкаРемонтнаяКарта" id="42">
+					<DataPath>Объект.Разукомплектовка.РемонтнаяКарта</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РазукомплектовкаРемонтнаяКартаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="РазукомплектовкаРемонтнаяКартаРасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<LabelField name="РазукомплектовкаРемонтнаяКартаПричинаРемонта" id="215">
+					<DataPath>Объект.Разукомплектовка.РемонтнаяКарта.ПричинаРемонта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РазукомплектовкаРемонтнаяКартаПричинаРемонтаКонтекстноеМеню" id="216"/>
+					<ExtendedTooltip name="РазукомплектовкаРемонтнаяКартаПричинаРемонтаРасширеннаяПодсказка" id="217"/>
+				</LabelField>
+				<InputField name="РазукомплектовкаНетВКанбанеЛинейки" id="201">
+					<DataPath>Объект.Разукомплектовка.НетВКанбанеЛинейки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ContextMenu name="РазукомплектовкаНетВКанбанеЛинейкиКонтекстноеМеню" id="202"/>
+					<ExtendedTooltip name="РазукомплектовкаНетВКанбанеЛинейкиРасширеннаяПодсказка" id="203"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоУД_Разукомплектовка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:967bb2a8-1547-4a77-bc82-aaab51343765</Field>
+				<Field>Объект.ИнтервалОбновления</Field>
+			</Save>
+			<Columns>
+				<AdditionalColumns table="Объект.Разукомплектовка">
+					<Column name="НетВКанбанеЛинейки" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Нет в канбане линейки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Стенд</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Стенд.Ремонт</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаГрупповойУпаковки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаГрупповойУпаковки.Количество</dcsset:left>
+						<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ТаблицаГрупповойУпаковки.КоличествоВТаре</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="НайтиПоБарКоду" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по бар-коду</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по бар-коду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.НайтиПоБарКоду</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиПоБарКоду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьОтсутствующие" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать отсутствующие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать отсутствующие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьОтсутствующие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

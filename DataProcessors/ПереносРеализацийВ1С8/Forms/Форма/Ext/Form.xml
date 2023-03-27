@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="15">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<InputField name="ОбменДанными" id="38">
+					<DataPath>Объект.ОбменДанными</DataPath>
+					<ContextMenu name="ОбменДаннымиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ОбменДаннымиРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Период" id="20">
+			<DataPath>Объект.Период</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="22"/>
+		</InputField>
+		<InputField name="Контрагент" id="17">
+			<DataPath>Контрагент</DataPath>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="19"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="26">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="41">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьРучнуюНумерацию" id="23">
+							<DataPath>ИспользоватьРучнуюНумерацию</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьРучнуюНумерациюКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ИспользоватьРучнуюНумерациюРасширеннаяПодсказка" id="25"/>
+						</CheckBoxField>
+						<InputField name="ТекНомерП" id="28">
+							<DataPath>ТекНомерП</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ТекНомерПКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ТекНомерПРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа5" id="46">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<CheckBoxField name="СоздатьНедостающиеПолуфабрикаты" id="35">
+							<DataPath>СоздатьНедостающиеПолуфабрикаты</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СоздатьНедостающиеПолуфабрикатыКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="СоздатьНедостающиеПолуфабрикатыРасширеннаяПодсказка" id="37"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="Группа3" id="31">
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<Button name="Проверить" id="33">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Проверить</CommandName>
+					<ExtendedTooltip name="ПроверитьРасширеннаяПодсказка" id="34"/>
+				</Button>
+				<Button name="Выгрузить" id="5">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Соединиться</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="11"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПереносРеализацийВ1С8</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:138ad4a2-e866-4853-ae2f-8e29eb27bfd9</Field>
+				<Field>1/0:9bab0117-e019-4829-8f1e-d5627363a726</Field>
+				<Field>1/0:acdfa513-f37d-4cae-8440-b4affbfe5849</Field>
+				<Field>Объект.ОбменДанными</Field>
+				<Field>Объект.Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТаблицаМПЗ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Save>
+				<Field>ТаблицаМПЗ</Field>
+			</Save>
+			<Columns>
+				<Column name="МПЗ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>14</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Цена" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидМПЗ" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕдиницаИзмерения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица измерения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Контрагент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>Контрагент</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТекНомерП" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тек номер П</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>6</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ТекНомерП</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИспользоватьРучнуюНумерацию" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать ручную нумерацию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ИспользоватьРучнуюНумерацию</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СоздатьНедостающиеПолуфабрикаты" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать недостающие полуфабрикаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>СоздатьНедостающиеПолуфабрикаты</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Соединиться" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соединиться</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Соединиться</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Проверить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Проверить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

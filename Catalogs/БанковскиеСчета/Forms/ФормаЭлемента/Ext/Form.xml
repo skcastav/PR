@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="НомерСчёта" id="7">
+			<DataPath>Объект.Номер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерСчётаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НомерСчётаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="42">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<InputField name="ТипСчета" id="25">
+					<DataPath>Объект.ТипСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипСчетаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ТипСчетаРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ВидСчета" id="28">
+					<DataPath>Объект.ВидСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидСчетаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ВидСчетаРасширеннаяПодсказка" id="30"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="БанкОрганизации" id="10">
+			<DataPath>Объект.БанкОрганизации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="БанкОрганизацииКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="БанкОрганизацииРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="БанкДляРасчетов" id="13">
+			<DataPath>Объект.БанкДляРасчетов</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="БанкДляРасчетовКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="БанкДляРасчетовРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Корреспондент" id="16">
+			<DataPath>Объект.Корреспондент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КорреспондентКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КорреспондентРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="40">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<CheckBoxField name="МесяцПрописью" id="19">
+					<DataPath>Объект.МесяцПрописью</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="МесяцПрописьюКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="МесяцПрописьюРасширеннаяПодсказка" id="21"/>
+				</CheckBoxField>
+				<CheckBoxField name="СуммаБез00Копеек" id="22">
+					<DataPath>Объект.СуммаБез00Копеек</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СуммаБез00КопеекКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СуммаБез00КопеекРасширеннаяПодсказка" id="24"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="НомерИДатаРазрешения" id="31">
+			<DataPath>Объект.НомерИДатаРазрешения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерИДатаРазрешенияКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="НомерИДатаРазрешенияРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<UsualGroup name="Группа3" id="44">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<InputField name="ДатаОткрытияСчета" id="34">
+					<DataPath>Объект.ДатаОткрытияСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаОткрытияСчетаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДатаОткрытияСчетаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ДатаЗакрытияСчета" id="37">
+					<DataPath>Объект.ДатаЗакрытияСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаЗакрытияСчетаКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДатаЗакрытияСчетаРасширеннаяПодсказка" id="39"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.БанковскиеСчета</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

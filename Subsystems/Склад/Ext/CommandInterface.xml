@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandsVisibility>
+		<Command name="Report.ОтчётПоРегиструЗаказыПоставщикам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиНаЗакупку.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиОтПокупателей.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструМестаХранения.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПереработку.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПроизводство.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиНаЛинейки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоПоступлениямИСписаниямПрочим.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоПередачамВПроизводствоПоступлениямИСписаниямПрочим.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоБракуКомплектующих.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СписокКомплектующихИзделий.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.КомплектацияНаЛинейках.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОборачиваемостьКанбанов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СверкаВыпускаГП.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОбработкаПустыхКанбанов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоОборотуКанбановПоставщика.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоОборотамКанбанов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПечатьКарточекДляКанбанов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПечатьКарточекДляКанбановУД.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПечатьКарточекМатериалов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ПечатьКарточекНомеровВозвратнойТары.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоЯчейкамКомплектации.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Report.ОтчётПоРегиструЗаказыПоставщикам.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоЗаявкамИЗаказам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиНаЗакупку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоЗаявкамИЗаказам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиОтПокупателей.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоЗаявкамИЗаказам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструМестаХранения.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПереработку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоПоступлениямИСписаниямПрочим.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоПередачамВПроизводствоПоступлениямИСписаниямПрочим.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоБракуКомплектующих.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СписокКомплектующихИзделий.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПрочие</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.КомплектацияНаЛинейках.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПрочие</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОборачиваемостьКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПрочие</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СверкаВыпускаГП.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПрочие</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ОбработкаПустыхКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоОборотуКанбановПоставщика.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоОборотамКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ПечатьКарточекДляКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ПечатьКарточекДляКанбановУД.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ПечатьКарточекМатериалов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ПечатьКарточекНомеровВозвратнойТары.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоЯчейкамКомплектации.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Report.ОтчётПоРегиструЯчейкиКомплектации.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструЯчейкиХранения.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоДокументамРеализация.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоОстаткамМПЗНаЛинейке.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.СверкаРеализацийДляБухгалтерии.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.СверкаИнвентаризацийПоЛинейкам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.СравнениеОстатковСИнвентаризацией.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ЗатратыМатериаловНаПродукциюИСписанияПоСтатьям.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.СводныйОтчётПоОборотамКанбанов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.АнализПараметровМатериаловНаСкладе.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоФасовке.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ГрупповоеСписаниеМПЗ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.МоделированиеКанбанов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПередачаМПЗНаЛинейку.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПоступлениеМПЗНаЛинейку.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СозданиеРеализацииДляВыгрузкиВБухгалтерию.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОформлениеПустыхКанбанов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПринятиеПустыхКанбанов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПроверкаЗаявокОтПокупателейДляСЦ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СписаниеГотовойПродукции.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.МаркировкаМатериалов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаспределениеПоставокПоЗаказамПоставщикам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаспределениеПоставокПоЗаказамПоставщикам_UA.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаспределениеПоставокПоЭДО.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаПараметровМатериаловСклад.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыПоставщикам.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоЗаявкамИЗаказам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиНаЗакупку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоЗаявкамИЗаказам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаявкиОтПокупателей.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоЗаявкамИЗаказам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструМестаХранения.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПереработку.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиВПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструПередачиНаЛинейки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоПоступлениямИСписаниямПрочим.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоПередачамВПроизводствоПоступлениямИСписаниямПрочим.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоБракуКомплектующих.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСкладу</CommandGroup>
+		</Command>
+		<Command name="Report.СписокКомплектующихИзделий.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПрочие</CommandGroup>
+		</Command>
+		<Command name="Report.КомплектацияНаЛинейках.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПрочие</CommandGroup>
+		</Command>
+		<Command name="Report.ОборачиваемостьКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПрочие</CommandGroup>
+		</Command>
+		<Command name="Report.СверкаВыпускаГП.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПрочие</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбработкаПустыхКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоОборотуКанбановПоставщика.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоОборотамКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПечатьКарточекДляКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПечатьКарточекДляКанбановУД.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПечатьКарточекМатериалов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+		</Command>
+		<Command name="Report.ПечатьКарточекНомеровВозвратнойТары.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоЯчейкамКомплектации.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СервисДляВнутреннихПоставщиков</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Склад.Subsystem.ДокументыПоСкладу</Subsystem>
+		<Subsystem>Subsystem.Склад.Subsystem.ДокументыСнабжения</Subsystem>
+		<Subsystem>Subsystem.Склад.Subsystem.Справочники</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.ВРазработке</Group>
+		<Group>CommandGroup.ОтчётыПоЗаявкамИЗаказам</Group>
+		<Group>CommandGroup.ОтчётыПоСкладу</Group>
+		<Group>CommandGroup.ОтчётыПрочие</Group>
+		<Group>CommandGroup.СервисДляВнутреннихПоставщиков</Group>
+	</GroupsOrder>
+</CommandInterface>

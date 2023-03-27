@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Каталог" id="26">
+			<DataPath>Объект.Каталог</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог для поиска</v8:content>
+				</v8:item>
+			</Title>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КаталогКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="КаталогРасширеннаяПодсказка" id="34"/>
+			<Events>
+				<Event name="StartChoice">КаталогНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="Группа2" id="30">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="Маска" id="1">
+					<DataPath>Объект.Маска</DataPath>
+					<ContextMenu name="МаскаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="МаскаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<CheckBoxField name="ИспользоватьДату" id="32">
+					<DataPath>Объект.ИспользоватьДату</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьДатуКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ИспользоватьДатуРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+				<InputField name="ДатаСоздания" id="28">
+					<DataPath>Объект.ДатаСоздания</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="38"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Документы" id="3">
+			<CommandBarLocation>Bottom</CommandBarLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Документы</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДокументыКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="ДокументыКоманднаяПанель" id="5">
+				<ChildItems>
+					<Button name="НайтиФайлы" id="31">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.НайтиФайлы</CommandName>
+						<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+						<ExtendedTooltip name="НайтиФайлыРасширеннаяПодсказка" id="59"/>
+					</Button>
+					<Button name="ВыбратьВсе" id="23">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыбратьВсе</CommandName>
+						<ExtendedTooltip name="ВыбратьВсеРасширеннаяПодсказка" id="60"/>
+					</Button>
+					<Button name="ОтменитьВсе" id="24">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьВсе</CommandName>
+						<ExtendedTooltip name="ОтменитьВсеРасширеннаяПодсказка" id="61"/>
+					</Button>
+					<Button name="Добавить" id="22">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.ДобавитьДокументы</CommandName>
+						<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="58"/>
+					</Button>
+					<Button name="ДокументыПерейтиКСсылке" id="70">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПерейтиКСсылке</CommandName>
+						<ExtendedTooltip name="ДокументыПерейтиКСсылкеРасширеннаяПодсказка" id="71"/>
+					</Button>
+					<Button name="ДокументыОбщаяКомандаСохранениеПозиции" id="74">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.СохранениеПозиции</CommandName>
+						<DataPath>Items.Документы.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ДокументыОбщаяКомандаСохранениеПозицииРасширеннаяПодсказка" id="75"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДокументыРасширеннаяПодсказка" id="39"/>
+			<SearchStringAddition name="ДокументыСтрокаПоиска" id="40">
+				<AdditionSource>
+					<Item>Документы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыСтрокаПоискаКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ДокументыСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДокументыСостояниеПросмотра" id="43">
+				<AdditionSource>
+					<Item>Документы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыСостояниеПросмотраКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ДокументыСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДокументыУправлениеПоиском" id="46">
+				<AdditionSource>
+					<Item>Документы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыУправлениеПоискомКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="ДокументыУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДокументыНомерСтроки" id="6">
+					<DataPath>Объект.Документы.LineNumber</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыНомерСтрокиКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ДокументыНомерСтрокиРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<CheckBoxField name="ДокументыПометка" id="8">
+					<DataPath>Объект.Документы.Пометка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДокументыПометкаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДокументыПометкаРасширеннаяПодсказка" id="50"/>
+				</CheckBoxField>
+				<InputField name="ДокументыИмяФайла" id="12">
+					<DataPath>Объект.Документы.ИмяФайла</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыИмяФайлаКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ДокументыИмяФайлаРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ДокументыНаименование" id="14">
+					<DataPath>Объект.Документы.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ДокументыНаименованиеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДокументыНаименованиеРасширеннаяПодсказка" id="53"/>
+				</InputField>
+				<InputField name="ДокументыВидДокумента" id="10">
+					<DataPath>Объект.Документы.ВидДокумента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыВидДокументаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДокументыВидДокументаРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ДокументыГруппа" id="67">
+					<DataPath>Объект.Документы.Группа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыГруппаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ДокументыГруппаРасширеннаяПодсказка" id="69"/>
+					<Events>
+						<Event name="OnChange">ДокументыГруппаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДокументыИзвещение" id="16">
+					<DataPath>Объект.Документы.Извещение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ДокументыИзвещениеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДокументыИзвещениеРасширеннаяПодсказка" id="54"/>
+					<Events>
+						<Event name="StartChoice">ДокументыИзвещениеНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДокументыКомментарий" id="18">
+					<DataPath>Объект.Документы.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыКомментарийКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ДокументыКомментарийРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ДокументыСсылка" id="20">
+					<DataPath>Объект.Документы.Ссылка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыСсылкаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДокументыСсылкаРасширеннаяПодсказка" id="56"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДобавлениеДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.ДатаСоздания</Field>
+				<Field>Объект.ИспользоватьДату</Field>
+				<Field>Объект.Каталог</Field>
+				<Field>Объект.Маска</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьДокументы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НайтиФайлы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиФайлыДок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СохранитьСсылку" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить ссылку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить ссылку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьСсылку</Action>
+		</Command>
+		<Command name="ПерейтиКСсылке" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к ссылке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к ссылке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиКСсылке</Action>
+		</Command>
+	</Commands>
+</Form>

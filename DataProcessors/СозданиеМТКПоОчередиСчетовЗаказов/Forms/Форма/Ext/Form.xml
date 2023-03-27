@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="6">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<InputField name="Линейка" id="1">
+					<DataPath>Объект.Линейка</DataPath>
+					<Width>15</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЛинейкаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ЛинейкаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelField name="ВыпускЗаДеньРасчётный" id="61">
+					<DataPath>ВыпускЗаДеньРасчётный</DataPath>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ВыпускЗаДеньРасчётныйКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ВыпускЗаДеньРасчётныйРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<LabelField name="Запущено" id="64">
+					<DataPath>Запущено</DataPath>
+					<Visible>false</Visible>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ЗапущеноКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ЗапущеноРасширеннаяПодсказка" id="66"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаСчетовЗаказов" id="33">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаСчетовЗаказов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаСчетовЗаказовКонтекстноеМеню" id="34"/>
+			<AutoCommandBar name="ТаблицаСчетовЗаказовКоманднаяПанель" id="35">
+				<ChildItems>
+					<Button name="ТаблицаСчетовЗаказовОбновить" id="76">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<ExtendedTooltip name="ТаблицаСчетовЗаказовОбновитьРасширеннаяПодсказка" id="77"/>
+					</Button>
+					<Button name="СоздатьМТК" id="4">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.СоздатьМТК</CommandName>
+						<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+						<ExtendedTooltip name="СоздатьМТКРасширеннаяПодсказка" id="5"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаСчетовЗаказовРасширеннаяПодсказка" id="36"/>
+			<SearchStringAddition name="ТаблицаСчетовЗаказовСтрокаПоиска" id="37">
+				<AdditionSource>
+					<Item>ТаблицаСчетовЗаказов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСчетовЗаказовСтрокаПоискаКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="ТаблицаСчетовЗаказовСтрокаПоискаРасширеннаяПодсказка" id="39"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаСчетовЗаказовСостояниеПросмотра" id="40">
+				<AdditionSource>
+					<Item>ТаблицаСчетовЗаказов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСчетовЗаказовСостояниеПросмотраКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ТаблицаСчетовЗаказовСостояниеПросмотраРасширеннаяПодсказка" id="42"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаСчетовЗаказовУправлениеПоиском" id="43">
+				<AdditionSource>
+					<Item>ТаблицаСчетовЗаказов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСчетовЗаказовУправлениеПоискомКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ТаблицаСчетовЗаказовУправлениеПоискомРасширеннаяПодсказка" id="45"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаСчетовЗаказовСчётЗаказ" id="46">
+					<DataPath>ТаблицаСчетовЗаказов.ЗаказНаПроизводство</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ContextMenu name="ТаблицаСчетовЗаказовСчётЗаказКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ТаблицаСчетовЗаказовСчётЗаказРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ТаблицаСчетовЗаказовСчётЗаказДатаАкцепта" id="58">
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСчетовЗаказовСчётЗаказДатаАкцептаКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ТаблицаСчетовЗаказовСчётЗаказДатаАкцептаРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ТаблицаСчетовЗаказовНоменклатура" id="49">
+					<DataPath>ТаблицаСчетовЗаказов.Продукция</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ContextMenu name="ТаблицаСчетовЗаказовНоменклатураКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ТаблицаСчетовЗаказовНоменклатураРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ТаблицаСчетовЗаказовТовар" id="83">
+					<DataPath>ТаблицаСчетовЗаказов.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ContextMenu name="ТаблицаСчетовЗаказовТоварКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ТаблицаСчетовЗаказовТоварРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="ТаблицаСчетовЗаказовНоменклатураТоварКрупностьЗаказа" id="55">
+					<DataPath>ТаблицаСчетовЗаказов.Продукция.Товар.КрупностьЗаказа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСчетовЗаказовНоменклатураТоварКрупностьЗаказаКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ТаблицаСчетовЗаказовНоменклатураТоварКрупностьЗаказаРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ТаблицаСчетовЗаказовКоличество" id="52">
+					<DataPath>ТаблицаСчетовЗаказов.Количество</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСчетовЗаказовКоличествоКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ТаблицаСчетовЗаказовКоличествоРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="ТаблицаСчетовЗаказовКоличествоЗапусков" id="67">
+					<DataPath>ТаблицаСчетовЗаказов.КоличествоЗапусков</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСчетовЗаказовКоличествоЗапусковКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ТаблицаСчетовЗаказовКоличествоЗапусковРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<CheckBoxField name="ТаблицаСчетовЗаказовЛьготнаяОчередь" id="80">
+					<DataPath>ТаблицаСчетовЗаказов.ЛьготнаяОчередь</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаСчетовЗаказовЛьготнаяОчередьКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ТаблицаСчетовЗаказовЛьготнаяОчередьРасширеннаяПодсказка" id="82"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<Table name="ТаблицаМТК" id="8">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаМТК</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаМТККонтекстноеМеню" id="9"/>
+			<AutoCommandBar name="ТаблицаМТККоманднаяПанель" id="10">
+				<ChildItems>
+					<Button name="ТаблицаМТКУдалитьМТК" id="78">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьМТК</CommandName>
+						<ExtendedTooltip name="ТаблицаМТКУдалитьМТКРасширеннаяПодсказка" id="79"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаМТКРасширеннаяПодсказка" id="11"/>
+			<SearchStringAddition name="ТаблицаМТКСтрокаПоиска" id="12">
+				<AdditionSource>
+					<Item>ТаблицаМТК</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМТКСтрокаПоискаКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ТаблицаМТКСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаМТКСостояниеПросмотра" id="15">
+				<AdditionSource>
+					<Item>ТаблицаМТК</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМТКСостояниеПросмотраКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ТаблицаМТКСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаМТКУправлениеПоиском" id="18">
+				<AdditionSource>
+					<Item>ТаблицаМТК</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМТКУправлениеПоискомКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ТаблицаМТКУправлениеПоискомРасширеннаяПодсказка" id="20"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаМТКМТКНомерОчереди" id="73">
+					<DataPath>ТаблицаМТК.МТК.НомерОчереди</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НО</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМТКМТКНомерОчередиКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ТаблицаМТКМТКНомерОчередиРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<PictureField name="ТаблицаМТКМТКСтатус" id="70">
+					<DataPath>ТаблицаМТК.МТК.Статус</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ст.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.СтатусыМТК</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ТаблицаМТКМТКСтатусКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ТаблицаМТКМТКСтатусРасширеннаяПодсказка" id="72"/>
+				</PictureField>
+				<InputField name="ТаблицаМТКМТК" id="21">
+					<DataPath>ТаблицаМТК.МТК</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМТКМТККонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ТаблицаМТКМТКРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="ТаблицаМТКМТКНоменклатура" id="27">
+					<DataPath>ТаблицаМТК.МТК.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМТКМТКНоменклатураКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ТаблицаМТКМТКНоменклатураРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="ТаблицаМТКМТККоличество" id="30">
+					<DataPath>ТаблицаМТК.МТК.Количество</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТаблицаМТКМТККоличествоКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТаблицаМТКМТККоличествоРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ТаблицаМТКМТКДокументОснование" id="24">
+					<DataPath>ТаблицаМТК.МТК.ДокументОснование</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счёт-заказ</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМТКМТКДокументОснованиеКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ТаблицаМТКМТКДокументОснованиеРасширеннаяПодсказка" id="26"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СозданиеМТКПоОчередиСчетовЗаказов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаМТК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица МТК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="МТК" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МТК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.МаршрутнаяКарта</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаСчетовЗаказов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица счетов-заказов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЗаказНаПроизводство" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ на пр-во</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Продукция" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продукция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во остаток</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоЗапусков" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество запусков</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЛьготнаяОчередь" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЛО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Товар" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товар</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Товары</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВыпускЗаДеньРасчётный" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выпуск за день расчётный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Запущено" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запущено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьМТК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать МТК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать МТК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьМТК</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьМТК" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить МТК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить МТК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьМТК</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

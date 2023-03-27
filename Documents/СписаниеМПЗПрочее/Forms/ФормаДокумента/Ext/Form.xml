@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="Печать" id="66">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать...</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.Print</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="67"/>
+				<ChildItems>
+					<Button name="ФормаПечатьАктаОБракеНаПроизводстве" id="68">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьАктаОБракеНаПроизводстве</CommandName>
+						<ExtendedTooltip name="ФормаПечатьАктаОБракеНаПроизводствеРасширеннаяПодсказка" id="69"/>
+					</Button>
+					<Button name="ФормаПечатьАктаОСписанииПоСтатьеЗатрат" id="70">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьАктаОСписанииПоСтатьеЗатрат</CommandName>
+						<ExtendedTooltip name="ФормаПечатьАктаОСписанииПоСтатьеЗатратРасширеннаяПодсказка" id="71"/>
+					</Button>
+					<Button name="ФормаПечатьАктОСписанииЗапасовМатериалов" id="99">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьАктОСписанииЗапасовМатериалов</CommandName>
+						<ExtendedTooltip name="ФормаПечатьАктОСписанииЗапасовМатериаловРасширеннаяПодсказка" id="100"/>
+					</Button>
+					<Button name="ФормаПечатьАктОСписанииЗапасовПФ" id="101">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьАктОСписанииЗапасовПФ</CommandName>
+						<ExtendedTooltip name="ФормаПечатьАктОСписанииЗапасовПФРасширеннаяПодсказка" id="102"/>
+					</Button>
+					<Button name="ФормаПечатьАктОСписанииЗапасовТНП" id="103">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьАктОСписанииЗапасовТНП</CommandName>
+						<ExtendedTooltip name="ФормаПечатьАктОСписанииЗапасовТНПРасширеннаяПодсказка" id="104"/>
+					</Button>
+					<Button name="ФормаПечатьАктОСписанииЗапасовГП" id="105">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьАктОСписанииЗапасовГП</CommandName>
+						<ExtendedTooltip name="ФормаПечатьАктОСписанииЗапасовГПРасширеннаяПодсказка" id="106"/>
+					</Button>
+					<Button name="ФормаПечатьАктаОСписанииТоваров" id="84">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьРасходнаяНакладная</CommandName>
+						<ExtendedTooltip name="ФормаПечатьАктаОСписанииТоваровРасширеннаяПодсказка" id="85"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Button name="ВыгрузитьВБазуСбыта" id="95">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыгрузитьВБазуСбыта</CommandName>
+				<ExtendedTooltip name="ВыгрузитьВБазуСбытаРасширеннаяПодсказка" id="96"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="Автор" id="33">
+			<DataPath>Объект.Автор</DataPath>
+			<ContextMenu name="АвторКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="37"/>
+		</LabelField>
+		<UsualGroup name="Группа3" id="107">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="108"/>
+			<ChildItems>
+				<InputField name="ДокументОснование" id="5">
+					<DataPath>Объект.ДокументОснование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="Подразделение" id="11">
+					<DataPath>Объект.Подразделение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="42"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="30">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<CheckBoxField name="Выгружено" id="92">
+					<DataPath>Объект.Выгружено</DataPath>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыгруженоКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ВыгруженоРасширеннаяПодсказка" id="94"/>
+					<Events>
+						<Event name="OnChange">ВыгруженоПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="80">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<InputField name="МестоХранения" id="7">
+					<DataPath>Объект.МестоХранения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МестоХраненияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="МестоХраненияРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="ChoiceProcessing">МестоХраненияОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="СтатьяСписания" id="31">
+			<DataPath>Объект.Статья</DataPath>
+			<ContextMenu name="СтатьяСписанияКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="СтатьяСписанияРасширеннаяПодсказка" id="44"/>
+		</InputField>
+		<InputField name="Утвердил" id="35">
+			<DataPath>Объект.Утвердил</DataPath>
+			<ContextMenu name="УтвердилКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="УтвердилРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<UsualGroup name="Брак" id="72">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о браке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Брак</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="БракРасширеннаяПодсказка" id="73"/>
+			<ChildItems>
+				<InputField name="РабочееМесто" id="89">
+					<DataPath>Объект.РабочееМесто</DataPath>
+					<ContextMenu name="РабочееМестоКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="РабочееМестоРасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="ВидНеисправности" id="77">
+					<DataPath>Объект.ВидБрака</DataPath>
+					<ContextMenu name="ВидНеисправностиКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ВидНеисправностиРасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="ЭтапЖизненногоЦикла" id="86">
+					<DataPath>Объект.ЭтапЖизненногоЦикла</DataPath>
+					<ContextMenu name="ЭтапЖизненногоЦиклаКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ЭтапЖизненногоЦиклаРасширеннаяПодсказка" id="88"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="15">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<Table name="ТабличнаяЧасть" id="17">
+			<Representation>List</Representation>
+			<Footer>true</Footer>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ТабличнаяЧасть</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабличнаяЧастьКонтекстноеМеню" id="18"/>
+			<AutoCommandBar name="ТабличнаяЧастьКоманднаяПанель" id="19">
+				<ChildItems>
+					<Button name="ТабличнаяЧастьЗаполнитьПоОснованию" id="62">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьПоОснованию</CommandName>
+						<ExtendedTooltip name="ТабличнаяЧастьЗаполнитьПоОснованиюРасширеннаяПодсказка" id="63"/>
+					</Button>
+					<Button name="ТабличнаяЧастьЗаполнитьПоОстаткам" id="97">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<CommandName>Form.Command.ЗаполнитьПоОстаткам</CommandName>
+						<ExtendedTooltip name="ТабличнаяЧастьЗаполнитьПоОстаткамРасширеннаяПодсказка" id="98"/>
+					</Button>
+					<Button name="ТабличнаяЧастьПодборМПЗ" id="64">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПодборМПЗ</CommandName>
+						<ExtendedTooltip name="ТабличнаяЧастьПодборМПЗРасширеннаяПодсказка" id="65"/>
+					</Button>
+					<Button name="ТабличнаяЧастьЗагрузитьИзФайла" id="82">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+						<ExtendedTooltip name="ТабличнаяЧастьЗагрузитьИзФайлаРасширеннаяПодсказка" id="83"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТабличнаяЧастьРасширеннаяПодсказка" id="47"/>
+			<SearchStringAddition name="ТабличнаяЧастьСтрокаПоиска" id="48">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСтрокаПоискаКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабличнаяЧастьСостояниеПросмотра" id="51">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСостояниеПросмотраКонтекстноеМеню" id="52"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабличнаяЧастьУправлениеПоиском" id="54">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьУправлениеПоискомКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="ТабличнаяЧастьУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТабличнаяЧастьНомерСтроки" id="20">
+					<DataPath>Объект.ТабличнаяЧасть.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерСтрокиРасширеннаяПодсказка" id="57"/>
+				</LabelField>
+				<LabelField name="ТабличнаяЧастьВидМПЗ" id="22">
+					<DataPath>Объект.ТабличнаяЧасть.ВидМПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьВидМПЗКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТабличнаяЧастьВидМПЗРасширеннаяПодсказка" id="58"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧастьВидМПЗПриИзменении</Event>
+					</Events>
+				</LabelField>
+				<InputField name="ТабличнаяЧастьМПЗ" id="24">
+					<DataPath>Объект.ТабличнаяЧасть.МПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьМПЗКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ТабличнаяЧастьМПЗРасширеннаяПодсказка" id="59"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧастьМПЗПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество" id="26">
+					<DataPath>Объект.ТабличнаяЧасть.Количество</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ТабличнаяЧасть.TotalКоличество</FooterDataPath>
+					<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ТабличнаяЧастьКоличествоКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличествоРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьЕдиницаИзмерения" id="28">
+					<DataPath>Объект.ТабличнаяЧасть.ЕдиницаИзмерения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьЕдиницаИзмеренияКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ТабличнаяЧастьЕдиницаИзмеренияРасширеннаяПодсказка" id="61"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.СписаниеМПЗПрочее</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПоОснованию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по основанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по основанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоОснованию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодборМПЗ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор МПЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборМПЗ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьАктаОБракеНаПроизводстве" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт о браке на производстве</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать акта о браке на производстве</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Печать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьАктаОСписанииПоСтатьеЗатрат" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт о списании по статье затрат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать акта о браке на производстве</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьАктаОСписанииПоСтатьеЗатрат</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьИзФайла</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьРасходнаяНакладная" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходная накладная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать расходной накладной</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьРасходнаяНакладная</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыгрузитьВБазуСбыта" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в БД Сбыт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в базу сбыта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExchangePlan</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыгрузитьВБазуСбыта</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьПоОстаткам" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по остаткам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по остаткам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоОстаткам</Action>
+		</Command>
+		<Command name="ПечатьАктОСписанииЗапасовМатериалов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт о списании запасов материалов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать акт о списании запасов материалов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьАктОСписанииЗапасовМатериалов</Action>
+		</Command>
+		<Command name="ПечатьАктОСписанииЗапасовГП" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт о списании запасов материалов СМТС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать акт о списании запасов ГП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьАктОСписанииЗапасовГП</Action>
+		</Command>
+		<Command name="ПечатьАктОСписанииЗапасовТНП" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт о списании запасов ТНП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать акт о списании запасов ТНП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьАктОСписанииЗапасовТНП</Action>
+		</Command>
+		<Command name="ПечатьАктОСписанииЗапасовПФ" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт о списании запасов п.ф.</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать акт о списании запасов п.ф.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьАктОСписанииЗапасовПФ</Action>
+		</Command>
+	</Commands>
+</Form>

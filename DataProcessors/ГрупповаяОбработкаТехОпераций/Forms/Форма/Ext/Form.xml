@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="103">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="104"/>
+			<ChildItems>
+				<InputField name="Линейка" id="47">
+					<DataPath>Объект.Линейка</DataPath>
+					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЛинейкаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="49"/>
+					<Events>
+						<Event name="OnChange">ЛинейкаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ВноситьНаДату" id="105">
+					<DataPath>Объект.ВноситьНаДату</DataPath>
+					<ContextMenu name="ВноситьНаДатуКонтекстноеМеню" id="106"/>
+					<ExtendedTooltip name="ВноситьНаДатуРасширеннаяПодсказка" id="107"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаТехОпераций" id="22">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаТехОпераций</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаТехОперацийКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="ТаблицаТехОперацийКоманднаяПанель" id="24">
+				<ChildItems>
+					<Button name="ТаблицаТехОперацийДобавитьВСпецификации" id="87">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.ДобавитьВСпецификации</CommandName>
+						<ExtendedTooltip name="ТаблицаТехОперацийДобавитьВСпецификацииРасширеннаяПодсказка" id="88"/>
+					</Button>
+					<Button name="ТаблицаТехОперацийВыбратьВсе" id="50">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыбратьВсе</CommandName>
+						<ExtendedTooltip name="ТаблицаТехОперацийВыбратьВсеРасширеннаяПодсказка" id="51"/>
+					</Button>
+					<Button name="ТаблицаТехОперацийОтменитьВсе" id="52">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьВсе</CommandName>
+						<ExtendedTooltip name="ТаблицаТехОперацийОтменитьВсеРасширеннаяПодсказка" id="53"/>
+					</Button>
+					<Button name="ТаблицаТехОперацийОбновить" id="92">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<ExtendedTooltip name="ТаблицаТехОперацийОбновитьРасширеннаяПодсказка" id="93"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаТехОперацийРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="ТаблицаТехОперацийСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>ТаблицаТехОпераций</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаТехОперацийСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ТаблицаТехОперацийСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаТехОперацийСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>ТаблицаТехОпераций</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаТехОперацийСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ТаблицаТехОперацийСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаТехОперацийУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>ТаблицаТехОпераций</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаТехОперацийУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ТаблицаТехОперацийУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ТаблицаТехОперацийПометка" id="38">
+					<DataPath>ТаблицаТехОпераций.Пометка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>П.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаТехОперацийПометкаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТаблицаТехОперацийПометкаРасширеннаяПодсказка" id="40"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаТехОперацийГруппаТО" id="100">
+					<DataPath>ТаблицаТехОпераций.ГруппаТО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+					<ContextMenu name="ТаблицаТехОперацийГруппаТОКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="ТаблицаТехОперацийГруппаТОРасширеннаяПодсказка" id="102"/>
+				</InputField>
+				<InputField name="ТаблицаТехОперацийТехОперация" id="35">
+					<DataPath>ТаблицаТехОпераций.ТехОперация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<QuickChoice>false</QuickChoice>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<TextEdit>false</TextEdit>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ТаблицаТехОперацийТехОперацияКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТаблицаТехОперацийТехОперацияРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="StartChoice">ТаблицаТехОперацийТехОперацияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаТехОперацийРабочееМесто" id="89">
+					<DataPath>ТаблицаТехОпераций.РабочееМесто</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаТехОперацийРабочееМестоКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ТаблицаТехОперацийРабочееМестоРасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="ТаблицаТехОперацийНормаВремени" id="44">
+					<DataPath>ТаблицаТехОпераций.НормаВремени</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ТаблицаТехОперацийНормаВремениКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТаблицаТехОперацийНормаВремениРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа1" id="57">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<Table name="СписокНоменклатуры" id="1">
+					<Representation>List</Representation>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>СписокНоменклатуры</DataPath>
+					<RowPictureDataPath>СписокНоменклатуры.Picture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<ContextMenu name="СписокНоменклатурыКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="СписокНоменклатурыКоманднаяПанель" id="3">
+						<ChildItems>
+							<Button name="СписокНоменклатурыЗагрузитьИзФайла" id="20">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+								<ExtendedTooltip name="СписокНоменклатурыЗагрузитьИзФайлаРасширеннаяПодсказка" id="21"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокНоменклатурыРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="СписокНоменклатурыСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>СписокНоменклатуры</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокНоменклатурыСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="СписокНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокНоменклатурыСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>СписокНоменклатуры</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="СписокНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокНоменклатурыУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>СписокНоменклатуры</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокНоменклатурыУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="СписокНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">СписокНоменклатурыПриАктивизацииСтроки</Event>
+						<Event name="OnChange">СписокНоменклатурыПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="СписокНоменклатурыПометка" id="84">
+							<DataPath>СписокНоменклатуры.Check</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокНоменклатурыПометкаКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="СписокНоменклатурыПометкаРасширеннаяПодсказка" id="86"/>
+							<Events>
+								<Event name="OnChange">СписокНоменклатурыПометкаПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="СписокНоменклатурыЗначение" id="14">
+							<DataPath>СписокНоменклатуры.Value</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СписокНоменклатурыЗначениеКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="СписокНоменклатурыЗначениеРасширеннаяПодсказка" id="16"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ТаблицаТехОперацийСпецификации" id="59">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ТаблицаТехОперацийСпецификации</DataPath>
+					<RowPictureDataPath>ТаблицаТехОперацийСпецификации.DefaultPicture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>true</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="ТаблицаТехОперацийСпецификацииКонтекстноеМеню" id="60"/>
+					<AutoCommandBar name="ТаблицаТехОперацийСпецификацииКоманднаяПанель" id="61"/>
+					<ExtendedTooltip name="ТаблицаТехОперацийСпецификацииРасширеннаяПодсказка" id="62"/>
+					<SearchStringAddition name="ТаблицаТехОперацийСпецификацииСтрокаПоиска" id="63">
+						<AdditionSource>
+							<Item>ТаблицаТехОперацийСпецификации</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаТехОперацийСпецификацииСтрокаПоискаКонтекстноеМеню" id="64"/>
+						<ExtendedTooltip name="ТаблицаТехОперацийСпецификацииСтрокаПоискаРасширеннаяПодсказка" id="65"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаТехОперацийСпецификацииСостояниеПросмотра" id="66">
+						<AdditionSource>
+							<Item>ТаблицаТехОперацийСпецификации</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаТехОперацийСпецификацииСостояниеПросмотраКонтекстноеМеню" id="67"/>
+						<ExtendedTooltip name="ТаблицаТехОперацийСпецификацииСостояниеПросмотраРасширеннаяПодсказка" id="68"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаТехОперацийСпецификацииУправлениеПоиском" id="69">
+						<AdditionSource>
+							<Item>ТаблицаТехОперацийСпецификации</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаТехОперацийСпецификацииУправлениеПоискомКонтекстноеМеню" id="70"/>
+						<ExtendedTooltip name="ТаблицаТехОперацийСпецификацииУправлениеПоискомРасширеннаяПодсказка" id="71"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeRowChange">ТаблицаТехОперацийСпецификацииПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ТаблицаТехОперацийСпецификацииЭлемент" id="94">
+							<DataPath>ТаблицаТехОперацийСпецификации.Элемент</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тех. операция</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТаблицаТехОперацийСпецификацииЭлементКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="ТаблицаТехОперацийСпецификацииЭлементРасширеннаяПодсказка" id="96"/>
+						</LabelField>
+						<LabelField name="ТаблицаТехОперацийСпецификацииНорма" id="97">
+							<DataPath>ТаблицаТехОперацийСпецификации.Норма</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Норма ТО</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТаблицаТехОперацийСпецификацииНормаКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="ТаблицаТехОперацийСпецификацииНормаРасширеннаяПодсказка" id="99"/>
+						</LabelField>
+						<LabelField name="ТаблицаТехОперацийСпецификацииКоличество" id="108">
+							<DataPath>ТаблицаТехОперацийСпецификации.Количество</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТаблицаТехОперацийСпецификацииКоличествоКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="ТаблицаТехОперацийСпецификацииКоличествоРасширеннаяПодсказка" id="110"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ГрупповаяОбработкаТехОпераций</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокНоменклатуры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТаблицаТехОпераций" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица тех. операций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТехОперация" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тех. операция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТехОперации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НормаВремени" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Норма времени</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>8</v8:Digits>
+							<v8:FractionDigits>4</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РабочееМесто" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочее место</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РабочиеМестаЛинеек</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ГруппаТО" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ТО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТехОперации</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаТехОперацийСпецификации" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица тех. операций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	НормыРасходов.Элемент,
+	НормыТОСрезПоследних.Норма,
+	НормыРасходовСрезПоследних.Норма КАК Количество
+ИЗ
+	РегистрСведений.НормыРасходов.СрезПоследних КАК НормыРасходовСрезПоследних
+		ПОЛНОЕ СОЕДИНЕНИЕ Справочник.НормыРасходов КАК НормыРасходов
+			ПОЛНОЕ СОЕДИНЕНИЕ РегистрСведений.НормыТО.СрезПоследних КАК НормыТОСрезПоследних
+			ПО НормыРасходов.Элемент = НормыТОСрезПоследних.ТехОперация
+		ПО НормыРасходовСрезПоследних.НормаРасходов = НормыРасходов.Ссылка
+ГДЕ
+	НормыРасходов.Владелец = &amp;МПЗ
+	И НормыРасходовСрезПоследних.Норма &gt; 0
+	И НормыРасходов.ВидЭлемента = &amp;ВидЭлемента</QueryText>
+				<MainTable>Catalog.НормыРасходов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаТехОперацийНормаВремени</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаТехОпераций.ГруппаТО</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаТехОперацийНормаВремени</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаТехОпераций.НормаВремени</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>нет норм времени</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаТехОперацийПометка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаТехОпераций.ТехОперация</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьИзФайла" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла по товарам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла по товарам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.LevelDown</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьИзФайла</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьВсе1" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьВсе1" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьВсе1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьВСпецификации" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в спецификации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в спецификации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВСпецификации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

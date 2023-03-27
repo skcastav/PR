@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Subsystem uuid="56af7588-48eb-4851-ad50-8a396ddc612e">
+		<Properties>
+			<Name>Склад</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.Склад</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструМестаХранения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОборачиваемостьКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГрупповоеСписаниеМПЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СписокКомплектующихИзделий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструПередачиВПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МоделированиеКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.КомплектацияНаЛинейках</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструЗаказыПоставщикам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструЗаявкиНаЗакупку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструЗаявкиОтПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоБракуКомплектующих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоПоступлениямИСписаниямПрочим</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПоступлениеМПЗНаЛинейку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструПередачиНаЛинейки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаПустыхКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПечатьКарточекДляКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоОборотуКанбановПоставщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоЯчейкамКомплектации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СверкаИнвентаризацийПоЛинейкам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоРегиструЯчейкиХранения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоОстаткамМПЗНаЛинейке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СозданиеРеализацииДляВыгрузкиВБухгалтерию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СверкаРеализацийДляБухгалтерии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СравнениеОстатковСИнвентаризацией</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаспределениеПоставокПоЗаказамПоставщикам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПечатьКарточекМатериалов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПечатьКарточекНомеровВозвратнойТары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПечатьКарточекДляКанбановУД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СписаниеГотовойПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОформлениеПустыхКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПроверкаЗаявокОтПокупателейДляСЦ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаспределениеПоставокПоЗаказамПоставщикам_UA</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструПередачиВПереработку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗатратыМатериаловНаПродукциюИСписанияПоСтатьям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СверкаВыпускаГП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МаркировкаМатериалов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаспределениеПоставокПоЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПринятиеПустыхКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПередачаМПЗНаЛинейку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоОборотамКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СводныйОтчётПоОборотамКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоПередачамВПроизводствоПоступлениямИСписаниямПрочим</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструЯчейкиКомплектации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоФасовке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализПараметровМатериаловНаСкладе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПараметровМатериаловСклад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоДокументамРеализация</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Справочники</Subsystem>
+			<Subsystem>ДокументыПоСкладу</Subsystem>
+			<Subsystem>ДокументыСнабжения</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

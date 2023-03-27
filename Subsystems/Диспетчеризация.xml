@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Subsystem uuid="8f379f42-28c9-4067-b4b6-591f9e52851e">
+		<Properties>
+			<Name>Диспетчеризация</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диспетчеризация</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.Диспетчеризация</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Визуализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Диспетчеризация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоТекущейЛьготнойОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоОжидаемомуДефициту</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструПланыВыпуска</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОстановкаМаршрутныхКарт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СверкаПоступленийНаЛинейки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.НаличиеКомплектацииНаЛинейках</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДиспетчеризацияПроизводства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ДиспетчеризацияПЭО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ДиспетчеризацияМастера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ДиспетчеризацияДиспетчера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоНоменклатуреЛинеек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоГрупповойУпаковке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОформлениеПустыхКанбановИлиИзлишков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРегиструПередачиНаЛинейки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВизуализацияСводная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаХарьковскихЗаказов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СозданиеПодчиненныхМТК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаЗаказовНаПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоНоменклатуреЛинеекТНП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГрупповаяОстановкаМаршрутныхКарт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КорректировкаПотерьПродукцииВЗНП</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

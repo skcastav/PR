@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="18">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<InputField name="Линейка" id="1">
+					<DataPath>Объект.Линейка</DataPath>
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЛинейкаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ЛинейкаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПроизводственноеЗадание" id="4">
+					<DataPath>Объект.ПроизводственноеЗадание</DataPath>
+					<ContextMenu name="ПроизводственноеЗаданиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПроизводственноеЗаданиеРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">ПроизводственноеЗаданиеПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="20">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<LabelField name="ПроизводственноеЗаданиеИзделие" id="22">
+					<DataPath>Объект.ПроизводственноеЗадание.Изделие</DataPath>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ПроизводственноеЗаданиеИзделиеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПроизводственноеЗаданиеИзделиеРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="ПроизводственноеЗаданиеКоличество" id="25">
+					<DataPath>Объект.ПроизводственноеЗадание.Количество</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во</v8:content>
+						</v8:item>
+					</Title>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ПроизводственноеЗаданиеКоличествоКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ПроизводственноеЗаданиеКоличествоРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ОтправитьВРемонт" id="10">
+			<Type>UsualButton</Type>
+			<DefaultButton>true</DefaultButton>
+			<CommandName>Form.Command.ОтправитьВРемонт</CommandName>
+			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ExtendedTooltip name="ОтправитьВРемонтРасширеннаяПодсказка" id="11"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОтправкаВРемонтВыходныхПолуфабрикатов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОтправитьВРемонт" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить в ремонт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить в ремонт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьВРемонт</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

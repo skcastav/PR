@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Этапы" id="1">
+			<CommandBarLocation>None</CommandBarLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Этапы</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЭтапыКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ЭтапыКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ЭтапыРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="ЭтапыСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>Этапы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЭтапыСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ЭтапыСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЭтапыСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>Этапы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЭтапыСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ЭтапыСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЭтапыУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>Этапы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЭтапыУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ЭтапыУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ЭтапыПометка" id="6">
+					<DataPath>Объект.Этапы.Пометка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЭтапыПометкаКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ЭтапыПометкаРасширеннаяПодсказка" id="32"/>
+				</CheckBoxField>
+				<InputField name="ЭтапыСпецификация" id="8">
+					<DataPath>Объект.Этапы.Спецификация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЭтапыСпецификацияКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ЭтапыСпецификацияРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ЭтапыВидКанбана" id="10">
+					<DataPath>Объект.Этапы.ВидКанбана</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<ContextMenu name="ЭтапыВидКанбанаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ЭтапыВидКанбанаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ЭтапыМТК" id="12">
+					<DataPath>Объект.Этапы.МТК</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>15</Width>
+					<ContextMenu name="ЭтапыМТККонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ЭтапыМТКРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ЭтапыКоличество" id="15">
+					<DataPath>Объект.Этапы.Количество</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ЭтапыКоличествоКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ЭтапыКоличествоРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<CheckBoxField name="ЭтапыОсновнойЭтап" id="19">
+					<DataPath>Объект.Этапы.ОсновнойЭтап</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЭтапыОсновнойЭтапКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ЭтапыОсновнойЭтапРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа1" id="18">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<Button name="Создать" id="14">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Создать</CommandName>
+					<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ExtendedTooltip name="СоздатьРасширеннаяПодсказка" id="39"/>
+				</Button>
+				<Button name="ВыбратьАвтоматически" id="42">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыбратьАвтоматически</CommandName>
+					<ExtendedTooltip name="ВыбратьАвтоматическиРасширеннаяПодсказка" id="43"/>
+				</Button>
+				<Button name="ПометкаВыбранных" id="21">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПометкаВыбранных</CommandName>
+					<ExtendedTooltip name="ПометкаВыбранныхРасширеннаяПодсказка" id="40"/>
+				</Button>
+				<Button name="ОтменитьВсе" id="17">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОтменитьВсе</CommandName>
+					<ExtendedTooltip name="ОтменитьВсеРасширеннаяПодсказка" id="41"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СозданиеЭтаповМТК</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Этапы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Этапы.МТК</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#008080</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЭтапыСпецификация</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Этапы.ОсновнойЭтап</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Создать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Создать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПометкаВыбранных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометка выбранных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометка выбранных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПометкаВыбранных</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьАвтоматически" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать автоматически</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьАвтоматически</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

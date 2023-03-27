@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelField name="ID" id="16">
+			<DataPath>1/0:4fa05f23-3e01-46aa-9898-3c3f27a09826</DataPath>
+			<ContextMenu name="IDКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="IDРасширеннаяПодсказка" id="18"/>
+		</LabelField>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="МПЗ" id="4">
+			<DataPath>Запись.МПЗ</DataPath>
+			<ContextMenu name="МПЗКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="МПЗРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ФайлИзготовления" id="7">
+			<ContextMenu name="ФайлИзготовленияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ФайлИзготовленияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ФайлИзготовления1" id="13">
+			<DataPath>Запись.ФайлИзготовления</DataPath>
+			<ContextMenu name="ФайлИзготовления1КонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ФайлИзготовления1РасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<CheckBoxField name="Действующий" id="10">
+			<DataPath>Запись.Действующий</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ДействующийКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДействующийРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ИзготовлениеПечатныхПлат</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

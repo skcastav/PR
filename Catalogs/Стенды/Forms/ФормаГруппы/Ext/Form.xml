@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Folders</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="16">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="Линейка" id="14">
+					<DataPath>Объект.Линейка</DataPath>
+					<ContextMenu name="ЛинейкаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="19"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<Table name="РаспределениеНоменклатуры" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.РаспределениеНоменклатуры</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РаспределениеНоменклатурыКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="РаспределениеНоменклатурыКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="РаспределениеНоменклатурыРасширеннаяПодсказка" id="21"/>
+			<SearchStringAddition name="РаспределениеНоменклатурыСтрокаПоиска" id="22">
+				<AdditionSource>
+					<Item>РаспределениеНоменклатуры</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РаспределениеНоменклатурыСтрокаПоискаКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="РаспределениеНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РаспределениеНоменклатурыСостояниеПросмотра" id="25">
+				<AdditionSource>
+					<Item>РаспределениеНоменклатуры</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РаспределениеНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="РаспределениеНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РаспределениеНоменклатурыУправлениеПоиском" id="28">
+				<AdditionSource>
+					<Item>РаспределениеНоменклатуры</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РаспределениеНоменклатурыУправлениеПоискомКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="РаспределениеНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="РаспределениеНоменклатурыНоменклатура" id="12">
+					<DataPath>Объект.РаспределениеНоменклатуры.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РаспределениеНоменклатурыНоменклатураКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="РаспределениеНоменклатурыНоменклатураРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Стенды</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="64">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<InputField name="Период" id="59">
+					<DataPath>Объект.Период</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="Наименование" id="66">
+					<DataPath>Наименование</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="ИНН" id="69">
+					<DataPath>ИНН</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ИННКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="71"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаКонтрагентов" id="3">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаКонтрагентов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаКонтрагентовКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="ТаблицаКонтрагентовКоманднаяПанель" id="5">
+				<ChildItems>
+					<Button name="ФормаЗагрузить" id="1">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Загрузить</CommandName>
+						<ExtendedTooltip name="ФормаЗагрузитьРасширеннаяПодсказка" id="2"/>
+					</Button>
+					<Button name="ТаблицаКонтрагентовВыбратьВсе" id="75">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыбратьВсе</CommandName>
+						<ExtendedTooltip name="ТаблицаКонтрагентовВыбратьВсеРасширеннаяПодсказка" id="76"/>
+					</Button>
+					<Button name="ТаблицаКонтрагентовОтменитьВсе" id="77">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьВсе</CommandName>
+						<ExtendedTooltip name="ТаблицаКонтрагентовОтменитьВсеРасширеннаяПодсказка" id="78"/>
+					</Button>
+					<Button name="ТаблицаКонтрагентовДобавитьКонтрагентов" id="62">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.ДобавитьКонтрагентов</CommandName>
+						<ExtendedTooltip name="ТаблицаКонтрагентовДобавитьКонтрагентовРасширеннаяПодсказка" id="63"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаКонтрагентовРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="ТаблицаКонтрагентовСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>ТаблицаКонтрагентов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКонтрагентовСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="ТаблицаКонтрагентовСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаКонтрагентовСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>ТаблицаКонтрагентов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКонтрагентовСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ТаблицаКонтрагентовСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаКонтрагентовУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>ТаблицаКонтрагентов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКонтрагентовУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ТаблицаКонтрагентовУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ТаблицаКонтрагентовПометка" id="72">
+					<DataPath>ТаблицаКонтрагентов.Пометка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаКонтрагентовПометкаКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовПометкаРасширеннаяПодсказка" id="74"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаКонтрагентовКод" id="16">
+					<DataPath>ТаблицаКонтрагентов.Код</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКонтрагентовКодКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовКодРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ТаблицаКонтрагентовНаименование" id="19">
+					<DataPath>ТаблицаКонтрагентов.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКонтрагентовНаименованиеКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовНаименованиеРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ТаблицаКонтрагентовНаименованиеПолное" id="22">
+					<DataPath>ТаблицаКонтрагентов.НаименованиеПолное</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКонтрагентовНаименованиеПолноеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовНаименованиеПолноеРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ТаблицаКонтрагентовИНН" id="25">
+					<DataPath>ТаблицаКонтрагентов.ИНН</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКонтрагентовИННКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовИННРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ТаблицаКонтрагентовКПП" id="28">
+					<DataPath>ТаблицаКонтрагентов.КПП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКонтрагентовКППКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовКППРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="ТаблицаКонтрагентовДатаСоздания" id="37">
+					<DataPath>ТаблицаКонтрагентов.ДатаСоздания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКонтрагентовДатаСозданияКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовДатаСозданияРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ТаблицаКонтрагентовСсылка" id="31">
+					<DataPath>ТаблицаКонтрагентов.Ссылка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКонтрагентовСсылкаКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовСсылкаРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<CheckBoxField name="ТаблицаКонтрагентовНеточноеСоответствие" id="34">
+					<DataPath>ТаблицаКонтрагентов.НеточноеСоответствие</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаКонтрагентовНеточноеСоответствиеКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовНеточноеСоответствиеРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<Table name="ТаблицаКонтрагентовКонтактнаяИнформация" id="40">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Items.ТаблицаКонтрагентов.CurrentData.КонтактнаяИнформация</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаКонтрагентовКонтактнаяИнформацияКонтекстноеМеню" id="41"/>
+			<AutoCommandBar name="ТаблицаКонтрагентовКонтактнаяИнформацияКоманднаяПанель" id="42"/>
+			<ExtendedTooltip name="ТаблицаКонтрагентовКонтактнаяИнформацияРасширеннаяПодсказка" id="43"/>
+			<SearchStringAddition name="ТаблицаКонтрагентовКонтактнаяИнформацияСтрокаПоиска" id="44">
+				<AdditionSource>
+					<Item>ТаблицаКонтрагентовКонтактнаяИнформация</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКонтрагентовКонтактнаяИнформацияСтрокаПоискаКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="ТаблицаКонтрагентовКонтактнаяИнформацияСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаКонтрагентовКонтактнаяИнформацияСостояниеПросмотра" id="47">
+				<AdditionSource>
+					<Item>ТаблицаКонтрагентовКонтактнаяИнформация</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКонтрагентовКонтактнаяИнформацияСостояниеПросмотраКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ТаблицаКонтрагентовКонтактнаяИнформацияСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаКонтрагентовКонтактнаяИнформацияУправлениеПоиском" id="50">
+				<AdditionSource>
+					<Item>ТаблицаКонтрагентовКонтактнаяИнформация</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКонтрагентовКонтактнаяИнформацияУправлениеПоискомКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ТаблицаКонтрагентовКонтактнаяИнформацияУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаКонтрагентовКонтактнаяИнформацияВид" id="53">
+					<DataPath>Items.ТаблицаКонтрагентов.CurrentData.КонтактнаяИнформация.Вид</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКонтрагентовКонтактнаяИнформацияВидКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовКонтактнаяИнформацияВидРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ТаблицаКонтрагентовКонтактнаяИнформацияПредставление" id="56">
+					<DataPath>Items.ТаблицаКонтрагентов.CurrentData.КонтактнаяИнформация.Представление</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКонтрагентовКонтактнаяИнформацияПредставлениеКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ТаблицаКонтрагентовКонтактнаяИнформацияПредставлениеРасширеннаяПодсказка" id="58"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаПоставщиковИзБазыБитФинанс</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТаблицаКонтрагентов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Код" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеПолное" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИНН" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИНН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КПП" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НеточноеСоответствие" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаСоздания" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="КонтактнаяИнформация" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактная информация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>П.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<AdditionalColumns table="ТаблицаКонтрагентов.КонтактнаяИнформация">
+					<Column name="Вид" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вид</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Представление" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Представление</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИНН" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИНН</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИНН</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Наименование" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Наименование</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Загрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьКонтрагентов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить новых</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить контрагентов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКонтрагентов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе</Action>
+		</Command>
+		<Command name="ОтменитьВсе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьВсе</Action>
+		</Command>
+	</Commands>
+</Form>

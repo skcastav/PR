@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИмяФайла" id="57">
+			<DataPath>Объект.ИмяФайла</DataPath>
+			<Visible>false</Visible>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="58"/>
+			<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="59"/>
+		</InputField>
+		<InputField name="ВыгрузкаВФорматеExcel" id="60">
+			<DataPath>Объект.ВыгрузкаВФорматеCSV</DataPath>
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формат выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Excel</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:boolean">false</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>csv</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:boolean">true</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ВыгрузкаВФорматеExcelКонтекстноеМеню" id="61"/>
+			<ExtendedTooltip name="ВыгрузкаВФорматеExcelРасширеннаяПодсказка" id="62"/>
+		</InputField>
+		<UsualGroup name="ОбменПоРасписанию" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен по расписанию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Exchange on the schedule</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбменПоРасписаниюExtendedTooltip" id="51"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьРегламентноеЗадание" id="52">
+					<DataPath>Объект.ИспользоватьРегламентноеЗадание</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автоматически по расписанию:</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Automatically on schedule:</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьРегламентноеЗаданиеКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ИспользоватьРегламентноеЗаданиеРасширеннаяПодсказка" id="54"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьРегламентноеЗаданиеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<Button name="НастроитьРасписаниеРегламентногоЗадания" id="55">
+					<Type>Hyperlink</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.НастроитьРасписаниеРегламентногоЗадания</CommandName>
+					<ExtendedTooltip name="НастроитьРасписаниеРегламентногоЗаданияРасширеннаяПодсказка" id="56"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗапрос" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаЗапросРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<Button name="КонсольЗапроса" id="43">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КонсольЗапроса</CommandName>
+					<ExtendedTooltip name="КонсольЗапросаРасширеннаяПодсказка" id="44"/>
+				</Button>
+				<InputField name="ТекстЗапроса" id="16">
+					<DataPath>Объект.ТекстЗапроса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ТекстЗапросаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ТекстЗапросаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<Table name="Параметры" id="19">
+					<Representation>List</Representation>
+					<HeightInTableRows>3</HeightInTableRows>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ПараметрыЗапроса</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПараметрыКонтекстноеМеню" id="20"/>
+					<AutoCommandBar name="ПараметрыКоманднаяПанель" id="21"/>
+					<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="22"/>
+					<SearchStringAddition name="ПараметрыСтрокаПоиска" id="23">
+						<AdditionSource>
+							<Item>Параметры</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПараметрыСтрокаПоискаКонтекстноеМеню" id="24"/>
+						<ExtendedTooltip name="ПараметрыСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПараметрыСостояниеПросмотра" id="26">
+						<AdditionSource>
+							<Item>Параметры</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПараметрыСостояниеПросмотраКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="ПараметрыСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПараметрыУправлениеПоиском" id="29">
+						<AdditionSource>
+							<Item>Параметры</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПараметрыУправлениеПоискомКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="ПараметрыУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ПараметрыИмяПараметра" id="63">
+							<DataPath>ПараметрыЗапроса.ИмяПараметра</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПараметрыИмяПараметраКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ПараметрыИмяПараметраРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="ПараметрыТипПараметра" id="66">
+							<DataPath>ПараметрыЗапроса.ТипПараметра</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПараметрыТипПараметраКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ПараметрыТипПараметраРасширеннаяПодсказка" id="68"/>
+							<Events>
+								<Event name="OnChange">ПараметрыТипПараметраПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПараметрыЗначениеПараметра" id="69">
+							<DataPath>ПараметрыЗапроса.ЗначениеПараметра</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<OpenButton>false</OpenButton>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="ПараметрыЗначениеПараметраКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ПараметрыЗначениеПараметраРасширеннаяПодсказка" id="71"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="10">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="12"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Запросы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РасписаниеРегламентногоЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание регламентного задания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Schedule of the scheduled task</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПараметрыЗапроса" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяПараметра" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипПараметра" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗначениеПараметра" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КонсольЗапроса" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Консоль запроса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Консоль запроса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КонсольЗапроса</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="НастроитьРасписаниеРегламентногоЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание синхронизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Timing Schedule</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание регламентного задания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Adjust the schedule of the scheduled task</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SetTime</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьРасписаниеРегламентногоЗадания</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа4" id="56">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<LabelField name="ID" id="113">
+					<DataPath>Объект.ID</DataPath>
+					<ContextMenu name="IDКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="IDРасширеннаяПодсказка" id="115"/>
+				</LabelField>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="61"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ИспользоватьТаблицуПараметровДатчиков" id="142">
+			<DataPath>Объект.ИспользоватьТаблицуПараметровДатчиков</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьТаблицуПараметровДатчиковКонтекстноеМеню" id="143"/>
+			<ExtendedTooltip name="ИспользоватьТаблицуПараметровДатчиковРасширеннаяПодсказка" id="144"/>
+		</CheckBoxField>
+		<Pages name="Страницы" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<Page name="ТаблицаПараметров" id="116">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица параметров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица параметров</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ТаблицаПараметровРасширеннаяПодсказка" id="117"/>
+					<ChildItems>
+						<Table name="ПараметрыТоварныхГрупп" id="118">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПараметрыТоварныхГрупп</DataPath>
+							<RowPictureDataPath>ПараметрыТоварныхГрупп.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>Refresh</ExcludedCommand>
+								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ПараметрыТоварныхГруппКонтекстноеМеню" id="119"/>
+							<AutoCommandBar name="ПараметрыТоварныхГруппКоманднаяПанель" id="120">
+								<ChildItems>
+									<Button name="ПараметрыТоварныхГруппСкопироватьПараметры" id="140">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КопироватьПараметры</CommandName>
+										<ExtendedTooltip name="ПараметрыТоварныхГруппСкопироватьПараметрыРасширеннаяПодсказка" id="141"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПараметрыТоварныхГруппРасширеннаяПодсказка" id="121"/>
+							<SearchStringAddition name="ПараметрыТоварныхГруппСтрокаПоиска" id="122">
+								<AdditionSource>
+									<Item>ПараметрыТоварныхГрупп</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыТоварныхГруппСтрокаПоискаКонтекстноеМеню" id="123"/>
+								<ExtendedTooltip name="ПараметрыТоварныхГруппСтрокаПоискаРасширеннаяПодсказка" id="124"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПараметрыТоварныхГруппСостояниеПросмотра" id="125">
+								<AdditionSource>
+									<Item>ПараметрыТоварныхГрупп</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыТоварныхГруппСостояниеПросмотраКонтекстноеМеню" id="126"/>
+								<ExtendedTooltip name="ПараметрыТоварныхГруппСостояниеПросмотраРасширеннаяПодсказка" id="127"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПараметрыТоварныхГруппУправлениеПоиском" id="128">
+								<AdditionSource>
+									<Item>ПараметрыТоварныхГрупп</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыТоварныхГруппУправлениеПоискомКонтекстноеМеню" id="129"/>
+								<ExtendedTooltip name="ПараметрыТоварныхГруппУправлениеПоискомРасширеннаяПодсказка" id="130"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПараметрыТоварныхГруппПараметрТоварнойГруппы" id="134">
+									<DataPath>ПараметрыТоварныхГрупп.ПараметрТоварнойГруппы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметр</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПараметрыТоварныхГруппПараметрТоварнойГруппыКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ПараметрыТоварныхГруппПараметрТоварнойГруппыРасширеннаяПодсказка" id="136"/>
+								</LabelField>
+								<LabelField name="ПараметрыТоварныхГруппПараметрТоварнойГруппыПолнНаименование" id="137">
+									<DataPath>ПараметрыТоварныхГрупп.ПараметрТоварнойГруппы.ПолнНаименование</DataPath>
+									<ContextMenu name="ПараметрыТоварныхГруппПараметрТоварнойГруппыПолнНаименованиеКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ПараметрыТоварныхГруппПараметрТоварнойГруппыПолнНаименованиеРасширеннаяПодсказка" id="139"/>
+								</LabelField>
+								<LabelField name="ПараметрыТоварныхГруппЗначениеПараметра" id="131">
+									<DataPath>ПараметрыТоварныхГрупп.ЗначениеПараметра</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПараметрыТоварныхГруппЗначениеПараметраКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ПараметрыТоварныхГруппЗначениеПараметраРасширеннаяПодсказка" id="133"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Шаблоны" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шаблоны печати</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шаблоны</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ШаблоныРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<Table name="ШаблоныДокументов" id="94">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ШаблоныПечатныхДокументов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ШаблоныДокументовКонтекстноеМеню" id="95"/>
+							<AutoCommandBar name="ШаблоныДокументовКоманднаяПанель" id="96">
+								<ChildItems>
+									<Button name="ШаблоныДокументовКопироватьИзТоварнойГруппы" id="145">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КопироватьШаблоны</CommandName>
+										<ExtendedTooltip name="ШаблоныДокументовКопироватьИзТоварнойГруппыРасширеннаяПодсказка" id="146"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ШаблоныДокументовРасширеннаяПодсказка" id="97"/>
+							<SearchStringAddition name="ШаблоныДокументовСтрокаПоиска" id="98">
+								<AdditionSource>
+									<Item>ШаблоныДокументов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ШаблоныДокументовСтрокаПоискаКонтекстноеМеню" id="99"/>
+								<ExtendedTooltip name="ШаблоныДокументовСтрокаПоискаРасширеннаяПодсказка" id="100"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ШаблоныДокументовСостояниеПросмотра" id="101">
+								<AdditionSource>
+									<Item>ШаблоныДокументов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ШаблоныДокументовСостояниеПросмотраКонтекстноеМеню" id="102"/>
+								<ExtendedTooltip name="ШаблоныДокументовСостояниеПросмотраРасширеннаяПодсказка" id="103"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ШаблоныДокументовУправлениеПоиском" id="104">
+								<AdditionSource>
+									<Item>ШаблоныДокументов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ШаблоныДокументовУправлениеПоискомКонтекстноеМеню" id="105"/>
+								<ExtendedTooltip name="ШаблоныДокументовУправлениеПоискомРасширеннаяПодсказка" id="106"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ШаблоныДокументовНомерСтроки" id="107">
+									<DataPath>Объект.ШаблоныПечатныхДокументов.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ШаблоныДокументовНомерСтрокиКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ШаблоныДокументовНомерСтрокиРасширеннаяПодсказка" id="109"/>
+								</LabelField>
+								<InputField name="ШаблоныДокументовШаблон" id="110">
+									<DataPath>Объект.ШаблоныПечатныхДокументов.Шаблон</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ШаблоныДокументовШаблонКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ШаблоныДокументовШаблонРасширеннаяПодсказка" id="112"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Группа1" id="147">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="148"/>
+			<ChildItems>
+				<InputField name="НумераторMAC" id="57">
+					<DataPath>Объект.НумераторMAC</DataPath>
+					<ContextMenu name="НумераторMACКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="НумераторMACРасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="КоличествоMACАдресов" id="149">
+					<DataPath>Объект.КоличествоMACАдресов</DataPath>
+					<ContextMenu name="КоличествоMACАдресовКонтекстноеМеню" id="150"/>
+					<ExtendedTooltip name="КоличествоMACАдресовРасширеннаяПодсказка" id="151"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ГрупповаяУпаковка" id="152">
+			<DataPath>Объект.ГрупповаяУпаковка</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ГрупповаяУпаковкаКонтекстноеМеню" id="153"/>
+			<ExtendedTooltip name="ГрупповаяУпаковкаРасширеннаяПодсказка" id="154"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ТоварныеГруппы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПараметрыТоварныхГрупп" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры товарных групп</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийПараметрыТоварныхГрупп.ТоварнаяГруппа,
+	РегистрСведенийПараметрыТоварныхГрупп.ПараметрТоварнойГруппы,
+	РегистрСведенийПараметрыТоварныхГрупп.ЗначениеПараметра
+ИЗ
+	РегистрСведений.ПараметрыТоварныхГрупп КАК РегистрСведенийПараметрыТоварныхГрупп
+ГДЕ
+	РегистрСведенийПараметрыТоварныхГрупп.ТоварнаяГруппа = &amp;ТоварнаяГруппа</QueryText>
+				<MainTable>InformationRegister.ПараметрыТоварныхГрупп</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КопироватьПараметры" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КопироватьПараметры</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КопироватьШаблоны" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать шаблоны</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать шаблоны</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КопироватьШаблоны</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

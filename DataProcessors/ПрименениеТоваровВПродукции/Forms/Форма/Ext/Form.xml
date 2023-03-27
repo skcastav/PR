@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="СписокГруппТоваров" id="31">
+			<DataPath>СписокГруппТоваров</DataPath>
+			<ClearButton>true</ClearButton>
+			<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+			<ContextMenu name="СписокГруппТоваровКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="СписокГруппТоваровРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<Table name="ТаблицаМПЗ" id="6">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаМПЗ</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаМПЗКонтекстноеМеню" id="7"/>
+			<AutoCommandBar name="ТаблицаМПЗКоманднаяПанель" id="8">
+				<ChildItems>
+					<Button name="Проверить" id="4">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.Проверить</CommandName>
+						<ExtendedTooltip name="ПроверитьРасширеннаяПодсказка" id="5"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаМПЗРасширеннаяПодсказка" id="9"/>
+			<SearchStringAddition name="ТаблицаМПЗСтрокаПоиска" id="10">
+				<AdditionSource>
+					<Item>ТаблицаМПЗ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМПЗСтрокаПоискаКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ТаблицаМПЗСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаМПЗСостояниеПросмотра" id="13">
+				<AdditionSource>
+					<Item>ТаблицаМПЗ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМПЗСостояниеПросмотраКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ТаблицаМПЗСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаМПЗУправлениеПоиском" id="16">
+				<AdditionSource>
+					<Item>ТаблицаМПЗ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМПЗУправлениеПоискомКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="ТаблицаМПЗУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаМПЗТоварРодитель" id="40">
+					<DataPath>ТаблицаМПЗ.Товар.Parent</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗТоварРодительКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ТаблицаМПЗТоварРодительРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗТовар" id="22">
+					<DataPath>ТаблицаМПЗ.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗТоварКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТаблицаМПЗТоварРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗТоварКод" id="25">
+					<DataPath>ТаблицаМПЗ.Товар.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗТоварКодКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ТаблицаМПЗТоварКодРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗТоварСтатус" id="34">
+					<DataPath>ТаблицаМПЗ.Товар.Статус</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ст.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗТоварСтатусКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТаблицаМПЗТоварСтатусРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗМПЗ" id="19">
+					<DataPath>ТаблицаМПЗ.МПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМПЗМПЗКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ТаблицаМПЗМПЗРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ТаблицаМПЗСтатус" id="28">
+					<DataPath>ТаблицаМПЗ.Статус</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ст.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>7</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ТаблицаМПЗСтатусКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ТаблицаМПЗСтатусРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<CheckBoxField name="ТаблицаМПЗТНП" id="37">
+					<DataPath>ТаблицаМПЗ.ТНП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаМПЗТНПКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ТаблицаМПЗТНПРасширеннаяПодсказка" id="39"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПрименениеТоваровВПродукции</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаМПЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="МПЗ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продукция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+						<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Товар" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товар</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Товары</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Статус" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыСпецификаций</v8:Type>
+						<v8:Type>cfg:EnumRef.СтатусыМПЗ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТНП" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТНП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокГруппТоваров" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокГруппТоваров</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Товары</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Проверить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Проверить</Action>
+		</Command>
+	</Commands>
+</Form>

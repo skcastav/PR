@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПолучитьИзделия" id="30">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьИзделия</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьИзделияРасширеннаяПодсказка" id="31"/>
+			</Button>
+			<Button name="ФормаПрисвоитьЛинейку" id="25">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПрисвоитьЛинейку</CommandName>
+				<ExtendedTooltip name="ФормаПрисвоитьЛинейкуРасширеннаяПодсказка" id="26"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="4">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<InputField name="Линейка" id="1">
+					<DataPath>Линейка</DataPath>
+					<ContextMenu name="ЛинейкаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ЛинейкаНовая" id="6">
+					<DataPath>ЛинейкаНовая</DataPath>
+					<ContextMenu name="ЛинейкаНоваяКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ЛинейкаНоваяРасширеннаяПодсказка" id="8"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокИзделий" id="9">
+			<Representation>List</Representation>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>СписокИзделий</DataPath>
+			<RowPictureDataPath>СписокИзделий.Picture</RowPictureDataPath>
+			<ContextMenu name="СписокИзделийКонтекстноеМеню" id="10"/>
+			<AutoCommandBar name="СписокИзделийКоманднаяПанель" id="11">
+				<ChildItems>
+					<Button name="СписокИзделийЗагрузитьИзФайла" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+						<ExtendedTooltip name="СписокИзделийЗагрузитьИзФайлаРасширеннаяПодсказка" id="33"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокИзделийРасширеннаяПодсказка" id="12"/>
+			<SearchStringAddition name="СписокИзделийСтрокаПоиска" id="13">
+				<AdditionSource>
+					<Item>СписокИзделий</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокИзделийСтрокаПоискаКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокИзделийСтрокаПоискаРасширеннаяПодсказка" id="15"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокИзделийСостояниеПросмотра" id="16">
+				<AdditionSource>
+					<Item>СписокИзделий</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокИзделийСостояниеПросмотраКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="СписокИзделийСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокИзделийУправлениеПоиском" id="19">
+				<AdditionSource>
+					<Item>СписокИзделий</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокИзделийУправлениеПоискомКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="СписокИзделийУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="СписокИзделийПометка" id="27">
+					<DataPath>СписокИзделий.Check</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокИзделийПометкаКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="СписокИзделийПометкаРасширеннаяПодсказка" id="29"/>
+				</CheckBoxField>
+				<InputField name="СписокИзделийЗначение" id="22">
+					<DataPath>СписокИзделий.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокИзделийЗначениеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СписокИзделийЗначениеРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПрисвоениеЛинеек</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Линейка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая линейка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛинейкаНовая" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новая линейка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИзделий" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список изделий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+				<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрисвоитьЛинейку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Присвоить линейку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Присвоить линейку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрисвоитьЛинейку</Action>
+		</Command>
+		<Command name="ПолучитьИзделия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить изделия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить изделия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьИзделия</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.LevelUp</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьИзФайла</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Линейка" id="4">
+			<DataPath>Запись.Линейка</DataPath>
+			<ContextMenu name="ЛинейкаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="19">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время такта, мин</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="ВремяТактаРасчётное" id="7">
+					<DataPath>Запись.ВремяТактаРасчётное</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчётное</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВремяТактаРасчётноеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ВремяТактаРасчётноеРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ВремяТактаМинимальное" id="21">
+					<DataPath>Запись.ВремяТактаМинимальное</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Min</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВремяТактаМинимальноеКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ВремяТактаМинимальноеРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="ВремяТактаМаксимальное" id="24">
+					<DataPath>Запись.ВремяТактаМаксимальное</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Max</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВремяТактаМаксимальноеКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ВремяТактаМаксимальноеРасширеннаяПодсказка" id="26"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ВыпускЗаДеньРасчётный" id="10">
+			<DataPath>Запись.ВыпускЗаДеньРасчётный</DataPath>
+			<ContextMenu name="ВыпускЗаДеньРасчётныйКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВыпускЗаДеньРасчётныйРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Смена" id="13">
+			<DataPath>Запись.Смена</DataPath>
+			<ContextMenu name="СменаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СменаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ПроцентПремии" id="30">
+			<DataPath>Запись.ПроцентПремии</DataPath>
+			<ContextMenu name="ПроцентПремииКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="ПроцентПремииРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="Мастер" id="16">
+			<DataPath>Запись.Мастер</DataPath>
+			<ContextMenu name="МастерКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="МастерРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ТехническийЛидер" id="27">
+			<DataPath>Запись.ТехническийЛидер</DataPath>
+			<ContextMenu name="ТехническийЛидерКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ТехническийЛидерРасширеннаяПодсказка" id="29"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ПаспортЛинейки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

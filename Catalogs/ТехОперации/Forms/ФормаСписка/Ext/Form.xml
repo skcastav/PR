@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="НаДату" id="57">
+			<DataPath>НаДату</DataPath>
+			<ContextMenu name="НаДатуКонтекстноеМеню" id="58"/>
+			<ExtendedTooltip name="НаДатуРасширеннаяПодсказка" id="59"/>
+			<Events>
+				<Event name="OnChange">НаДатуПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Список" id="1">
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<AutoRefresh>true</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="21"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="22">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="25">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="28">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="32"/>
+				</LabelField>
+				<LabelField name="Код" id="6">
+					<DataPath>Список.Код</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<CheckBoxField name="Технологическая" id="78">
+					<DataPath>Список.Технологическая</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тех.</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТехнологическаяКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ТехнологическаяРасширеннаяПодсказка" id="80"/>
+				</CheckBoxField>
+				<CheckBoxField name="ДополнительныеРаботы" id="60">
+					<DataPath>Список.ДополнительныеРаботы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДР</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДополнительныеРаботыКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ДополнительныеРаботыРасширеннаяПодсказка" id="62"/>
+				</CheckBoxField>
+				<CheckBoxField name="Разовая" id="10">
+					<DataPath>Список.Разовая</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Р.</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РазоваяКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="РазоваяРасширеннаяПодсказка" id="33"/>
+				</CheckBoxField>
+				<LabelField name="ВидРабот" id="63">
+					<DataPath>Список.ВидРабот</DataPath>
+					<ContextMenu name="ВидРаботКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ВидРаботРасширеннаяПодсказка" id="65"/>
+				</LabelField>
+				<LabelField name="НормаВремени" id="51">
+					<DataPath>Список.Норма</DataPath>
+					<ContextMenu name="НормаВремениКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="НормаВремениРасширеннаяПодсказка" id="53"/>
+				</LabelField>
+				<LabelField name="МашинноеВремя" id="83">
+					<DataPath>Список.МашинноеВремя</DataPath>
+					<ContextMenu name="МашинноеВремяКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="МашинноеВремяРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<LabelField name="Стоимость" id="54">
+					<DataPath>Список.Стоимость</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стоимость (тарифная ставка)</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СтоимостьКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="СтоимостьРасширеннаяПодсказка" id="56"/>
+				</LabelField>
+				<LabelField name="НормаВремениНаНастройку" id="86">
+					<DataPath>Список.НормаВремениНаНастройку</DataPath>
+					<ContextMenu name="НормаВремениНаНастройкуКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="НормаВремениНаНастройкуРасширеннаяПодсказка" id="88"/>
+				</LabelField>
+				<LabelField name="НормаВремениНаОбдув" id="89">
+					<DataPath>Список.НормаВремениНаОбдув</DataPath>
+					<ContextMenu name="НормаВремениНаОбдувКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="НормаВремениНаОбдувРасширеннаяПодсказка" id="91"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<CommandBar name="Группа1" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<Button name="ОбщаяКомандаСохранениеПозиции" id="43">
+					<Type>CommandBarButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>CommonCommand.СохранениеПозиции</CommandName>
+					<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+					<Picture>
+						<xr:Ref>StdPicture.SaveValues</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбщаяКомандаСохранениеПозицииРасширеннаяПодсказка" id="44"/>
+				</Button>
+				<Button name="ОбщаяКомандаВосстановлениеПозиции" id="45">
+					<Type>CommandBarButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>CommonCommand.ВосстановлениеПозиции</CommandName>
+					<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+					<Picture>
+						<xr:Ref>StdPicture.RestoreValues</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбщаяКомандаВосстановлениеПозицииРасширеннаяПодсказка" id="46"/>
+				</Button>
+				<Button name="ОбщаяКомандаСписокСохраненийЭлементовСправочников" id="81">
+					<Type>CommandBarButton</Type>
+					<CommandName>CommonCommand.СписокСохраненийЭлементовСправочников</CommandName>
+					<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+					<ExtendedTooltip name="ОбщаяКомандаСписокСохраненийЭлементовСправочниковРасширеннаяПодсказка" id="82"/>
+				</Button>
+				<Button name="Применение" id="16">
+					<Type>CommandBarButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<CommandName>Form.Command.Применение</CommandName>
+					<ExtendedTooltip name="ПрименениеРасширеннаяПодсказка" id="36"/>
+				</Button>
+				<Button name="ОбщаяКомандаПрименяемость" id="47">
+					<Type>CommandBarButton</Type>
+					<CommandName>CommonCommand.Применяемость</CommandName>
+					<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+					<ExtendedTooltip name="ОбщаяКомандаПрименяемостьРасширеннаяПодсказка" id="48"/>
+				</Button>
+				<Button name="ШаблоныТО" id="20">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ШаблоныТО</CommandName>
+					<ExtendedTooltip name="ШаблоныТОРасширеннаяПодсказка" id="37"/>
+				</Button>
+				<Popup name="Операции" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОперацииРасширеннаяПодсказка" id="39"/>
+					<ChildItems>
+						<Button name="ОбщаяКомандаГрупповаяОбработка" id="49">
+							<Type>CommandBarButton</Type>
+							<CommandName>CommonCommand.ГрупповаяОбработка</CommandName>
+							<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+							<ExtendedTooltip name="ОбщаяКомандаГрупповаяОбработкаРасширеннаяПодсказка" id="50"/>
+						</Button>
+						<Button name="ЗагрузкаНормТехОпераций" id="72">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗагрузкаНормТехОпераций</CommandName>
+							<ExtendedTooltip name="ЗагрузкаНормТехОперацийРасширеннаяПодсказка" id="73"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+				<Popup name="Печать" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать...</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.Print</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<Button name="ПечатьОтчётПоТехОперациям" id="68">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьОтчётПоТехОперациям</CommandName>
+							<ExtendedTooltip name="ПечатьОтчётПоТехОперациямРасширеннаяПодсказка" id="69"/>
+						</Button>
+						<Button name="ПечатьОтчётПоШаблонамТехОпераций" id="76">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьОтчётПоШаблонамТехОпераций</CommandName>
+							<ExtendedTooltip name="ПечатьОтчётПоШаблонамТехОперацийРасширеннаяПодсказка" id="77"/>
+						</Button>
+						<Button name="ПечатьОборудование" id="74">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьОборудование</CommandName>
+							<ExtendedTooltip name="ПечатьОборудованиеРасширеннаяПодсказка" id="75"/>
+						</Button>
+						<Button name="ПечатьВыгрузкаДанных" id="70">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьВыгрузкаДанных</CommandName>
+							<ExtendedTooltip name="ПечатьВыгрузкаДанныхРасширеннаяПодсказка" id="71"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникТехОперации.Ссылка КАК Ссылка,
+	СправочникТехОперации.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникТехОперации.Родитель КАК Родитель,
+	СправочникТехОперации.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникТехОперации.Код КАК Код,
+	СправочникТехОперации.Наименование КАК Наименование,
+	СправочникТехОперации.ID КАК ID,
+	СправочникТехОперации.ДополнительныеРаботы КАК ДополнительныеРаботы,
+	СправочникТехОперации.Разовая КАК Разовая,
+	СправочникТехОперации.БК КАК БК,
+	СправочникТехОперации.Технологическая КАК Технологическая,
+	СправочникТехОперации.ВидРабот КАК ВидРабот,
+	СправочникТехОперации.Оборудование.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Оборудование КАК Оборудование,
+		Сотрудник КАК Сотрудник
+	) КАК Оборудование,
+	СправочникТехОперации.Предопределенный КАК Предопределенный,
+	СправочникТехОперации.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	НормыТОСрезПоследних.Норма КАК Норма,
+	НормыТОСрезПоследних.Стоимость КАК Стоимость,
+	НормыТОСрезПоследних.МашинноеВремя КАК МашинноеВремя,
+	НормыТОСрезПоследних.НормаВремениНаНастройку КАК НормаВремениНаНастройку,
+	НормыТОСрезПоследних.НормаВремениНаОбдув КАК НормаВремениНаОбдув
+ИЗ
+	РегистрСведений.НормыТО.СрезПоследних(&amp;НаДату, ) КАК НормыТОСрезПоследних
+		ПОЛНОЕ СОЕДИНЕНИЕ Справочник.ТехОперации КАК СправочникТехОперации
+		ПО НормыТОСрезПоследних.ТехОперация = СправочникТехОперации.Ссылка</QueryText>
+				<MainTable>Catalog.ТехОперации</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="НаДату" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Применение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СпецификацияКСледующему</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Применение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ШаблоныТО" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблоны ТО</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблоны ТО</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ШаблоныТО</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьОтчётПоТехОперациям" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёт по тех. операциям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать отчёт по тех. операциям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьОтчётПоТехОперациям</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьВыгрузкаДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать выгрузка данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьВыгрузкаДанных</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузкаНормТехОпераций" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка норм тех. операций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка норм тех. операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузкаНормТехОпераций</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьОборудование" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оборудование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать оборудование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьОборудование</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьОтчётПоШаблонамТехОпераций" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёт по шаблонам тех. операций УД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать отчёт по шаблонам тех. операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьОтчётПоШаблонамТехОпераций</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,977 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="75">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<RadioButtonField name="ВидДанных" id="72">
+					<DataPath>ВидДанных</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Для обработки</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Резерв</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ВидДанныхКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ВидДанныхРасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="OnChange">ВидДанныхПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+				<InputField name="СрокРезервирования" id="66">
+					<DataPath>СрокРезервирования</DataPath>
+					<ContextMenu name="СрокРезервированияКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="СрокРезервированияРасширеннаяПодсказка" id="68"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаКрупныхЗаказов" id="82">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаКрупныхЗаказов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаКрупныхЗаказовКонтекстноеМеню" id="83"/>
+			<AutoCommandBar name="ТаблицаКрупныхЗаказовКоманднаяПанель" id="84">
+				<ChildItems>
+					<Button name="ТаблицаКрупныхЗаказовПолучитьКрупныеЗаказы" id="38">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПолучитьКрупныеЗаказы</CommandName>
+						<ExtendedTooltip name="ТаблицаКрупныхЗаказовПолучитьКрупныеЗаказыРасширеннаяПодсказка" id="39"/>
+					</Button>
+					<Button name="ТаблицаКрупныхЗаказовВедомостьДефицита" id="52">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВедомостьДефицита</CommandName>
+						<ExtendedTooltip name="ТаблицаКрупныхЗаказовВедомостьДефицитаРасширеннаяПодсказка" id="53"/>
+					</Button>
+					<Button name="ТаблицаКрупныхЗаказовРассчитатьДатуОтгрузкиТНП" id="80">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.РассчитатьДатуОтгрузкиТНП</CommandName>
+						<ExtendedTooltip name="ТаблицаКрупныхЗаказовРассчитатьДатуОтгрузкиТНПРасширеннаяПодсказка" id="81"/>
+					</Button>
+					<Button name="ТаблицаКрупныхЗаказовЗавершитьИОтправитьРезультат" id="54">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗавершитьИОтправитьРезультат</CommandName>
+						<BackColor>#CCFFFF</BackColor>
+						<ExtendedTooltip name="ТаблицаКрупныхЗаказовЗавершитьИОтправитьРезультатРасширеннаяПодсказка" id="55"/>
+					</Button>
+					<Button name="ТаблицаКрупныхЗаказовЗарезервировать" id="62">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Зарезервировать</CommandName>
+						<BackColor>#FFFF00</BackColor>
+						<ExtendedTooltip name="ТаблицаКрупныхЗаказовЗарезервироватьРасширеннаяПодсказка" id="63"/>
+					</Button>
+					<Button name="ТаблицаКрупныхЗаказовЗавершитьОбработку" id="64">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗавершитьОбработку</CommandName>
+						<ExtendedTooltip name="ТаблицаКрупныхЗаказовЗавершитьОбработкуРасширеннаяПодсказка" id="65"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаКрупныхЗаказовРасширеннаяПодсказка" id="85"/>
+			<SearchStringAddition name="ТаблицаКрупныхЗаказовСтрокаПоиска" id="86">
+				<AdditionSource>
+					<Item>ТаблицаКрупныхЗаказов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКрупныхЗаказовСтрокаПоискаКонтекстноеМеню" id="87"/>
+				<ExtendedTooltip name="ТаблицаКрупныхЗаказовСтрокаПоискаРасширеннаяПодсказка" id="88"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаКрупныхЗаказовСостояниеПросмотра" id="89">
+				<AdditionSource>
+					<Item>ТаблицаКрупныхЗаказов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКрупныхЗаказовСостояниеПросмотраКонтекстноеМеню" id="90"/>
+				<ExtendedTooltip name="ТаблицаКрупныхЗаказовСостояниеПросмотраРасширеннаяПодсказка" id="91"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаКрупныхЗаказовУправлениеПоиском" id="92">
+				<AdditionSource>
+					<Item>ТаблицаКрупныхЗаказов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКрупныхЗаказовУправлениеПоискомКонтекстноеМеню" id="93"/>
+				<ExtendedTooltip name="ТаблицаКрупныхЗаказовУправлениеПоискомРасширеннаяПодсказка" id="94"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаКрупныхЗаказовПериод" id="119">
+					<DataPath>ТаблицаКрупныхЗаказов.Период</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовПериодКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовПериодРасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовСчёт" id="95">
+					<DataPath>ТаблицаКрупныхЗаказов.Счёт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>20</Width>
+					<ContextMenu name="ТаблицаКрупныхЗаказовСчётКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовСчётРасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовПроект" id="192">
+					<DataPath>ТаблицаКрупныхЗаказов.Проект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовПроектКонтекстноеМеню" id="193"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовПроектРасширеннаяПодсказка" id="194"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовКонтрагент" id="98">
+					<DataPath>ТаблицаКрупныхЗаказов.Контрагент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовКонтрагентКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовКонтрагентРасширеннаяПодсказка" id="100"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТовар" id="101">
+					<DataPath>ТаблицаКрупныхЗаказов.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТоварКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТоварРасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<CheckBoxField name="ТаблицаКрупныхЗаказовТоварСтандартный" id="131">
+					<DataPath>ТаблицаКрупныхЗаказов.Товар.Стандартный</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стд.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТоварСтандартныйКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТоварСтандартныйРасширеннаяПодсказка" id="133"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаКрупныхЗаказовТоварКратностьЗапуска" id="134">
+					<DataPath>ТаблицаКрупныхЗаказов.Товар.КратностьЗапуска</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кр. зап.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТоварКратностьЗапускаКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТоварКратностьЗапускаРасширеннаяПодсказка" id="136"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовПродукция" id="104">
+					<DataPath>ТаблицаКрупныхЗаказов.Продукция</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовПродукцияКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовПродукцияРасширеннаяПодсказка" id="106"/>
+					<Events>
+						<Event name="StartChoice">ТаблицаКрупныхЗаказовПродукцияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовДатаПоступленияКомплектации" id="113">
+					<DataPath>ТаблицаКрупныхЗаказов.ДатаПоступленияКомплектации</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовДатаПоступленияКомплектацииКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовДатаПоступленияКомплектацииРасширеннаяПодсказка" id="115"/>
+					<Events>
+						<Event name="OnChange">ТаблицаКрупныхЗаказовДатаПоступленияКомплектацииПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовКоличество" id="107">
+					<DataPath>ТаблицаКрупныхЗаказов.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовКоличествоКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовКоличествоРасширеннаяПодсказка" id="109"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовКоличествоЗапусков" id="122">
+					<DataPath>ТаблицаКрупныхЗаказов.КоличествоЗапусков</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовКоличествоЗапусковКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовКоличествоЗапусковРасширеннаяПодсказка" id="124"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовСрокПоставки" id="116">
+					<DataPath>ТаблицаКрупныхЗаказов.СрокПоставки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовСрокПоставкиКонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовСрокПоставкиРасширеннаяПодсказка" id="118"/>
+					<Events>
+						<Event name="OnChange">ТаблицаКрупныхЗаказовСрокПоставкиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовДатаРезерва" id="125">
+					<DataPath>ТаблицаКрупныхЗаказов.ДатаРезерва</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовДатаРезерваКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовДатаРезерваРасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<CheckBoxField name="ТаблицаКрупныхЗаказовРезервЗавершён" id="128">
+					<DataPath>ТаблицаКрупныхЗаказов.РезервЗавершён</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаКрупныхЗаказовРезервЗавершёнКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовРезервЗавершёнРасширеннаяПодсказка" id="130"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаКрупныхЗаказовМенеджер" id="110">
+					<DataPath>ТаблицаКрупныхЗаказов.Менеджер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовМенеджерКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовМенеджерРасширеннаяПодсказка" id="112"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовМенеджерEmail" id="137">
+					<DataPath>ТаблицаКрупныхЗаказов.Менеджер.Email</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<ContextMenu name="ТаблицаКрупныхЗаказовМенеджерEmailКонтекстноеМеню" id="138"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовМенеджерEmailРасширеннаяПодсказка" id="139"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="ТаблицаКрупныхЗаказовТаблицаТНП" id="140">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<Height>3</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПКонтекстноеМеню" id="141"/>
+			<AutoCommandBar name="ТаблицаКрупныхЗаказовТаблицаТНПКоманднаяПанель" id="142"/>
+			<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПРасширеннаяПодсказка" id="143"/>
+			<SearchStringAddition name="ТаблицаКрупныхЗаказовТаблицаТНПСтрокаПоиска" id="144">
+				<AdditionSource>
+					<Item>ТаблицаКрупныхЗаказовТаблицаТНП</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПСтрокаПоискаКонтекстноеМеню" id="145"/>
+				<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПСтрокаПоискаРасширеннаяПодсказка" id="146"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаКрупныхЗаказовТаблицаТНПСостояниеПросмотра" id="147">
+				<AdditionSource>
+					<Item>ТаблицаКрупныхЗаказовТаблицаТНП</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПСостояниеПросмотраКонтекстноеМеню" id="148"/>
+				<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПСостояниеПросмотраРасширеннаяПодсказка" id="149"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаКрупныхЗаказовТаблицаТНПУправлениеПоиском" id="150">
+				<AdditionSource>
+					<Item>ТаблицаКрупныхЗаказовТаблицаТНП</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПУправлениеПоискомКонтекстноеМеню" id="151"/>
+				<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПУправлениеПоискомРасширеннаяПодсказка" id="152"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокМХ" id="183">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.КоличествоОстатокМХ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокМХКонтекстноеМеню" id="184"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокМХРасширеннаяПодсказка" id="185"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокТранзит" id="177">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.КоличествоОстатокТранзит</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокТранзитКонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокТранзитРасширеннаяПодсказка" id="179"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокРезерв" id="174">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.КоличествоОстатокРезерв</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокРезервКонтекстноеМеню" id="175"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокРезервРасширеннаяПодсказка" id="176"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокДолги" id="153">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.КоличествоОстатокДолги</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокДолгиКонтекстноеМеню" id="154"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокДолгиРасширеннаяПодсказка" id="155"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПНЗ_50" id="156">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.НЗ_50</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПНЗ_50КонтекстноеМеню" id="157"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПНЗ_50РасширеннаяПодсказка" id="158"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокЗП" id="159">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.КоличествоОстатокЗП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокЗПКонтекстноеМеню" id="160"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоОстатокЗПРасширеннаяПодсказка" id="161"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПРезервКомплектов" id="162">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.РезервКомплектов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПРезервКомплектовКонтекстноеМеню" id="163"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПРезервКомплектовРасширеннаяПодсказка" id="164"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоКЗ" id="165">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.КоличествоКЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоКЗКонтекстноеМеню" id="166"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПКоличествоКЗРасширеннаяПодсказка" id="167"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПДатаОтгрузкиДней" id="189">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.ДатаОтгрузкиДней</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПДатаОтгрузкиДнейКонтекстноеМеню" id="190"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПДатаОтгрузкиДнейРасширеннаяПодсказка" id="191"/>
+				</InputField>
+				<InputField name="ТаблицаКрупныхЗаказовТаблицаТНПОшибка" id="186">
+					<DataPath>Items.ТаблицаКрупныхЗаказов.CurrentData.ТаблицаТНП.Ошибка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКрупныхЗаказовТаблицаТНПОшибкаКонтекстноеМеню" id="187"/>
+					<ExtendedTooltip name="ТаблицаКрупныхЗаказовТаблицаТНПОшибкаРасширеннаяПодсказка" id="188"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбработкаКрупныхЗаказов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СрокРезервирования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок резервирования, дней</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>СрокРезервирования</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВидДанных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ВидДанных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТаблицаКрупныхЗаказов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица крупных заказов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Счёт" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счёт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>60</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Контрагент" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Товар" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товар</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Товары</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Продукция" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продукция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во в заказе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Менеджер" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Менеджер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаПоступленияКомплектации" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата поступления комплектации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СрокПоставки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок поставки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Период" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоЗапусков" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во запусков</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаРезерва" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата резерва</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="РезервЗавершён" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Резерв завершён</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТаблицаТНП" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица ТНП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Проект" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>11</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<AdditionalColumns table="ТаблицаКрупныхЗаказов.ТаблицаТНП">
+					<Column name="КоличествоОстатокДолги" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во остаток долги</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="НЗ_50" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>50% НЗ</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="КоличествоОстатокЗП" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во остаток ЗП</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="РезервКомплектов" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>РК</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="КоличествоКЗ" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во КЗ</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="СрокПоставкиДни" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Срок поставки по ЗП, в днях</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="ДатаОтгрузки" id="8">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата отгрузки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Date</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="КоличествоОстатокРезерв" id="10">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во остаток резерв ГП</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="КоличествоОстатокТранзит" id="11">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во остаток транзит</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="КоличествоОстатокМХ" id="14">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во остаток МХ</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Ошибка" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>1</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="ДатаОтгрузкиДней" id="9">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата отгрузки, раб, дн.</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаКрупныхЗаказов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаКрупныхЗаказов.СрокПоставки</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаКрупныхЗаказов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаКрупныхЗаказов.РезервЗавершён</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьКрупныеЗаказы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить крупные заказы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить крупные заказы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПолучитьКрупныеЗаказы</Action>
+		</Command>
+		<Command name="ВедомостьДефицита" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведомость дефицита</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведомость дефицита</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВедомостьДефицита</Action>
+		</Command>
+		<Command name="ЗавершитьИОтправитьРезультат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить результат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить и отправить результат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьИОтправитьРезультат</Action>
+		</Command>
+		<Command name="Зарезервировать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарезервировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарезервировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Зарезервировать</Action>
+		</Command>
+		<Command name="ЗавершитьОбработку" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить обработку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить обработку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьОбработку</Action>
+		</Command>
+		<Command name="РассчитатьДатуОтгрузкиТНП" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать дату отгрузки ТНП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать дату отгрузки ТНП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РассчитатьДатуОтгрузкиТНП</Action>
+		</Command>
+	</Commands>
+</Form>

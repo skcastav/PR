@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="13">
+			<Visible>false</Visible>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<Button name="Обновить" id="7">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="8"/>
+				</Button>
+				<UsualGroup name="Группа1" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка ГП</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<Representation>None</Representation>
+					<ShowLeftMargin>false</ShowLeftMargin>
+					<United>false</United>
+					<TitleDataPath>НаборКонстант.ДатаПоследнейВыгрузкиГотовойПродукции</TitleDataPath>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<InputField name="ОшибкиПриВыгрузкеГП" id="4">
+							<DataPath>НаборКонстант.ОшибкиПриВыгрузкеГП</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОшибкиПриВыгрузкеГПКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ОшибкиПриВыгрузкеГПРасширеннаяПодсказка" id="6"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="15">
+			<Visible>false</Visible>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<Button name="Обновить1" id="24">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<ExtendedTooltip name="Обновить1РасширеннаяПодсказка" id="25"/>
+				</Button>
+				<UsualGroup name="Группа5" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка ТНП</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ShowLeftMargin>false</ShowLeftMargin>
+					<United>false</United>
+					<TitleDataPath>НаборКонстант.ДатаПоследнейВыгрузкиТНП</TitleDataPath>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="18"/>
+					<ChildItems>
+						<InputField name="ОшибкиПриВыгрузкеТНП" id="21">
+							<DataPath>НаборКонстант.ОшибкиПриВыгрузкеТНП</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОшибкиПриВыгрузкеТНПКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ОшибкиПриВыгрузкеТНПРасширеннаяПодсказка" id="23"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="26">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<Button name="Обновить2" id="31">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<ExtendedTooltip name="Обновить2РасширеннаяПодсказка" id="32"/>
+				</Button>
+				<UsualGroup name="Группа6" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка ННС</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ShowLeftMargin>false</ShowLeftMargin>
+					<United>false</United>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<InputField name="ОшибкиПриВыгрузкеННС" id="28">
+							<DataPath>НаборКонстант.ОшибкиПриВыгрузкеННС</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОшибкиПриВыгрузкеННСКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ОшибкиПриВыгрузкеННСРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа7" id="35">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<Button name="Обновить3" id="37">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<ExtendedTooltip name="Обновить3РасширеннаяПодсказка" id="38"/>
+				</Button>
+				<UsualGroup name="Группа8" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка реализаций</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ShowLeftMargin>false</ShowLeftMargin>
+					<United>false</United>
+					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<InputField name="ОшибкиПриЗагрузкеРеализаций" id="41">
+							<DataPath>НаборКонстант.ОшибкиПриЗагрузкеРеализаций</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОшибкиПриЗагрузкеРеализацийКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ОшибкиПриЗагрузкеРеализацийРасширеннаяПодсказка" id="43"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

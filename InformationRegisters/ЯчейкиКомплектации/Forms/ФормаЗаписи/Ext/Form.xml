@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="МПЗ" id="4">
+			<DataPath>Запись.МПЗ</DataPath>
+			<ContextMenu name="МПЗКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="МПЗРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="МестоХранения" id="21">
+			<DataPath>Запись.МестоХранения</DataPath>
+			<ContextMenu name="МестоХраненияКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="МестоХраненияРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="ГруппаРасчёта" id="27">
+			<DataPath>Запись.ГруппаРасчёта</DataPath>
+			<ContextMenu name="ГруппаРасчётаКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ГруппаРасчётаРасширеннаяПодсказка" id="29"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="16">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="КоличествоЯчеек" id="10">
+					<DataPath>Запись.КоличествоЯчеек</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во ячеек в линейке</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КоличествоЯчеекКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КоличествоЯчеекРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="КоличествоВЯчейке" id="13">
+					<DataPath>Запись.КоличествоВЯчейке</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во в ячейке линейки</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КоличествоВЯчейкеКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="КоличествоВЯчейкеРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<LabelDecoration name="ЕИ" id="18">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЕИ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЕИКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ЕИРасширеннаяПодсказка" id="20"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ТочкаЗаказа" id="24">
+			<DataPath>Запись.ТочкаЗаказа</DataPath>
+			<ContextMenu name="ТочкаЗаказаКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ТочкаЗаказаРасширеннаяПодсказка" id="26"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЯчейкиКомплектации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="МестоХраненияТНП" id="49">
+			<DataPath>МестоХраненияТНП</DataPath>
+			<ContextMenu name="МестоХраненияТНПКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="МестоХраненияТНПРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="СтатьяСписанияРеализаций" id="52">
+			<DataPath>СтатьяСписанияРеализаций</DataPath>
+			<ContextMenu name="СтатьяСписанияРеализацийКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="СтатьяСписанияРеализацийРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="СтатьяСписанияСписаний" id="55">
+			<DataPath>СтатьяСписанияСписаний</DataPath>
+			<ContextMenu name="СтатьяСписанияСписанийКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="СтатьяСписанияСписанийРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<Table name="СписокФайловВыгрузки" id="31">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<Height>4</Height>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокФайловВыгрузки</DataPath>
+			<RowPictureDataPath>СписокФайловВыгрузки.Picture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>CheckAll</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>Pickup</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>UncheckAll</ExcludedCommand>
+			</CommandSet>
+			<ContextMenu name="СписокФайловВыгрузкиКонтекстноеМеню" id="32"/>
+			<AutoCommandBar name="СписокФайловВыгрузкиКоманднаяПанель" id="33">
+				<ChildItems>
+					<Button name="СписокФайловВыгрузкиОбновить" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<ExtendedTooltip name="СписокФайловВыгрузкиОбновитьРасширеннаяПодсказка" id="48"/>
+					</Button>
+					<Button name="СоздатьСписания" id="1">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.СоздатьСписания</CommandName>
+						<ExtendedTooltip name="СоздатьСписанияРасширеннаяПодсказка" id="2"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокФайловВыгрузкиРасширеннаяПодсказка" id="34"/>
+			<SearchStringAddition name="СписокФайловВыгрузкиСтрокаПоиска" id="35">
+				<AdditionSource>
+					<Item>СписокФайловВыгрузки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокФайловВыгрузкиСтрокаПоискаКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="СписокФайловВыгрузкиСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокФайловВыгрузкиСостояниеПросмотра" id="38">
+				<AdditionSource>
+					<Item>СписокФайловВыгрузки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокФайловВыгрузкиСостояниеПросмотраКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="СписокФайловВыгрузкиСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокФайловВыгрузкиУправлениеПоиском" id="41">
+				<AdditionSource>
+					<Item>СписокФайловВыгрузки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокФайловВыгрузкиУправлениеПоискомКонтекстноеМеню" id="42"/>
+				<ExtendedTooltip name="СписокФайловВыгрузкиУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СписокФайловВыгрузкиЗначение" id="44">
+					<DataPath>СписокФайловВыгрузки.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокФайловВыгрузкиЗначениеКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СписокФайловВыгрузкиЗначениеРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="ТаблицаОшибок" id="3">
+			<TitleLocation>Top</TitleLocation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ТаблицаОшибок</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаОшибокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="ТаблицаОшибокКоманднаяПанель" id="5"/>
+			<ExtendedTooltip name="ТаблицаОшибокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="ТаблицаОшибокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>ТаблицаОшибок</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОшибокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="ТаблицаОшибокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаОшибокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>ТаблицаОшибок</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОшибокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ТаблицаОшибокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаОшибокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>ТаблицаОшибок</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОшибокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ТаблицаОшибокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаОшибокТовар" id="19">
+					<DataPath>Объект.ТаблицаОшибок.МПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОшибокТоварКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ТаблицаОшибокТоварРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ТаблицаОшибокКод" id="22">
+					<DataPath>Объект.ТаблицаОшибок.Код</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОшибокКодКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТаблицаОшибокКодРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ТаблицаОшибокКоличество" id="25">
+					<DataPath>Объект.ТаблицаОшибок.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОшибокКоличествоКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ТаблицаОшибокКоличествоРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ТаблицаОшибокКомментарий" id="28">
+					<DataPath>Объект.ТаблицаОшибок.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОшибокКомментарийКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ТаблицаОшибокКомментарийРасширеннаяПодсказка" id="30"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СписаниеГотовойПродукцииТНП</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:4b1957bc-d77d-4ad4-a983-f3df13bd3742</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СписокФайловВыгрузки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список файлов выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="МестоХраненияТНП" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Место хранения ТНП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>МестоХраненияТНП</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СтатьяСписанияРеализаций" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья списания реализаций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СтатьяСписанияРеализаций</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СтатьяСписанияСписаний" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья списания списаний</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтатьиПоступленийСписанийПрочих</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СтатьяСписанияСписаний</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТаблицаРеализаций" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица реализаций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="МПЗ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>14</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаСписаний" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица списаний</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="МПЗ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>14</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьСписания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать списания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать списания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьСписания</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

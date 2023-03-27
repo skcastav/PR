@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandsVisibility>
+		<Command name="InformationRegister.Себестоимость.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЦеныСредние.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЯчейкиКомплектации.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ВыпускПродукцииПоВремени.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПЭОХарьков">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ВыгрузкаДоговорныхПозицийВФайл.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПЭОХарьков">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструДоговорныхПозиций.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПЭОХарьков">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПерспективныеПланы.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПЭОХарьков">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаДоговорныхПозицийИзФайла.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПЭОХарьков">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоНормированиюПриборовИВходящихКанбанов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоНормированиюМО.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРасходуВПроизводствоСоСреднейЦеной.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ВыгрузкаДанныхПоСтоимостиИзделий.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СебестоимостьПолуфабрикатовПоставщиков.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СебестоимостьПолуфабрикатовПоставщиковСКоэффициентами.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СебестоимостьSMD.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СебестоимостьКанбанов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СебестоимостьПриборов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СебестоимостьИтоговая.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="InformationRegister.Себестоимость.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ЦеныСредние.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ЯчейкиКомплектации.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоНормированиюПриборовИВходящихКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоНормированиюМО.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРасходуВПроизводствоСоСреднейЦеной.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ВыгрузкаДанныхПоСтоимостиИзделий.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СебестоимостьПолуфабрикатовПоставщиков.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СебестоимостьПолуфабрикатовПоставщиковСКоэффициентами.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СебестоимостьSMD.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СебестоимостьКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СебестоимостьПриборов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СебестоимостьИтоговая.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="InformationRegister.Себестоимость.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЦеныСредние.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЯчейкиКомплектации.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="Report.ВыпускПродукцииПоВремени.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ВыгрузкаДоговорныхПозицийВФайл.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструДоговорныхПозиций.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоНормативамРасходов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ЗатратыМатериаловНаПродукциюИСписанияПоСтатьям.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоОстаткамМПЗСоСтоимостью.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоУсловнымКоэффициентам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоПотребностямВМатериалахИПФ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоСборкеДоставкеИтоговый.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоНезавершенномуПроизводству.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОценкаСебестоимостиПродукции.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.СырьевыеСправкиВЭД.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПерспективныеПланы.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаДоговорныхПозицийИзФайла.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаУсловныхКоэффициентов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВыгрузкаПроизводстваВ1С77Бухгалтерию.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаСебестоимостиПолуфабрикатов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоНормированиюПриборовИВходящихКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоНормированиюМО.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРасходуВПроизводствоСоСреднейЦеной.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+		<Command name="Report.ВыгрузкаДанныхПоСтоимостиИзделий.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+		<Command name="Report.СебестоимостьПолуфабрикатовПоставщиков.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+		<Command name="Report.СебестоимостьПолуфабрикатовПоставщиковСКоэффициентами.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+		<Command name="Report.СебестоимостьSMD.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+		<Command name="Report.СебестоимостьКанбанов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+		<Command name="Report.СебестоимостьПриборов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+		<Command name="Report.СебестоимостьИтоговая.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоСебестоимости</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.Регистры</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.ОтчётыНоНормированию</Group>
+		<Group>CommandGroup.ОтчётыПоСебестоимости</Group>
+	</GroupsOrder>
+</CommandInterface>

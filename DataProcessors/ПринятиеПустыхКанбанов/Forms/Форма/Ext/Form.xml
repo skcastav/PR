@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="37">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<LabelField name="Сотрудник" id="1">
+					<DataPath>Сотрудник</DataPath>
+					<ContextMenu name="СотрудникКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="3"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаКанбанов" id="4">
+			<Representation>List</Representation>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаКанбанов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаКанбановКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ТаблицаКанбановКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="ПринятьКанбаны" id="35">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.ПринятьКанбаны</CommandName>
+						<ExtendedTooltip name="ПринятьКанбаныРасширеннаяПодсказка" id="36"/>
+					</Button>
+					<Button name="ТаблицаКанбановОформитьИПринятьКанбаны" id="46">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОформитьИПринятьКанбаны</CommandName>
+						<BackColor>#FFFF99</BackColor>
+						<ExtendedTooltip name="ТаблицаКанбановОформитьИПринятьКанбаныРасширеннаяПодсказка" id="47"/>
+					</Button>
+					<Button name="ТаблицаКанбановОчиститьТаблицу" id="39">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОчиститьТаблицу</CommandName>
+						<ExtendedTooltip name="ТаблицаКанбановОчиститьТаблицуРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="ТаблицаКанбановУдалить" id="44">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ТаблицаКанбанов.StandardCommand.Delete</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Удалить строку</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ТаблицаКанбановУдалитьРасширеннаяПодсказка" id="45"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаКанбановРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ТаблицаКанбановСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ТаблицаКанбанов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКанбановСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаКанбановСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаКанбановСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ТаблицаКанбанов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКанбановСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаКанбановСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаКанбановУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ТаблицаКанбанов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКанбановУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТаблицаКанбановУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаКанбановНомерСтроки" id="17">
+					<DataPath>ТаблицаКанбанов.НомерСтроки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаКанбановНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановКанбан" id="20">
+					<DataPath>ТаблицаКанбанов.Канбан</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановКанбанКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаКанбановКанбанРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановМестоХраненияОтправитель" id="41">
+					<DataPath>ТаблицаКанбанов.МестоХраненияОтправитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановМестоХраненияОтправительКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТаблицаКанбановМестоХраненияОтправительРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановМестоХранения" id="23">
+					<DataPath>ТаблицаКанбанов.МестоХранения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановМестоХраненияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаблицаКанбановМестоХраненияРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановНомерЯчейки" id="29">
+					<DataPath>ТаблицаКанбанов.НомерЯчейки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановНомерЯчейкиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаблицаКанбановНомерЯчейкиРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановКомментарий" id="32">
+					<DataPath>ТаблицаКанбанов.Комментарий</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановКомментарийКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТаблицаКанбановКомментарийРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПринятиеПустыхКанбанов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Сотрудник" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ТаблицаКанбанов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица канбанов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерСтроки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ стр.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Канбан" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Канбан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+						<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МестоХранения" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место хранения получателя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерЯчейки" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ яч.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="МестоХраненияОтправитель" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место хранения отправителя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПринятьКанбаны" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять канбаны (ПРОБЕЛ)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять канбаны</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Space</Shortcut>
+			<Action>ПринятьКанбаны</Action>
+		</Command>
+		<Command name="ОчиститьТаблицу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьТаблицу</Action>
+		</Command>
+		<Command name="ОформитьИПринятьКанбаны" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить и принять канбаны</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить и принять канбаны</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьИПринятьКанбаны</Action>
+		</Command>
+	</Commands>
+</Form>

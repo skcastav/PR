@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandsVisibility>
+		<Command name="Report.ОтчётОТекущемСостоянииДелНаЛинейках.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоКоличествуСозданныхМТКПоДатам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструКрупныеЗаказы.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструДолги.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструИзменениеДатыОтгрузкиОбещанной.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыНаПроизводство.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Report.ОтчётОТекущемСостоянииДелНаЛинейках.StandardCommand.Open">
+			<CommandGroup>CommandGroup.БлокГлобальногоДиспетчера</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоКоличествуСозданныхМТКПоДатам.StandardCommand.Open">
+			<CommandGroup>CommandGroup.БлокГлобальногоДиспетчера</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструКрупныеЗаказы.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструДолги.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструИзменениеДатыОтгрузкиОбещанной.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыНаПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Report.ВизуализацияЗаказовНаПроизводство.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоННС.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.СостояниеЗаказаНаПроизводство.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоЗНПМетрика.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоСвободнымОстаткамПродукции.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоННСХарьков.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РабочееМестоКомплектовщик.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбработкаЗаказовНаПроизводство.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбработкаКанбанныхПозиций.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбработкаКрупныхЗаказов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПечатьНомеровТары.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РабочееМестоПеремещенияПодЗаказ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РабочееМестоСборщик.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РабочееМестоСборщикХарьков.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СозданиеНакладныхНаСборку.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СозданиеНакладныхНаСборкуХарьков.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ИзменениеДатыОтгрузкиОбещанной.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПроверкаИзмененийДатыОтгрузкиОбещанной.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётОТекущемСостоянииДелНаЛинейках.StandardCommand.Open">
+			<CommandGroup>CommandGroup.БлокГлобальногоДиспетчера</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоКоличествуСозданныхМТКПоДатам.StandardCommand.Open">
+			<CommandGroup>CommandGroup.БлокГлобальногоДиспетчера</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоРегиструКрупныеЗаказы.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструДолги.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструИзменениеДатыОтгрузкиОбещанной.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчётПоРегиструЗаказыНаПроизводство.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчётыПоРегистрам</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Поставка.Subsystem.Документы</Subsystem>
+		<Subsystem>Subsystem.Поставка.Subsystem.Справочники</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.БлокГлобальногоДиспетчера</Group>
+		<Group>CommandGroup.ОтчётыПоРегистрам</Group>
+	</GroupsOrder>
+</CommandInterface>

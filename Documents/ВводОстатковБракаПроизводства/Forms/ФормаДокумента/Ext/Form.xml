@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="Автор" id="49">
+			<DataPath>Объект.Автор</DataPath>
+			<ContextMenu name="АвторКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="51"/>
+		</LabelField>
+		<UsualGroup name="Группа1" id="35">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="19"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ВидМПЗ" id="5">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидМПЗКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ВидМПЗРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<InputField name="Линейка" id="43">
+			<DataPath>Объект.Линейка</DataPath>
+			<ContextMenu name="ЛинейкаКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="Комментарий" id="37">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<Table name="ТабличнаяЧасть" id="52">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ТабличнаяЧасть</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабличнаяЧастьКонтекстноеМеню" id="53"/>
+			<AutoCommandBar name="ТабличнаяЧастьКоманднаяПанель" id="54"/>
+			<ExtendedTooltip name="ТабличнаяЧастьРасширеннаяПодсказка" id="55"/>
+			<SearchStringAddition name="ТабличнаяЧастьСтрокаПоиска" id="56">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСтрокаПоискаКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСтрокаПоискаРасширеннаяПодсказка" id="58"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабличнаяЧастьСостояниеПросмотра" id="59">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСостояниеПросмотраКонтекстноеМеню" id="60"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСостояниеПросмотраРасширеннаяПодсказка" id="61"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабличнаяЧастьУправлениеПоиском" id="62">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьУправлениеПоискомКонтекстноеМеню" id="63"/>
+				<ExtendedTooltip name="ТабличнаяЧастьУправлениеПоискомРасширеннаяПодсказка" id="64"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТабличнаяЧастьНомерСтроки" id="65">
+					<DataPath>Объект.ТабличнаяЧасть.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерСтрокиКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерСтрокиРасширеннаяПодсказка" id="67"/>
+				</LabelField>
+				<InputField name="ТабличнаяЧастьМестоХранения" id="68">
+					<DataPath>Объект.ТабличнаяЧасть.МестоХранения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьМестоХраненияКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ТабличнаяЧастьМестоХраненияРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПроизводственноеЗадание" id="71">
+					<DataPath>Объект.ТабличнаяЧасть.ПроизводственноеЗадание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПроизводственноеЗаданиеКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПроизводственноеЗаданиеРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьРабочееМесто" id="74">
+					<DataPath>Объект.ТабличнаяЧасть.РабочееМесто</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьРабочееМестоКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ТабличнаяЧастьРабочееМестоРасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьВидБрака" id="77">
+					<DataPath>Объект.ТабличнаяЧасть.ВидБрака</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьВидБракаКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ТабличнаяЧастьВидБракаРасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьЭтапЖизненногоЦикла" id="80">
+					<DataPath>Объект.ТабличнаяЧасть.ЭтапЖизненногоЦикла</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьЭтапЖизненногоЦиклаКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ТабличнаяЧастьЭтапЖизненногоЦиклаРасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьИзделие" id="83">
+					<DataPath>Объект.ТабличнаяЧасть.Изделие</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьИзделиеКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ТабличнаяЧастьИзделиеРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество" id="86">
+					<DataPath>Объект.ТабличнаяЧасть.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличествоКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличествоРасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьДокумент" id="89">
+					<DataPath>Объект.ТабличнаяЧасть.Документ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьДокументКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ТабличнаяЧастьДокументРасширеннаяПодсказка" id="91"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВводОстатковБракаПроизводства</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПоказатьЯчейкиХранения" id="74">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПоказатьЯчейкиХранения</CommandName>
+				<ExtendedTooltip name="ФормаПоказатьЯчейкиХраненияРасширеннаяПодсказка" id="75"/>
+			</Button>
+			<Popup name="Печать" id="60">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.Print</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="61"/>
+				<ChildItems>
+					<Button name="ФормаПечатьТорг13" id="62">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьТорг13</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Print</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ФормаПечатьТорг13РасширеннаяПодсказка" id="63"/>
+					</Button>
+					<Button name="ФормаПечатьПриходноРасходнаяНакладная" id="81">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьПриходноРасходнаяНакладная</CommandName>
+						<ExtendedTooltip name="ФормаПечатьПриходноРасходнаяНакладнаяРасширеннаяПодсказка" id="82"/>
+					</Button>
+					<Button name="ФормаПечатьЭтикеткаSMD" id="91">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьЭтикеткаSMD</CommandName>
+						<ExtendedTooltip name="ФормаПечатьЭтикеткаSMDРасширеннаяПодсказка" id="92"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="Автор" id="13">
+			<DataPath>Объект.Автор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АвторКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="33"/>
+		</LabelField>
+		<UsualGroup name="Группа3" id="86">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="87"/>
+			<ChildItems>
+				<InputField name="ДокументОснование" id="31">
+					<DataPath>Объект.ДокументОснование</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">ДокументОснованиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Подразделение" id="11">
+					<DataPath>Объект.Подразделение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="38"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="30">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ВозвратнаяТара" id="93">
+					<DataPath>Объект.ВозвратнаяТара</DataPath>
+					<ContextMenu name="ВозвратнаяТараКонтекстноеМеню" id="94"/>
+					<ExtendedTooltip name="ВозвратнаяТараРасширеннаяПодсказка" id="95"/>
+				</InputField>
+				<CheckBoxField name="НаСборке" id="88">
+					<DataPath>Объект.НаСборке</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НаСборкеКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="НаСборкеРасширеннаяПодсказка" id="90"/>
+				</CheckBoxField>
+				<CheckBoxField name="Выгружено" id="76">
+					<DataPath>Объект.Выгружено</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыгруженоКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ВыгруженоРасширеннаяПодсказка" id="78"/>
+					<Events>
+						<Event name="OnChange">ВыгруженоПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="64">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<InputField name="МестоХранения" id="5">
+					<DataPath>Объект.МестоХранения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МестоХраненияКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="МестоХраненияРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="ChoiceProcessing">МестоХраненияОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="МестоХраненияВ" id="7">
+					<DataPath>Объект.МестоХраненияВ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МестоХраненияВКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="МестоХраненияВРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Сотрудник" id="9">
+			<DataPath>Объект.Сотрудник</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СотрудникКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="41"/>
+		</InputField>
+		<UsualGroup name="Брак" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о браке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Брак</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="БракРасширеннаяПодсказка" id="67"/>
+			<ChildItems>
+				<InputField name="РабочееМесто" id="68">
+					<DataPath>Объект.РабочееМесто</DataPath>
+					<ContextMenu name="РабочееМестоКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="РабочееМестоРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="КомментарийНеисправности" id="71">
+					<DataPath>Объект.ВидБрака</DataPath>
+					<ContextMenu name="КомментарийНеисправностиКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="КомментарийНеисправностиРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="ЭтапЖизненногоЦикла" id="83">
+					<DataPath>Объект.ЭтапЖизненногоЦикла</DataPath>
+					<ContextMenu name="ЭтапЖизненногоЦиклаКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ЭтапЖизненногоЦиклаРасширеннаяПодсказка" id="85"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="15">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<Table name="ТабличнаяЧасть" id="17">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ТабличнаяЧасть</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабличнаяЧастьКонтекстноеМеню" id="18"/>
+			<AutoCommandBar name="ТабличнаяЧастьКоманднаяПанель" id="19">
+				<ChildItems>
+					<Button name="ТабличнаяЧастьПодборМПЗ" id="58">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПодборМПЗ</CommandName>
+						<ExtendedTooltip name="ТабличнаяЧастьПодборМПЗРасширеннаяПодсказка" id="59"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТабличнаяЧастьРасширеннаяПодсказка" id="43"/>
+			<SearchStringAddition name="ТабличнаяЧастьСтрокаПоиска" id="44">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСтрокаПоискаКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабличнаяЧастьСостояниеПросмотра" id="47">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСостояниеПросмотраКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабличнаяЧастьУправлениеПоиском" id="50">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьУправлениеПоискомКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ТабличнаяЧастьУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТабличнаяЧастьНомерСтроки" id="20">
+					<DataPath>Объект.ТабличнаяЧасть.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерСтрокиРасширеннаяПодсказка" id="53"/>
+				</LabelField>
+				<LabelField name="ТабличнаяЧастьВидМПЗ" id="22">
+					<DataPath>Объект.ТабличнаяЧасть.ВидМПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьВидМПЗКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТабличнаяЧастьВидМПЗРасширеннаяПодсказка" id="54"/>
+				</LabelField>
+				<InputField name="ТабличнаяЧастьМПЗ" id="24">
+					<DataPath>Объект.ТабличнаяЧасть.МПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьМПЗКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ТабличнаяЧастьМПЗРасширеннаяПодсказка" id="55"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧастьМПЗПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабличнаяЧастьКоличество" id="26">
+					<DataPath>Объект.ТабличнаяЧасть.Количество</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьКоличествоКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТабличнаяЧастьКоличествоРасширеннаяПодсказка" id="56"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьЕдиницаИзмерения" id="28">
+					<DataPath>Объект.ТабличнаяЧасть.ЕдиницаИзмерения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьЕдиницаИзмеренияКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ТабличнаяЧастьЕдиницаИзмеренияРасширеннаяПодсказка" id="57"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ДвижениеМПЗ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПодборМПЗ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор МПЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборМПЗ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьТорг13" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТОРГ-13</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать ТОРГ13</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьТорг13</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьЯчейкиХранения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать ячейки хранения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать ячейки хранения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionSelection</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьЯчейкиХранения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыгрузитьВБазуСбыта" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в БД Сбыт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в базу сбыта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExchangePlan</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыгрузитьВБазуСбыта</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьПриходноРасходнаяНакладная" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приходно-расходная накладная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать приходно-расходной накладной</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьПриходноРасходнаяНакладная</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьЭтикеткаSMD" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этикетка SMD</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать этикетка SMD</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьЭтикеткаSMD</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>Document.Перепрогон.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Параметр1" id="1">
+			<DataPath>Объект.Параметр1</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="Параметр1КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Параметр1РасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Параметр2" id="4">
+			<DataPath>Объект.Параметр2</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="Параметр2КонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="Параметр2РасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Параметр3" id="7">
+			<DataPath>Объект.Параметр3</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="Параметр3КонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="Параметр3РасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Параметр4" id="10">
+			<DataPath>Объект.Параметр4</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="Параметр4КонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="Параметр4РасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Класс" id="13">
+			<DataPath>Объект.Класс</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КлассКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КлассРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Диапазон" id="16">
+			<DataPath>Объект.Диапазон</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДиапазонКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДиапазонРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ТУ" id="19">
+			<DataPath>Объект.ТУ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТУКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ТУРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="МП" id="22">
+			<DataPath>Объект.МП</DataPath>
+			<ContextMenu name="МПКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="МПРасширеннаяПодсказка" id="24"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПараметрыДатчиковДТС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

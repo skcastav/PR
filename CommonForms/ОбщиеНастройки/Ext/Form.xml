@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="КодБазы" id="19">
+			<DataPath>НаборКонстант.КодБазы</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодБазыКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КодБазыРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ОсновнаяВалюта" id="28">
+			<DataPath>НаборКонстант.ОсновнаяВалюта</DataPath>
+			<ContextMenu name="ОсновнаяВалютаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ОсновнаяВалютаРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ОсновнаяСтавкаНДС" id="22">
+			<DataPath>НаборКонстант.ОсновнаяСтавкаНДС</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОсновнаяСтавкаНДСКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ОсновнаяСтавкаНДСРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ОсновнойПроизводственныйКалендарь" id="34">
+			<DataPath>НаборКонстант.ОсновнойПроизводственныйКалендарь</DataPath>
+			<ContextMenu name="ОсновнойПроизводственныйКалендарьКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ОсновнойПроизводственныйКалендарьРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<CheckBoxField name="ИспользоватьНесколькоПроизводственныхКалендарей" id="25">
+			<DataPath>НаборКонстант.ИспользоватьНесколькоПроизводственныхКалендарей</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьНесколькоПроизводственныхКалендарейКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ИспользоватьНесколькоПроизводственныхКалендарейРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<InputField name="РабочийСервер" id="40">
+			<DataPath>НаборКонстант.РабочийСервер</DataPath>
+			<ContextMenu name="РабочийСерверКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="РабочийСерверРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<CheckBoxField name="ПроверятьПризнакБазыЛинеек" id="43">
+			<DataPath>НаборКонстант.ПроверятьПризнакБазыЛинеек</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПроверятьПризнакБазыЛинеекКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ПроверятьПризнакБазыЛинеекРасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
+		<CheckBoxField name="ТестоваяБаза" id="31">
+			<DataPath>НаборКонстант.ТестоваяБаза</DataPath>
+			<TitleTextColor>#FF0000</TitleTextColor>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ТестоваяБазаКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ТестоваяБазаРасширеннаяПодсказка" id="33"/>
+		</CheckBoxField>
+		<CheckBoxField name="РазрешитьСборИнформации" id="37">
+			<DataPath>НаборКонстант.РазрешитьСборИнформации</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РазрешитьСборИнформацииКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="РазрешитьСборИнформацииРасширеннаяПодсказка" id="39"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

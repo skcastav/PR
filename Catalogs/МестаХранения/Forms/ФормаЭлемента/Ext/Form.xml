@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="24">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<InputField name="КодВБухБазе" id="26">
+					<DataPath>Объект.КодВБухБазе</DataPath>
+					<ContextMenu name="КодВБухБазеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КодВБухБазеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Подразделение" id="9">
+			<DataPath>Объект.Подразделение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="13"/>
+		</InputField>
+		<InputField name="ГруппаАктивов" id="18">
+			<DataPath>Объект.ГруппаАктивов</DataPath>
+			<ContextMenu name="ГруппаАктивовКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ГруппаАктивовРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<InputField name="МОЛ" id="7">
+			<DataPath>Объект.МОЛ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МОЛКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МОЛРасширеннаяПодсказка" id="14"/>
+		</InputField>
+		<CheckBoxField name="СоздаватьПередачуНаЛинейкуПотребитель" id="15">
+			<DataPath>Объект.СоздаватьПередачуНаЛинейкуПотребитель</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СоздаватьПередачуНаЛинейкуПотребительКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="СоздаватьПередачуНаЛинейкуПотребительРасширеннаяПодсказка" id="17"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВыгружатьСвободныеОстатки" id="21">
+			<DataPath>Объект.ВыгружатьСвободныеОстатки</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыгружатьСвободныеОстаткиКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ВыгружатьСвободныеОстаткиРасширеннаяПодсказка" id="23"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.МестаХранения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ОборотКанбанов.StandardCommand.OpenByValue.МестоХранения</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

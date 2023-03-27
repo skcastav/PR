@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Enum uuid="48f1bef9-e925-483b-8367-299d72a9f858">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыДокументов" category="Ref">
+				<xr:TypeId>ed14ec12-8be3-4e7d-adf1-bff9d7c420e0</xr:TypeId>
+				<xr:ValueId>53205df2-bc2c-400b-89b2-88e8b3f9264a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыДокументов" category="Manager">
+				<xr:TypeId>ca4ffb36-e7ef-4a08-a0ab-806ec6b28380</xr:TypeId>
+				<xr:ValueId>527b4668-80df-4cfa-9aa0-793ac6025f3a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыДокументов" category="List">
+				<xr:TypeId>54caffbb-3fc3-4e24-bb61-1282c76f1604</xr:TypeId>
+				<xr:ValueId>cd3becd0-b6d6-425a-8e1a-eae8e8b5b384</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыДокументов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды документов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="0ab0f82b-d51c-4bdb-ba98-cf26e99ee0cb">
+				<Properties>
+					<Name>PCB</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PCB</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ca18d606-6875-4011-9771-5ffb5b836b43">
+				<Properties>
+					<Name>Гербер</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гербер</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ea1874cc-986f-4e7b-b430-64a580f675af">
+				<Properties>
+					<Name>ГТ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гарантийный талон</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e2b6b7db-1dad-47af-ac28-954762038302">
+				<Properties>
+					<Name>Инструкция</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструкция</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6624b017-7b12-42c6-8762-f8a8e9158c4b">
+				<Properties>
+					<Name>ИнструкцияПоДоработке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструкция по доработке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9606f305-02ae-4cd5-8173-7bbd6ed09625">
+				<Properties>
+					<Name>ИнструкцияПоЛакировке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструкция по лакировке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="82f93520-4943-466d-a893-bdd703299976">
+				<Properties>
+					<Name>ИнструкцияПоМонтажу</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструкция по монтажу</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="953f4a97-fa3a-4a48-87bd-851eb56b70de">
+				<Properties>
+					<Name>ИнструкцияПоНаладке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструкция по наладке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ebb42f4e-1699-40a4-a41a-7d8b3fca4162">
+				<Properties>
+					<Name>ИнструкцияПоПроверке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструкция по проверке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="952c0ee5-1f38-44fd-af03-77b17c071138">
+				<Properties>
+					<Name>ИнструкцияПоПрошивке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструкция по прошивке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="61aae7b4-3458-4c4a-acee-ecb014606759">
+				<Properties>
+					<Name>ИнструкцияПоСборке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструкция по сборке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="68dfc183-8747-4a9b-83e2-89c361c9d3d0">
+				<Properties>
+					<Name>ИнструкцияПоСуточномуПрогону</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструкция по суточному прогону</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="31ae1d52-488d-455b-ba8d-031de1cb0e03">
+				<Properties>
+					<Name>КР</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Краткое руководство</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="55ae01c5-b92f-4447-a825-a314200e67c8">
+				<Properties>
+					<Name>Листовка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Листовка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dc6098f1-b6fc-4b92-a181-0d880b32064c">
+				<Properties>
+					<Name>МонтажнаяСхема</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Монтажная схема</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="99434d95-5fb7-4508-860f-f967f89b25d1">
+				<Properties>
+					<Name>НаклейкаНаУпаковку</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наклейка на упаковку</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d0d44691-0b5e-462c-96b1-d73d233fd355">
+				<Properties>
+					<Name>Паспорт</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Паспорт</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="96622639-ddd3-411a-b0ea-a7010e0dcf6a">
+				<Properties>
+					<Name>ПМИ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Программа - методика испытаний</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3d256c61-3433-443f-be58-be27760e06df">
+				<Properties>
+					<Name>ПрограммаМК</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПО МК</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="267979e7-1e78-489e-8038-ea2f08b0c9cc">
+				<Properties>
+					<Name>ПрограммаПК</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПО ПК</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="40cc219f-417a-4b7b-8bc3-be5573839767">
+				<Properties>
+					<Name>ПрограммаТО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПО ТО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="05bf1050-1274-416f-983a-d49cf62c5c16">
+				<Properties>
+					<Name>РП</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Руководство пользователя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2318e4ab-2b05-4a27-9411-3c1fd7472930">
+				<Properties>
+					<Name>РПР</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Руководство по проектированию</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="aa00ac79-8d1c-4716-83b0-af16fa9b63ab">
+				<Properties>
+					<Name>РЭП</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Руководство по эксплуатации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3b2e9f99-ef26-4e9c-9862-494e1497def3">
+				<Properties>
+					<Name>СборочныйЧертёж</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сборочный чертёж</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dd80575a-88e6-419f-85d3-e9bef1954bee">
+				<Properties>
+					<Name>СпецификацияЕСКД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификация ЕСКД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="36704e79-77e8-45e7-95ac-850299801539">
+				<Properties>
+					<Name>СхемаОбщая</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Схема общая</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="11087b7f-8f81-4a9f-b951-a85e2ea22fb9">
+				<Properties>
+					<Name>СхемаСоединений</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Схема соединений</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Схема соединений</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e4c25096-247b-4f97-abe1-f89e287fbd5a">
+				<Properties>
+					<Name>СхемаЭлектрическаяПринципиальная</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Схема электрическая принципиальная</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a5892440-1c00-4195-8096-e075c8939112">
+				<Properties>
+					<Name>СхемаЭлектрическаяФункциональная</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Схема электрическая функциональная</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="87e98de7-3b75-45ed-a1a8-4d7903a94291">
+				<Properties>
+					<Name>ТаблицаДоработок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица доработок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="71af0d3f-db69-4687-acf3-fade33629749">
+				<Properties>
+					<Name>ТехническоеОписание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техническое описание</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f6f1048f-662e-4165-8ab0-1f714009e098">
+				<Properties>
+					<Name>Техпроцесс</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Технологический процесс</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9aa5cb02-17bf-4085-ba04-42d6f6941056">
+				<Properties>
+					<Name>ТрафаретПодПасту</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Трафарет под пасту</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="37882ac4-1e40-4690-9856-e8ab97b475d8">
+				<Properties>
+					<Name>ТУ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Технические условия</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0b074997-ef37-41db-bfa2-c7f67912df92">
+				<Properties>
+					<Name>ФайлДляСтанка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл для станка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4de66b6f-0a95-4735-b05b-4a6d372434cc">
+				<Properties>
+					<Name>ЧертёжМатериала</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чертёж ЭРИ собственного изготовления</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e13e52ca-b7b6-4650-b731-01febccf203f">
+				<Properties>
+					<Name>ШаблонПодКлей</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шаблон под клей</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Subsystem uuid="f74f299b-1f89-4dd0-a3e8-5f15c7b7af6b">
+		<Properties>
+			<Name>ДокументыПоСкладу</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы по складу</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИнвентаризацияМПЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеМПЗПрочее</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеМПЗПрочее</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатковМПЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДвижениеМПЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеМПЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Реализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаНаЛинейку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеНаЛинейку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаВПереработку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеИзПереработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеИзПереработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДвижениеРезервовГП</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПЗ" id="4">
+			<DataPath>Запись.ПЗ</DataPath>
+			<ContextMenu name="ПЗКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПЗРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="36">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="37"/>
+			<ChildItems>
+				<InputField name="Изделие" id="7">
+					<DataPath>Запись.Изделие</DataPath>
+					<ContextMenu name="ИзделиеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ИзделиеРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="НомерИзделия" id="38">
+					<DataPath>Запись.НомерИзделия</DataPath>
+					<ContextMenu name="НомерИзделияКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="НомерИзделияРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Товар" id="10">
+			<DataPath>Запись.Товар</DataPath>
+			<ContextMenu name="ТоварКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТоварРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="31">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<InputField name="БарКод" id="13">
+					<DataPath>Запись.БарКод</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бар-код</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="БарКодКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="БарКодРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="СтарыйБарКод" id="33">
+					<DataPath>Запись.СтарыйБарКод</DataPath>
+					<ContextMenu name="СтарыйБарКодКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="СтарыйБарКодРасширеннаяПодсказка" id="35"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="MAC" id="16">
+			<DataPath>Запись.MAC</DataPath>
+			<ContextMenu name="MACКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="MACРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="IMEI" id="25">
+			<DataPath>Запись.IMEI</DataPath>
+			<ContextMenu name="IMEIКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="IMEIРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="КодDanfoss" id="19">
+			<DataPath>Запись.КодDanfoss</DataPath>
+			<ContextMenu name="КодDanfossКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КодDanfossРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="СерийныйНомерEnLogic" id="22">
+			<DataPath>Запись.СерийныйНомерEnLogic</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>s/n EnLogic</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="СерийныйНомерEnLogicКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="СерийныйНомерEnLogicРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="IDКлюча" id="28">
+			<DataPath>Запись.IDКлюча</DataPath>
+			<ContextMenu name="IDКлючаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="IDКлючаРасширеннаяПодсказка" id="30"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.БарКоды</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Линейка" id="20">
+			<DataPath>Линейка</DataPath>
+			<ContextMenu name="ЛинейкаКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="22"/>
+		</InputField>
+		<Table name="ТаблицаСтационарныхПитателей" id="1">
+			<Representation>List</Representation>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаСтационарныхПитателей</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаСтационарныхПитателейКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаСтационарныхПитателейКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ЗагрузитьИзФайла" id="25">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+						<ExtendedTooltip name="ЗагрузитьИзФайлаРасширеннаяПодсказка" id="26"/>
+					</Button>
+					<Button name="ТаблицаСтационарныхПитателейПолучитьМПЗ" id="31">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПолучитьМПЗ</CommandName>
+						<ExtendedTooltip name="ТаблицаСтационарныхПитателейПолучитьМПЗРасширеннаяПодсказка" id="32"/>
+					</Button>
+					<Button name="ВыбратьВсе" id="27">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьВсе</CommandName>
+						<ExtendedTooltip name="ВыбратьВсеРасширеннаяПодсказка" id="28"/>
+					</Button>
+					<Button name="ТаблицаСтационарныхПитателейОтменитьВсе" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьДобавлениеВсе</CommandName>
+						<ExtendedTooltip name="ТаблицаСтационарныхПитателейОтменитьВсеРасширеннаяПодсказка" id="30"/>
+					</Button>
+					<Button name="ТаблицаСтационарныхПитателейУдалитьВсе" id="36">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьВсе</CommandName>
+						<ExtendedTooltip name="ТаблицаСтационарныхПитателейУдалитьВсеРасширеннаяПодсказка" id="37"/>
+					</Button>
+					<Button name="ТаблицаСтационарныхПитателейОтменитьУдалениеВсе" id="38">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьУдалениеВсе</CommandName>
+						<ExtendedTooltip name="ТаблицаСтационарныхПитателейОтменитьУдалениеВсеРасширеннаяПодсказка" id="39"/>
+					</Button>
+					<Button name="Обработать" id="23">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.Обработать</CommandName>
+						<ExtendedTooltip name="ОбработатьРасширеннаяПодсказка" id="24"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаСтационарныхПитателейРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаСтационарныхПитателейСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаСтационарныхПитателей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСтационарныхПитателейСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаСтационарныхПитателейСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаСтационарныхПитателейСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаСтационарныхПитателей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСтационарныхПитателейСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаСтационарныхПитателейСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаСтационарныхПитателейУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаСтационарныхПитателей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСтационарныхПитателейУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаСтационарныхПитателейУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ТаблицаСтационарныхПитателейПометкаДобавить" id="14">
+					<DataPath>ТаблицаСтационарныхПитателей.ПометкаДобавить</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаСтационарныхПитателейПометкаДобавитьКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТаблицаСтационарныхПитателейПометкаДобавитьРасширеннаяПодсказка" id="16"/>
+					<Events>
+						<Event name="OnChange">ТаблицаСтационарныхПитателейПометкаДобавитьПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТаблицаСтационарныхПитателейПометкаУдалить" id="33">
+					<DataPath>ТаблицаСтационарныхПитателей.ПометкаУдалить</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаСтационарныхПитателейПометкаУдалитьКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ТаблицаСтационарныхПитателейПометкаУдалитьРасширеннаяПодсказка" id="35"/>
+					<Events>
+						<Event name="OnChange">ТаблицаСтационарныхПитателейПометкаУдалитьПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ТаблицаСтационарныхПитателейМПЗ" id="17">
+					<DataPath>ТаблицаСтационарныхПитателей.МПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСтационарныхПитателейМПЗКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаСтационарныхПитателейМПЗРасширеннаяПодсказка" id="19"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ГрупповаяОбработкаСтационарныхПитателей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаСтационарныхПитателей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица стационарных питателей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ПометкаДобавить" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МПЗ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Материалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдалить" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удалить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Линейка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обработать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обработать</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.LevelDown</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="ДобавитьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВсе</Action>
+		</Command>
+		<Command name="ОтменитьДобавлениеВсе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить добавление все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить добавление все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьДобавлениеВсе</Action>
+		</Command>
+		<Command name="ПолучитьМПЗ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить МПЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить МПЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьМПЗ</Action>
+		</Command>
+		<Command name="УдалитьВсе" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсе</Action>
+		</Command>
+		<Command name="ОтменитьУдалениеВсе" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить удаление все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьУдалениеВсе</Action>
+		</Command>
+	</Commands>
+</Form>

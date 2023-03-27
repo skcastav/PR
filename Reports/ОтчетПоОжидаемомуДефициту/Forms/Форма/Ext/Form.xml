@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="6">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<InputField name="СписокМестХранения" id="109">
+					<DataPath>СписокМестХранения</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокМестХраненияКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="СписокМестХраненияРасширеннаяПодсказка" id="111"/>
+				</InputField>
+				<InputField name="ВыбПодразделение" id="106">
+					<DataPath>ВыбПодразделение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ВыбПодразделениеКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ВыбПодразделениеРасширеннаяПодсказка" id="108"/>
+				</InputField>
+				<InputField name="ВидКанбана" id="112">
+					<DataPath>ВидКанбана</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ВидКанбанаКонтекстноеМеню" id="113"/>
+					<ExtendedTooltip name="ВидКанбанаРасширеннаяПодсказка" id="114"/>
+				</InputField>
+				<Button name="Сформировать" id="11">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Сформировать</CommandName>
+					<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="12"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаКанбанов" id="52">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ТаблицаКанбанов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаКанбановКонтекстноеМеню" id="53"/>
+			<AutoCommandBar name="ТаблицаКанбановКоманднаяПанель" id="54">
+				<ChildItems>
+					<Button name="ПочтоваяРассылка" id="74">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПочтоваяРассылка</CommandName>
+						<ExtendedTooltip name="ПочтоваяРассылкаРасширеннаяПодсказка" id="75"/>
+					</Button>
+					<Button name="ВыбратьВсе" id="79">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыбратьВсе</CommandName>
+						<ExtendedTooltip name="ВыбратьВсеРасширеннаяПодсказка" id="80"/>
+					</Button>
+					<Button name="ОтменитьВсе" id="81">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьВсе</CommandName>
+						<ExtendedTooltip name="ОтменитьВсеРасширеннаяПодсказка" id="82"/>
+					</Button>
+					<Button name="ВыбратьПодразделение" id="83">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыбратьПодразделение</CommandName>
+						<ExtendedTooltip name="ВыбратьПодразделениеРасширеннаяПодсказка" id="84"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаКанбановРасширеннаяПодсказка" id="55"/>
+			<SearchStringAddition name="ТаблицаКанбановСтрокаПоиска" id="56">
+				<AdditionSource>
+					<Item>ТаблицаКанбанов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКанбановСтрокаПоискаКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="ТаблицаКанбановСтрокаПоискаРасширеннаяПодсказка" id="58"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаКанбановСостояниеПросмотра" id="59">
+				<AdditionSource>
+					<Item>ТаблицаКанбанов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКанбановСостояниеПросмотраКонтекстноеМеню" id="60"/>
+				<ExtendedTooltip name="ТаблицаКанбановСостояниеПросмотраРасширеннаяПодсказка" id="61"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаКанбановУправлениеПоиском" id="62">
+				<AdditionSource>
+					<Item>ТаблицаКанбанов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаКанбановУправлениеПоискомКонтекстноеМеню" id="63"/>
+				<ExtendedTooltip name="ТаблицаКанбановУправлениеПоискомРасширеннаяПодсказка" id="64"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ТаблицаКанбановПометка" id="76">
+					<DataPath>Объект.ТаблицаКанбанов.Пометка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаКанбановПометкаКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ТаблицаКанбановПометкаРасширеннаяПодсказка" id="78"/>
+					<Events>
+						<Event name="OnChange">ТаблицаКанбановПометкаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ТаблицаКанбановМестоХранения" id="97">
+					<DataPath>Объект.ТаблицаКанбанов.МестоХранения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место хранения</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>4</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ТаблицаКанбановМестоХраненияКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="ТаблицаКанбановМестоХраненияРасширеннаяПодсказка" id="99"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановПодразделение" id="71">
+					<DataPath>Объект.ТаблицаКанбанов.Подразделение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановПодразделениеКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ТаблицаКанбановПодразделениеРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановМПЗ" id="68">
+					<DataPath>Объект.ТаблицаКанбанов.МПЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<QuickChoice>false</QuickChoice>
+					<TextEdit>false</TextEdit>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ТаблицаКанбановМПЗКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ТаблицаКанбановМПЗРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановКолТребуется" id="85">
+					<DataPath>Объект.ТаблицаКанбанов.КолТребуется</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во требуется</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановКолТребуетсяКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="ТаблицаКанбановКолТребуетсяРасширеннаяПодсказка" id="87"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановКолОстаток" id="88">
+					<DataPath>Объект.ТаблицаКанбанов.КолОстаток</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во остаток</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановКолОстатокКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ТаблицаКанбановКолОстатокРасширеннаяПодсказка" id="90"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановКолДефицит" id="91">
+					<DataPath>Объект.ТаблицаКанбанов.КолДефицит</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во дефицит</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановКолДефицитКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="ТаблицаКанбановКолДефицитРасширеннаяПодсказка" id="93"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановКолКанбан" id="94">
+					<DataPath>Объект.ТаблицаКанбанов.КолКанбан</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во в канбане</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановКолКанбанКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="ТаблицаКанбановКолКанбанРасширеннаяПодсказка" id="96"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановКоличествоЯчеек" id="100">
+					<DataPath>Объект.ТаблицаКанбанов.КоличествоЯчеек</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во ячеек</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановКоличествоЯчеекКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="ТаблицаКанбановКоличествоЯчеекРасширеннаяПодсказка" id="102"/>
+				</InputField>
+				<InputField name="ТаблицаКанбановКоличествоВЯчейке" id="103">
+					<DataPath>Объект.ТаблицаКанбанов.КоличествоВЯчейке</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во в ячейке</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКанбановКоличествоВЯчейкеКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="ТаблицаКанбановКоличествоВЯчейкеРасширеннаяПодсказка" id="105"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ОтчетПоОжидаемомуДефициту</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокЛинеек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список линеек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Линейки</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокМестХранения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список мест хранения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокМестХранения</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВыбПодразделение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВыбПодразделение</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВидКанбана" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид канбана</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыКанбанов</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВидКанбана</Field>
+			</Save>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаКанбанов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ТаблицаКанбанов.КолДефицит</dcsset:left>
+						<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПочтоваяРассылка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Почтовая рассылка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Почтовая рассылка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПочтоваяРассылка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьВсе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьВсе" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьПодразделение" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать подразделение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПодразделение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="19">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ReportHeaderBackColor</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="50">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<InputField name="Подразделение" id="16">
+					<DataPath>Объект.Подразделение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ПодразделениеДляСебестоимости" id="44">
+					<DataPath>Объект.ПодразделениеДляСебестоимости</DataPath>
+					<ContextMenu name="ПодразделениеДляСебестоимостиКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПодразделениеДляСебестоимостиРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="МестоХраненияСписанияНедостачи" id="35">
+			<DataPath>Объект.МестоХраненияСписанияНедостачи</DataPath>
+			<ContextMenu name="МестоХраненияСписанияНедостачиКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="МестоХраненияСписанияНедостачиРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="СтатьяПриходаИзлишков" id="38">
+			<DataPath>Объект.СтатьяПриходаИзлишков</DataPath>
+			<ContextMenu name="СтатьяПриходаИзлишковКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="СтатьяПриходаИзлишковРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="Время" id="10">
+			<DataPath>Объект.Время</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВремяКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<CheckBoxField name="Служебный" id="13">
+			<DataPath>Объект.Служебный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СлужебныйКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СлужебныйРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<CheckBoxField name="ПриЗаменеСоздаватьМТК" id="26">
+			<DataPath>Объект.ПриЗаменеСоздаватьМТК</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПриЗаменеСоздаватьМТККонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ПриЗаменеСоздаватьМТКРасширеннаяПодсказка" id="28"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЗапрещеноПеремещениеВБрак" id="29">
+			<DataPath>Объект.ЗапрещеноПеремещениеВБрак</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапрещеноПеремещениеВБракКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ЗапрещеноПеремещениеВБракРасширеннаяПодсказка" id="31"/>
+		</CheckBoxField>
+		<CheckBoxField name="НеРаскрыватьСпецификациюПриРемонте" id="41">
+			<DataPath>Объект.НеРаскрыватьСпецификациюПриРемонте</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеРаскрыватьСпецификациюПриРемонтеКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="НеРаскрыватьСпецификациюПриРемонтеРасширеннаяПодсказка" id="43"/>
+		</CheckBoxField>
+		<CheckBoxField name="РезервироватьВПроизводстве" id="32">
+			<DataPath>Объект.РезервироватьВПроизводстве</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РезервироватьВПроизводствеКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="РезервироватьВПроизводствеРасширеннаяПодсказка" id="34"/>
+		</CheckBoxField>
+		<CheckBoxField name="СканироватьПриИспользовании" id="47">
+			<DataPath>Объект.СканироватьПриИспользовании</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СканироватьПриИспользованииКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="СканироватьПриИспользованииРасширеннаяПодсказка" id="49"/>
+		</CheckBoxField>
+		<Table name="МестаХранения" id="52">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.МестаХранения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="МестаХраненияКонтекстноеМеню" id="53"/>
+			<AutoCommandBar name="МестаХраненияКоманднаяПанель" id="54"/>
+			<ExtendedTooltip name="МестаХраненияРасширеннаяПодсказка" id="55"/>
+			<SearchStringAddition name="МестаХраненияСтрокаПоиска" id="56">
+				<AdditionSource>
+					<Item>МестаХранения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МестаХраненияСтрокаПоискаКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="МестаХраненияСтрокаПоискаРасширеннаяПодсказка" id="58"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="МестаХраненияСостояниеПросмотра" id="59">
+				<AdditionSource>
+					<Item>МестаХранения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МестаХраненияСостояниеПросмотраКонтекстноеМеню" id="60"/>
+				<ExtendedTooltip name="МестаХраненияСостояниеПросмотраРасширеннаяПодсказка" id="61"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="МестаХраненияУправлениеПоиском" id="62">
+				<AdditionSource>
+					<Item>МестаХранения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="МестаХраненияУправлениеПоискомКонтекстноеМеню" id="63"/>
+				<ExtendedTooltip name="МестаХраненияУправлениеПоискомРасширеннаяПодсказка" id="64"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="МестаХраненияМестоХранения" id="68">
+					<DataPath>Объект.МестаХранения.МестоХранения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МестаХраненияМестоХраненияКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="МестаХраненияМестоХраненияРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="МестаХраненияКоличествоДней" id="71">
+					<DataPath>Объект.МестаХранения.КоличествоДней</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МестаХраненияКоличествоДнейКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="МестаХраненияКоличествоДнейРасширеннаяПодсказка" id="73"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВидыКанбанов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

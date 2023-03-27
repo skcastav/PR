@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Subsystem uuid="4c25889d-9d6d-4c56-b7e7-af3aceb724ea">
+		<Properties>
+			<Name>Производство</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Производство</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.Производство</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Администратор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.ПроизводственныеЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыСтендовогоПрогона</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЛазернаяГравировка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоСменнымЗаданиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоВыработкеВЛинейках</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Визуализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПрошивкаПриборов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыпускПродукцииПоВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоГрупповойУпаковке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоПрименениюТехнологическойОснастки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВизуализацияСводная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоДрагоценнымМеталлам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоПодчиненнымМТК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоИспытания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СписаниеТехПотерьНаЛинейкахИзделий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВизуализацияЗаказовНаПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГрупповаяОбработкаШПД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ФиксацияОборотовЯчеекКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоИспытаниям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаЗапретаКОтгрузке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыпускиПоКодамDanfoss</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИзменениеДатыОтгрузкиОбещанной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоВзаимодействиюСВнутреннимиПоставщиками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗаявкаНаСтороннююПоверку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РасчётВремениТактаЛинеек</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Документы</Subsystem>
+			<Subsystem>СправочникиБарКодов</Subsystem>
+			<Subsystem>СправочникиЛинеек</Subsystem>
+			<Subsystem>СправочникиПроизводства</Subsystem>
+			<Subsystem>УПЭА</Subsystem>
+			<Subsystem>УД</Subsystem>
+			<Subsystem>УД_ДД</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

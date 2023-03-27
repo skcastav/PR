@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Subsystem uuid="2a304227-dd2a-4cd3-962c-c5349c039ac4">
+		<Properties>
+			<Name>ПЭО</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПЭО</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыпускПродукцииПоВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыгрузкаДоговорныхПозицийВФайл</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПерспективныеПланы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоРегиструДоговорныхПозиций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДоговорныхПозицийИзФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоНормативамРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаУсловныхКоэффициентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗатратыМатериаловНаПродукциюИСписанияПоСтатьям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоНормированиюПриборовИВходящихКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СебестоимостьSMD</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СебестоимостьКанбанов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоОстаткамМПЗСоСтоимостью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыгрузкаДанныхПоСтоимостиИзделий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СебестоимостьПриборов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СебестоимостьИтоговая</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоУсловнымКоэффициентам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоПотребностямВМатериалахИПФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаСебестоимостиПолуфабрикатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаПроизводстваВ1С77Бухгалтерию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СебестоимостьПолуфабрикатовПоставщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СебестоимостьПолуфабрикатовПоставщиковСКоэффициентами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Себестоимость</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЯчейкиКомплектации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоНезавершенномуПроизводству</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОценкаСебестоимостиПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоСборкеДоставкеИтоговый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СырьевыеСправкиВЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоРасходуВПроизводствоСоСреднейЦеной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныСредние</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчётПоНормированиюМО</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Справочники</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

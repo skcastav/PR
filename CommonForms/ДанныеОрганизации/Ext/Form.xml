@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="КодОКПО" id="40">
+			<DataPath>НаборКонстант.КодОКПО</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодОКПОКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="КодОКПОРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="КодОКДП" id="37">
+			<DataPath>НаборКонстант.КодОКДП</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодОКДПКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="КодОКДПРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ИННОрганизации" id="19">
+			<DataPath>НаборКонстант.ИННОрганизации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИННОрганизацииКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ИННОрганизацииРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ОсновнойБанковскийСчёт" id="49">
+			<DataPath>НаборКонстант.ОсновнойБанковскийСчёт</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОсновнойБанковскийСчётКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="ОсновнойБанковскийСчётРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="ТелефоныОрганизации" id="67">
+			<DataPath>НаборКонстант.ТелефоныОрганизации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТелефоныОрганизацииКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="ТелефоныОрганизацииРасширеннаяПодсказка" id="69"/>
+		</InputField>
+		<InputField name="АдресОрганизации" id="1">
+			<DataPath>НаборКонстант.АдресОрганизации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресОрганизацииКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="АдресОрганизацииРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="НазваниеОрганизации" id="43">
+			<DataPath>НаборКонстант.НазваниеОрганизации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НазваниеОрганизацииКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="НазваниеОрганизацииРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="КоэффициентЕСН" id="70">
+			<DataPath>НаборКонстант.КоэффициентЕСН</DataPath>
+			<ContextMenu name="КоэффициентЕСНКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="КоэффициентЕСНРасширеннаяПодсказка" id="72"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ГлавныйБухгалтер" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Главный бухгалтер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Руководитель" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Руководитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаместительДиректораПоПроизводству" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заместитель директора по производству</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачальникСТК" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальник СТК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаместительНачальникаПоУправлениюРесурсами" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заместитель начальника по управлению ресурсами</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачальникПЭО" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальник ПЭО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

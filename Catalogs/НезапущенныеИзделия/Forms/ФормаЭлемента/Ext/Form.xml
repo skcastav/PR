@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="НомерОчереди" id="10">
+			<DataPath>Объект.НомерОчереди</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерОчередиКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НомерОчередиРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Линейка" id="1">
+			<DataPath>Объект.Линейка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЛинейкаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ЛинейкаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Изделие" id="4">
+			<DataPath>Объект.Изделие</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИзделиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИзделиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="22">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="КратностьЗапуска" id="38">
+					<DataPath>Объект.КратностьЗапуска</DataPath>
+					<ContextMenu name="КратностьЗапускаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="КратностьЗапускаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="НормативныйЗапас" id="41">
+					<DataPath>Объект.НормативныйЗапас</DataPath>
+					<ContextMenu name="НормативныйЗапасКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="НормативныйЗапасРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="27">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<InputField name="КоличествоЗапусков" id="19">
+					<DataPath>Объект.КоличествоЗапусков</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КоличествоЗапусковКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КоличествоЗапусковРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="КоличествоЗапусковЗаЦикл" id="47">
+					<DataPath>Объект.КоличествоЗапусковЗаЦикл</DataPath>
+					<ContextMenu name="КоличествоЗапусковЗаЦиклКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="КоличествоЗапусковЗаЦиклРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="50">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<InputField name="КоличествоВПроизводстве" id="32">
+					<DataPath>Объект.КоличествоВПроизводстве</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="КоличествоВПроизводствеКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="КоличествоВПроизводствеРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="СвободныйОстатокНаСкладеГП" id="44">
+					<DataPath>Объект.СвободныйОстатокНаСкладеГП</DataPath>
+					<ContextMenu name="СвободныйОстатокНаСкладеГПКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СвободныйОстатокНаСкладеГПРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="Запущено" id="16">
+			<DataPath>Объект.Запущено</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапущеноКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЗапущеноРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НезапущенныеИзделия</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
